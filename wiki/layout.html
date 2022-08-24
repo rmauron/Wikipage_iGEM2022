@@ -14,9 +14,15 @@
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
 
     <title>{% block title %}{% endblock %} | Stockholm - iGEM 2022</title>
-
 </head>
+
 <body>
+
+  <div>
+    {% block header %}{% endblock %}
+  </div>
+
+
   <!-- Navigation -->
   {% include 'menu.html' %}
 
