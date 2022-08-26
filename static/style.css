@@ -60,3 +60,14 @@ header {
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
 }
+
+/*main content and section START*/
+.main-content {
+   width: 70%;
+   margin-left: 25%;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   text-align: justify;
+   position: static;
+   z-index: 2;
+}
