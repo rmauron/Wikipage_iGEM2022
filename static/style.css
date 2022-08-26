@@ -81,6 +81,9 @@ section:last-of-type {
    font-weight: 600;
 }
 
+
+
+
 /* SIDE BAR START*/
 .side-bar {
   flex-direction: column;
@@ -118,6 +121,29 @@ nav li a:hover {
   font-size: 18px;
 }
 /* SIDE BAR STOP*/
+/*make the side bar disappear in function of the width*/
+@media (max-width: 1000px) {
+   .side-bar {
+     position:static;
+     display: none;
+     background: transparent;
+   }
+   .main-content {
+     width: 100%;
+     margin-left: 0%;
+     margin-right: 0%;
+     padding-top: 3%;
+     padding-bottom: 3%;
+     text-align: justify;
+     
+   }
+}
+
+.list-group-item {
+   transition: all ease-out 100ms;
+}
+/* end of new code FOR SIDE BAR */
+
 
 /*progress bar*/
 .progress-container {
