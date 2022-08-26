@@ -32,7 +32,7 @@ html {
 
 nav {
    position:relative;
-   top: 0;
+   top: 0 !important;
 }
 
 .center {
@@ -69,7 +69,7 @@ section {
    background-color: red;
    height: auto;
    margin:0;
-   /*padding:2.5rem 4rem;*/
+   padding:2.5rem 4rem;
    position: relative;
    z-index: 0;
 }
@@ -82,9 +82,6 @@ section:last-of-type {
    color: #e41b17; 
    font-weight: 600;
 }
-
-
-
 
 /* SIDE BAR START*/
 .side-bar {
