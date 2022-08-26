@@ -132,15 +132,6 @@ nav li a:hover {
      display: none;
      background: transparent;
    }
-   .main-content {
-     width: 100%;
-     margin-left: 0%;
-     margin-right: 0%;
-     padding-top: 3%;
-     padding-bottom: 3%;
-     text-align: justify;
-     
-   }
 }
 
 .list-group-item {
