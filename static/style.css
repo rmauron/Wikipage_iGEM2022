@@ -35,6 +35,10 @@ nav {
    top: 0;
 }
 
+.center {
+   text-align: center;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
