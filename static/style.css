@@ -62,7 +62,7 @@ header {
    padding-top: 3%;
    padding-bottom: 3%;
    position: static;
-   z-index: 2;
+   z-index: 0;
 }
 
 section {
