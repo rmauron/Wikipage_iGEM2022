@@ -72,6 +72,28 @@ header {
    z-index: 2;
 }
 
+.center {
+   text-align: center;
+}
+
+section {
+   background-color: transparent;
+   height: auto;
+   margin:0;
+   padding:2.5rem 4rem;
+   position: relative;
+   z-index: 0;
+}
+
+section:last-of-type {
+   height: 100vh;
+}
+  
+.active { /*needed for the JS*/
+   color: #e41b17; 
+   font-weight: 600;
+}
+
 
 /* SIDE BAR START*/
 .side-bar {
@@ -110,9 +132,5 @@ nav li a:hover {
   font-size: 18px;
 }
 
-.active {
-   font-size: 18px;
-   color:#e41b17;
-}
 
 /* SIDE BAR STOP*/
