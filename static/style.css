@@ -30,7 +30,8 @@ html {
 }
 
 nav {
-   position: top !important;
+   position:relative;
+   top: 0;
 }
 
 body{
