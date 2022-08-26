@@ -15,22 +15,18 @@
 
         <!-- Google Fonts -->
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap'>
-
-
     <title>{% block title %}{% endblock %} | Stockholm - iGEM 2022</title>
 </head>
 
 <body>
-<!-- Navigation -->
-{% include 'menu.html' %}
+  <!-- Navigation -->
+  {% include 'menu.html' %}
 
-<!-- SCROLL INDICATOR START -->
-<div class="progress-container">
-  <div class="progress-bar" id="myBar"></div>
-</div>
-<!-- SCROLL INDICATOR END-->
-
-
+  <!-- SCROLL INDICATOR START -->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <!-- SCROLL INDICATOR END-->
 
   <div>
     {% block header %}{% endblock %}
