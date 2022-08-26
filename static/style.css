@@ -110,4 +110,9 @@ nav li a:hover {
   font-size: 18px;
 }
 
+.active {
+   font-size: 18px;
+   color:#e41b17;
+}
+
 /* SIDE BAR STOP*/
