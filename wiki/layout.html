@@ -22,6 +22,13 @@
 
 <body>
 
+<!-- SCROLL INDICATOR START -->
+<div class="progress-container">
+  <div class="progress-bar" id="myBar"></div>
+</div>
+<!-- SCROLL INDICATOR END-->
+
+
   <div>
     {% block header %}{% endblock %}
   </div>
@@ -43,8 +50,11 @@
   <!-- Wiki Tools: Teams are allowed to remove it 
   {% include 'wiki-tools.html' %}-->
 
-    <!-- JS for sidebar -->
-    <script src="{{ url_for('static', filename = 'navbar.js') }}"></script>
+  <!-- JS for sidebar -->
+  <script src="{{ url_for('static', filename = 'navbar.js') }}"></script>
+
+  <!-- JS for scroll bar content -->
+  <script src="{{ url_for('static', filename = 'scrollbar.js') }}"></script>
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
