@@ -92,7 +92,7 @@ section:last-of-type {
   padding-left: 10%;*/
   display: flex;
   float: left;
-  background-color: transparent;
+  background-color: lightblue;
   position: sticky;
   z-index: 0;
 }
