@@ -160,14 +160,14 @@ nav li a:hover {
 /*stop*/
 
 /*carousel*/
-* {
+/* * {
   box-sizing: border-box;
 }
 
 body {
   max-width: 1440px;
   margin: auto;
-}
+} */
 
 .slider-wrapper {
   margin: 1rem;
