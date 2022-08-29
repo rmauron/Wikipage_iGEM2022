@@ -89,7 +89,7 @@ section:last-of-type {
   flex-direction: column;
   justify-content: center;
   /*width: 25%;*/
-  padding-top: 6%;
+  padding-top: 3%; /*to be same as main-content*/
   padding-left: 10%;
   display: flex;
   float: left;
