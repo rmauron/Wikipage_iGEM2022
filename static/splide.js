@@ -1,6 +1,10 @@
 var splide = new Splide( '.splide' );
 var bar    = splide.root.querySelector( '.my-slider-progress-bar' );
 
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel' ).mount();
+  } );
+
 // Update the bar width:
 splide.on( 'mounted move', function () {
 var end = splide.Components.Controller.getEnd() + 1;
