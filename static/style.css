@@ -168,7 +168,7 @@ nav li a:hover {
 
 .slides-container {
   /*height: calc(100vh - 2rem);*/
-  width: 100%;
+  width: 50%;
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
