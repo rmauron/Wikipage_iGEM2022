@@ -176,8 +176,8 @@ body {
 }
 
 .slides-container {
-  height: calc(100vh - 2rem);
-  width: 100%;
+  /*height: calc(100vh - 2rem);
+  width: 100%;*/
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
