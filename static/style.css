@@ -161,7 +161,6 @@ nav li a:hover {
 
 /*carousel*/
 .slider-wrapper {
-  max-width: 800px;
   margin: 1rem;
   position: relative;
   overflow: hidden;
