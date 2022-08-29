@@ -90,7 +90,7 @@ section:last-of-type {
   justify-content: center;
   /*width: 25%;*/
   padding-top: 3%; /*to be same as main-content*/
-  padding-left: 10%;
+  padding-left: 0%; /*to be aligned to title*/
   display: flex;
   float: left;
   background-color: lightblue;
