@@ -160,15 +160,6 @@ nav li a:hover {
 /*stop*/
 
 /*carousel*/
-/* * {
-  box-sizing: border-box;
-}
-
-body {
-  max-width: 1440px;
-  margin: auto;
-} */
-
 .slider-wrapper {
   margin: 1rem;
   position: relative;
@@ -176,8 +167,8 @@ body {
 }
 
 .slides-container {
-  /*height: calc(100vh - 2rem);
-  width: 100%;*/
+  /*height: calc(100vh - 2rem);*/
+  width: 80%;
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
