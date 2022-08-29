@@ -176,6 +176,7 @@ nav li a:hover {
   top: 0;
   left: 0;
   min-height: 50px;
+  max-height: 90px;
 }
 /*end of carousel*/
 
