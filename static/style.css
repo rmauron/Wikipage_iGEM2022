@@ -183,9 +183,9 @@ nav li a:hover {
 /*reveal effect onscroll from bottom*/
 .reveal{
    position: relative;
-   transform: translateY(150px);
+   transform: translateY(100px);
    opacity: 0;
-   transition: all 2s ease;
+   transition: all 1.5s ease;
 }
 
 .reveal.activeonscroll{
@@ -197,9 +197,9 @@ nav li a:hover {
 /*reveal effect onscroll from top*/
 .revealfromtop{
    position: relative;
-   transform: translateY(-150px);
+   transform: translateY(-100px);
    opacity: 0;
-   transition: all 2s ease;
+   transition: all 1.5s ease;
 }
 
 .revealfromtop.activeonscrolltop{
