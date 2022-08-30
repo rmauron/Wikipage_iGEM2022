@@ -8,7 +8,7 @@ function revealfromtop(){
 
         var windowheight = window.innerHeight;
         var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
+        var revealpoint = 300;
 
         if(revealtop < windowheight - revealpoint){
             reveals[i].classList.add('activeonscrolltop');
