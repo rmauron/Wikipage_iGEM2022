@@ -179,3 +179,18 @@ nav li a:hover {
    max-width: 70% !important;}
 /*end of carousel*/
 
+
+/*reveal effect onscroll*/
+.reveal{
+   position: relative;
+   transform: translateY(150px);
+   opacity: 0;
+   transition: all 2s ease;
+}
+
+.reveal.active{
+   transform: translateY(0px);
+   opacity: 1;
+}
+/*end of reveal effect*/
+
