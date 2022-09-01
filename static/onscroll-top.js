@@ -13,8 +13,9 @@ function revealfromtop(){
         if(revealtop < windowheight - revealpoint){
             reveals[i].classList.add('activeonscrolltop');
         }
-        else{
-            reveals[i].classList.remove('activeonscrolltop');
-        }
+        // REMOVE THIS PART TO LET THE CONTENT FIX. THE EFFECT APPEARS ONLY ONCE
+        //else{
+        //    reveals[i].classList.remove('activeonscrolltop');
+        //}
     }
 }
