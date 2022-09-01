@@ -12,8 +12,8 @@ function reveal(){
         if(revealtop < windowheight - revealpoint){
             reveals[i].classList.add('activeonscroll');
         }
-        else{
-            reveals[i].classList.remove('activeonscroll');
-        }
+        //else{
+        //    reveals[i].classList.remove('activeonscroll');
+        //}
     }
 }
