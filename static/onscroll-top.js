@@ -1,4 +1,3 @@
-
 window.addEventListener('scroll', revealfromtop);
 
 function revealfromtop(){
