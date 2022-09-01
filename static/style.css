@@ -18,8 +18,7 @@ footer a { color: white; font-weight: bold; text-decoration: none; }
 footer a:hover { color: white; text-decoration: underline; }
 
 .icon:hover {
-   width: 42px;
-   height: 42px;
+   font-size: 18px;
 }
 
 /*footer style STOPS*/
@@ -60,7 +59,7 @@ body{
 header {
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
-   height: 1200px;
+   height: 900px;
 }
 
 h1, h2, h3, h4, h5, h6 {
