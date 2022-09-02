@@ -60,12 +60,16 @@ header {
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
    height: 350px;
-   padding-top: 300px;
 }
 
+header h1 {
+   padding-top: 300px !important;
+}
+
+/*
 .header-content {
    top: 90%;
-}
+}*/
 
 
 h1, h2, h3, h4, h5, h6 {
