@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-   background-color: #f5d1cb;
+   /*background-color: #f5d1cb;*/
    height: auto;
    margin:0;
    padding-top: 0%;
@@ -112,7 +112,7 @@ section:last-of-type {
   padding-left: 0%; /*to be aligned to title*/
   display: flex;
   float: left;
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   position: sticky;
   z-index: 0;
 }
