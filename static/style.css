@@ -59,6 +59,7 @@ body{
 header {
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
+   letter-spacing: 3px;
    height: 350px;
 }
 
