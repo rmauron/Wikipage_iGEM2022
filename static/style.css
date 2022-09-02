@@ -85,9 +85,9 @@ h1, h2, h3, h4, h5, h6 {
 section {
    /*background-color: #f5d1cb;*/
    height: auto;
-   margin:0;
+   margin-bottom:50px;
    padding-top: 0%;
-   padding-bottom: 30px;
+   /*padding-bottom: 30px;*/
    /*padding:2.5rem 4rem;*/ /*try to egalize sidebar and maincontent*/
    position: relative;
    z-index: 0;
