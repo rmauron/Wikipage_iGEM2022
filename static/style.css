@@ -165,7 +165,8 @@ nav li a:hover {
  
 .progress-bar {
    height: 3px;
-   background: #e41b17;
+   background: rgb(42,149,177);
+   background: linear-gradient(90deg, rgba(42,149,177,0.7497373949579832) 0%, rgba(228,27,23,0.6713060224089635) 100%);
    width: 0%;
    transition:ease;
 }
