@@ -60,6 +60,7 @@ background: linear-gradient(90deg, rgba(228,27,23,0.055059523809523836) 0%, rgba
 header {
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
+   text-transform: uppercase;
    letter-spacing: 9px;
    height: 350px;
 }
@@ -68,8 +69,13 @@ header h1 {
    padding-top: 170px !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
+   letter-spacing: 6px;
    text-transform: uppercase;
+}
+
+p {
+   padding-top: 15px;
 }
 
 /*main content and section START*/
