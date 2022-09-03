@@ -204,20 +204,20 @@ nav li a:hover {
    opacity: 0;
    transition: all 1.3s ease;
 }
-.reveal2{
+.reveal:nth-child(2){
    position: relative;
    transform: translateY(85px);
    opacity: 0;
    transition: all 1.3s ease;
 }
-.reveal3{
+.reveal:nth-child(3){
    position: relative;
    transform: translateY(90px);
    opacity: 0;
    transition: all 1.3s ease;
 }
 
-.reveal.activeonscroll, .reveal2.activeonscroll, .reveal3.activeonscroll{
+.reveal.activeonscroll{
    transform: translateY(0px);
    opacity: 1;
 }
