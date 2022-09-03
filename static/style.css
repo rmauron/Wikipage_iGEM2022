@@ -257,7 +257,6 @@ nav li a:hover {
    border-radius: 5px;
    height: 100px; 
    font-size: 20px; 
-   display: flex; 
    align-items: center; 
    justify-content: center;
 }
