@@ -217,7 +217,7 @@ nav li a:hover {
    transition: all 1.3s ease;
 }
 
-.reveal.activeonscroll{
+.reveal.activeonscroll, .reveal2.activeonscroll, .reveal3.activeonscroll{
    transform: translateY(0px);
    opacity: 1;
 }
