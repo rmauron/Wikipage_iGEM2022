@@ -242,7 +242,7 @@ nav li a:hover {
    background: rgb(42,149,177);
    background: linear-gradient(90deg, rgba(42,149,177,0.1558998599439776) 0%, rgba(245,245,245,0) 60%, rgba(228,27,23,0.09707633053221287) 100%);
    border-radius: 5px;
-   box-shadow: 2px 2px 2px 1p rgba(0, 0, 0, 0.2);
+   box-shadow: 2px 2px 2px 1p orangered;
    height: 100px; 
    font-size: 20px; 
    display: flex; 
