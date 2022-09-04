@@ -249,7 +249,13 @@ nav li a:hover {
 /*box*/
 .box {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+   .box {
+      flex-direction: column;
+   }
 }
 
 .flashbox {
@@ -263,3 +269,4 @@ nav li a:hover {
    align-items: center; 
    justify-content: center;
 }
+/*end of flashbox*/
