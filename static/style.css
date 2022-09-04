@@ -251,15 +251,6 @@ nav li a:hover {
   align-items: baseline;
 }
 
-.box a {
-   text-decoration: none;
-   color: black;
-}
-.box a:hover {
-   color: #2A95B1;
-   font-weight: 200;
-}
-
 @media (max-width: 1000px) {
    .box {
       flex-direction: column;
@@ -276,6 +267,14 @@ nav li a:hover {
    text-align:center;
    align-items: center; 
    justify-content: center;
+}
+.flashbox a {
+   text-decoration: none;
+   color: black;
+}
+.flashbox a:hover {
+   color: #2A95B1;
+   font-weight: 200;
 }
 /*end of flashbox*/
 
