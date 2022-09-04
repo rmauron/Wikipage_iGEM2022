@@ -422,7 +422,7 @@ nav li a:hover {
 width: 1000px;
 display: flex;
 /*justify-content: space-between;*/
-perspective: 800px;
+perspective: 800px;}
 
    .card {
       position: relative;
@@ -431,7 +431,7 @@ perspective: 800px;
       color: white;
       cursor: pointer;
       transition: 1s ease-in-out;
-      transform-style: preserve-3d;
+      transform-style: preserve-3d;}
 
       &:hover {
       transform: rotateY(0.5turn);
@@ -445,6 +445,7 @@ perspective: 800px;
          height: 100%;
          backface-visibility: hidden;
          transition: 1s ease-in-out;
+      }
 
          img {
             width: 240px;
