@@ -74,6 +74,7 @@ header h1 {
 h2, h3, h4, h5, h6 {
    letter-spacing: 6px;
    text-transform: uppercase;
+   padding-bottom: 3%;
 }
 
 p {
