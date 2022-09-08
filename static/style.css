@@ -53,18 +53,18 @@ body{
   text-align: justify;
   line-height: 1.6;
   word-spacing: 1.15px;
-    /* font-family: 'Lexend' !important; */
+    /* font-family: 'opendyslexic' !important; */
 }
 
 @font-face {
-   font-family: 'Lexend,sans-serif';
-   font-style: normal;
-   font-weight: normal;
-   src: url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap")
+  font-family: 'opendyslexic';
+    src: url('fonts/od.otf');
+    font-style: normal;
+    font-weight: normal;
 } 
 
 .od {
-    font-family: 'Lexend,sans-serif' !important;
+    font-family: 'opendyslexic' !important;
 }
 
 header {
