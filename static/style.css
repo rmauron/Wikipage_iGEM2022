@@ -578,29 +578,6 @@ nav li a:hover {
 .flipcard__face--back {
    transform: rotateY(0.5turn);
 }
-
-@media screen and (max-width: 767px) {
-  .scene {
-    margin-left: 2.8%;
-    margin-top: 3%;
-    width: 46%;
-  }
-  .flipcard {
-    height: 285px;
-  }
-  .scene:last-child {
-    margin-bottom: 3%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .scene {
-    width: 94.5%;
-  }
-  .flipcard {
-    height: 260px;
-  }
-}
 /*end flip card*/
 
 
