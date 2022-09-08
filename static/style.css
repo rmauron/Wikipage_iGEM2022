@@ -70,7 +70,7 @@ header h1 {
 h2, h3, h4 {
    letter-spacing: 6px;
    text-transform: uppercase;
-   padding-bottom: 3%;
+   padding-bottom: 5PX;
 }
 
 h5, h6 {
@@ -80,7 +80,7 @@ h5, h6 {
 
 p {
    padding-top: 3px;
-   padding-bottom: 5%;
+   padding-bottom: 5PX;
 }
 
 /* animation logo START */
