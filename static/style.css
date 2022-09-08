@@ -53,6 +53,18 @@ body{
   text-align: justify;
   line-height: 1.6;
   word-spacing: 1.15px;
+   /* font-family: 'opendyslexic' !important; */
+}
+
+@font-face {
+  font-family: 'opendyslexic';
+    src: url('fonts/od.otf');
+    font-style: normal;
+    font-weight: normal;
+} 
+
+.od {
+    font-family: 'opendyslexic' !important;
 }
 
 header {
