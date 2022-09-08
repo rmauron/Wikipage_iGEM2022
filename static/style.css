@@ -77,6 +77,21 @@ p {
    padding-top: 15px;
 }
 
+/* animation logo START */
+.static-gif {
+   position:absolute;
+}
+
+.static-gif:hover {
+   opacity:0;
+}
+
+.active-gif:hover {
+   opacity: 0;
+}
+/* animation logo STOP */
+
+
 /*main content and section START*/
 .main-content {
    margin-left: 0%;
