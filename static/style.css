@@ -570,8 +570,8 @@ nav li a:hover {
 }
 
 .flipcard-img {
-   width: 200px;
-   height: 200px;
+   width: auto;
+   /*height: 200px;*/
    object-fit: cover;
 }
 
