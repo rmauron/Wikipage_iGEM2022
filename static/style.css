@@ -67,10 +67,15 @@ header h1 {
    padding-top: 170px !important;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4 {
    letter-spacing: 6px;
    text-transform: uppercase;
    padding-bottom: 12%;
+}
+
+h5, h6 {
+   letter-spacing: 6px;
+   text-transform: uppercase;
 }
 
 p {
