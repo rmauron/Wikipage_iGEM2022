@@ -71,13 +71,13 @@ h2, h3, h4 {
    letter-spacing: 6px;
    text-transform: uppercase;
    padding-bottom: 5PX;
-   text-align:start;
+   text-align:start !important;
 }
 
 h5, h6 {
    letter-spacing: 6px;
    text-transform: uppercase;
-   text-align:start;
+   text-align:start !important;
 }
 
 p {
