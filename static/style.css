@@ -256,6 +256,7 @@ nav li {
 nav li a {
   text-align: left !important;
   text-decoration: none;
+  text-transform: uppercase;
   display: block;
   font-weight: 500;
   transition: all ease-out 100ms;
