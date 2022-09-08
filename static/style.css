@@ -103,8 +103,8 @@ p {
 .image-swap {
     width: 128px;
     height: 128px;
+    position: absolute;
     background-image: url('https://static.igem.wiki/teams/4214/wiki/experiments/attributions/menubar/igem-website.png');
-    background-size: 100%;
 }
 .image-swap:hover {
     background-image: url('https://static.igem.wiki/teams/4214/wiki/experiments/attributions/menubar/igem-website.gif');
