@@ -99,6 +99,19 @@ p {
 }
 /* animation logo STOP */
 
+/*image-swap*/
+.image-swap {
+    width: 128px;
+    height: 128px;
+    background-image: url('https://static.igem.wiki/teams/4214/wiki/experiments/attributions/menubar/igem-website.png');
+    background-size: 100%;
+    background-position: center center;
+}
+.image-swap:hover {
+    background-image: url('https://static.igem.wiki/teams/4214/wiki/experiments/attributions/menubar/igem-website.gif');
+}
+
+
 /* dropdown navbar START */
 .dropdown:hover .dropdown-menu {
    display: block;
