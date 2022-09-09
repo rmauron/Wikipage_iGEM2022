@@ -382,6 +382,34 @@ nav li a:hover {
 }
 /*end of reveal effect*/
 
+/*reveal effect onscroll from left*/
+.revealfromleft{
+   position: relative;
+   transform: translateX(-80px);
+   opacity: 0;
+   transition: all 1.3s ease;
+}
+
+.revealfromleft.activeonscrolltop{
+   transform: translateX(0px);
+   opacity: 1;
+}
+/*end of reveal effect*/
+
+/*reveal effect onscroll from right*/
+.revealfromright{
+   position: relative;
+   transform: translateX(+80px);
+   opacity: 0;
+   transition: all 1.3s ease;
+}
+
+.revealfromright.activeonscrolltop{
+   transform: translateX(0px);
+   opacity: 1;
+}
+/*end of reveal effect*/
+
 /*box*/
 .box {
   display: flex;
