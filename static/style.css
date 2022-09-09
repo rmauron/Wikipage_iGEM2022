@@ -96,6 +96,11 @@ p {
    padding-bottom: 5PX;
 }
 
+a {
+   color:#2A95B1;
+   text-decoration: none;
+}
+
 /* animation logo START */
 .static-gif {
    position:absolute;
