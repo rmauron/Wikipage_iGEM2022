@@ -427,7 +427,7 @@ nav li a:hover {
 .flashbox {
    width: 160px;
    height: 80px;
-   background: rgba(228,27,23,0.14189425770308128);
+   background: rgba(228, 26, 23, 0.194);
    box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.18951330532212884);
    border-radius: 5px;
    font-size: 20px;
@@ -440,9 +440,35 @@ nav li a:hover {
 .flashbox:hover {
    background-color: #2A95B1;
 }
+
+.flashbox_pages {
+   width: 2200px;
+   height: 80px;
+   background: rgba(228, 26, 23, 0.454);
+   box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.18951330532212884);
+   border-radius: 5px;
+   font-size: 20px;
+   text-align:center;
+   align-items: center; 
+   justify-content: center;
+   text-decoration: none;
+}
+.flashbox_pages:hover {
+   background-color: #2A95B1;
+}
+
+.fa_pages {
+   color: #2A95B1
+}
+
+.flashbox_pages:hover #fa_pages {
+   color: #e41b17
+}
+
 /*end of flashbox*/
 
-/*timeline*/
+
+
 /*TIMELINE*/
 * {
    box-sizing: border-box;
