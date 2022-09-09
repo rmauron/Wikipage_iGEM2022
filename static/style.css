@@ -437,11 +437,11 @@ nav li a:hover {
    text-decoration: none;
 }
 
-.flashbox, .flashbox_pages a {
+.flashbox, .flashbox_pages p {
    text-decoration: none;
    color: #2A95B1;
 }
-.flashbox, .flashbox_pages a:hover {
+.flashbox, .flashbox_pages p:hover {
    text-decoration: none;
    color: #e41b17;
 }
