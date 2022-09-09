@@ -464,11 +464,12 @@ nav li a:hover {
    color: #e41b17
 }
 
-.p_pages {
+.p_pages, .a_pages {
    color:#2A95B1;
    text-decoration: none;
+   padding: none;
 }
-.flashbox_pages:hover .p_pages {
+.flashbox_pages:hover .p_pages, .a_pages {
    color: #e41b17;
 }
 
