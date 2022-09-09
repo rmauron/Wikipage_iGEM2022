@@ -460,7 +460,7 @@ nav li a:hover {
    content: '';
    position: absolute;
    width: 2px;
-   background-color: blue;
+   background-color: #2A95B1;
    top: 0;
    bottom: 0;
    left: 50%;
@@ -536,7 +536,7 @@ nav li a:hover {
  /* The actual content */
  .content-timeline {
    padding: 20px 30px;
-   background-color: pink;
+   background-color: #2A95B1;
    position: relative;
    border-radius: 0px; /*round angles*/
  }
