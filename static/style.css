@@ -460,7 +460,7 @@ nav li a:hover {
    content: '';
    position: absolute;
    width: 2px;
-   background-color: #2A95B1;
+   background-color: linear-gradient(90deg, rgba(228,27,23,1) 0%, rgba(255,255,255,0) 50%, rgba(42,149,177,1) 100%);
    top: 0;
    bottom: 0;
    left: 50%;
