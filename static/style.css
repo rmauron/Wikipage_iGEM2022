@@ -623,4 +623,14 @@ nav li a:hover {
 }
 /*end flip card*/
 
+/*font awesome*/
+.fa {
+   color:#30b0b4
+}
+
+.fa:hover{
+   color:#e41b17
+}
+/*end font awesome*/
+
 
