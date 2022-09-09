@@ -436,7 +436,7 @@ nav li a:hover {
    box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.18951330532212884);
    border-radius: 5px;
    font-size: 20px;
-   /*text-align:center;*/
+   text-align:center;
    align-items: center; 
    justify-content: center;
    text-decoration: none;
@@ -472,7 +472,6 @@ nav li a:hover {
 .p_pages, .a_pages {
    color:#2A95B1;
    text-decoration: none;
-   padding: none;
 }
 .flashbox_pages:hover .p_pages, .a_pages {
    color: #e41b17;
