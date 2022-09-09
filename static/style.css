@@ -454,7 +454,7 @@ nav li a:hover {
    border-radius: 5px;
    font-size: 20px;
    text-align:center;
-   align-items: center; 
+   align-items: baseline; 
    justify-content: center;
    text-decoration: none;
 }
