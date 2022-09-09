@@ -442,7 +442,7 @@ nav li a:hover {
 }
 
 .flashbox_pages {
-   width: 2200px;
+   width: 220px;
    height: 80px;
    background: rgba(228, 26, 23, 0.454);
    box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.18951330532212884);
@@ -461,7 +461,7 @@ nav li a:hover {
    color: #2A95B1
 }
 
-.flashbox_pages:hover #fa_pages {
+.flashbox_pages:hover .fa_pages {
    color: #e41b17
 }
 
