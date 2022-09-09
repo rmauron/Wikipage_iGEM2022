@@ -437,23 +437,14 @@ nav li a:hover {
    text-decoration: none;
 }
 
-.flashbox, .flashbox_pages p {
-   text-decoration: none;
-   color: #2A95B1;
-}
-.flashbox, .flashbox_pages p:hover {
-   text-decoration: none;
-   color: #e41b17;
-}
-
 .flashbox:hover {
    background-color: #2A95B1;
 }
 
 .flashbox_pages {
-   width: 220px;
+   width: 250px;
    height: 80px;
-   background: rgba(228, 26, 23, 0.454);
+   background: rgba(228, 26, 23, 0.317);
    box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.18951330532212884);
    border-radius: 5px;
    font-size: 20px;
@@ -469,9 +460,16 @@ nav li a:hover {
 .fa_pages {
    color: #2A95B1
 }
-
 .flashbox_pages:hover .fa_pages {
    color: #e41b17
+}
+
+.a_pages {
+   color:#e41b17;
+   text-decoration: none;
+}
+.flashbox_pages:hover .a_pages {
+   color: #2A95B1
 }
 
 /*end of flashbox*/
