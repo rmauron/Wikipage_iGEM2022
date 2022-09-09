@@ -539,7 +539,7 @@ nav li a:hover {
    padding: 20px 30px;
    background-color: #2A95B1;
    position: relative;
-   border-radius: 0px; /*round angles*/
+   border-radius: 5px; /*round angles*/
  }
  
  /* Media queries - Responsive timeline on screens less than 600px wide */
