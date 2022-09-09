@@ -1,4 +1,4 @@
- window.addEventListener('scroll', revealfromleft);
+window.addEventListener('scroll', revealfromleft);
 
 function revealfromleft(){
     var reveals = document.querySelectorAll('.revealfromleft');
