@@ -48,33 +48,33 @@
 
   <section id="tag2">
     <h2 class="revealfromtop">Engineering</h2>
-
-    <h3 class="revealfromtop">Choosing mutants</h3>
-    <p class="reveal">
+    <div class="reveal">
+    <h4>Choosing mutants</h4>
+    <p>
     `Did we use **GEMME** or SeqDesign in the end?` We predicted what mutants would give us the desired propeties of our recombinat protein, which in our case is an intrinsic factor that avoids the anti-IF antibody from binding. The idea is to weaken the antibody binding!</p>
 
-    <h3 class="revealfromtop">Plasmid Design</h3>
-    <p class="reveal">In benchling the plasmid for the recombinat protein was designed. We considered expression, restriction sites, promoter, primer binding site, cell type, shine dalgarno sequence, kozak sequence, removing introns, totalt size, backbone and histidine tag. Our reasons for including the His-tag was easier purification. In the end we choose the pSB2K3 backbone because…</p>
+    <h4>Plasmid Design</h4>
+    <p>In benchling the plasmid for the recombinat protein was designed. We considered expression, restriction sites, promoter, primer binding site, cell type, shine dalgarno sequence, kozak sequence, removing introns, totalt size, backbone and histidine tag. Our reasons for including the His-tag was easier purification. In the end we choose the pSB2K3 backbone because…</p>
 
-    <h3 class="revealfromtop">Primer Design</h3>
-    <p class="reveal">Next up we designed primers for site directed mutagenesis in order to make our variants of recombinant IF proteins. For this we wanted to make sure the restriction sites were amplified. For this the tool [Kozane](https://www.kozane.app) was used. We considered overhang and melting temperature in the design. `What settings were used?`</p>
-
+    <h4>Primer Design</h4>
+    <p>Next up we designed primers for site directed mutagenesis in order to make our variants of recombinant IF proteins. For this we wanted to make sure the restriction sites were amplified. For this the tool [Kozane](https://www.kozane.app) was used. We considered overhang and melting temperature in the design. `What settings were used?`</p>
+    </div>
   </section>
 
     <section id="tag3">
     <h2 class="revealfromtop">Modelling</h2>
-
-    <h3 class="revealfromtop">Docking Studies</h3>
-    <p class="reveal">Docking was done in order to look at what effects the mutations had on binding affinities, both thermodynamical parameters and geometric ones. For this autodock vina was used, looking at Human Intrinsic Factor and Cobalamin.
+    <div class="reveal">
+    <h4>Docking Studies</h4>
+    <p>Docking was done in order to look at what effects the mutations had on binding affinities, both thermodynamical parameters and geometric ones. For this autodock vina was used, looking at Human Intrinsic Factor and Cobalamin.
 
     In addition the tool Mutabind2 was used to look at the change in free energy (DDG) for Intrinsic Factor-Cobalamin bound to its receptor Cubilin. In addition alanine-screening was done to look at what residues play a crucial role in the bioactivity of IF.</p> 
 
-    <h3 class="revealfromtop">Modelling</h3>
-    <p class="reveal">After carefully evalutating a bunch of different tools we decided on using GROMCS for modelling. The purpose of this was looking at the molecular dynamics. For this we had to consider the solvent, the force field, preparing the structure (adding hydrogen atoms, adding missing chains, names of residue chains), adding necessary parametrizations. `Output?`</p>
+    <h4>Modelling</h4>
+    <p>After carefully evalutating a bunch of different tools we decided on using GROMCS for modelling. The purpose of this was looking at the molecular dynamics. For this we had to consider the solvent, the force field, preparing the structure (adding hydrogen atoms, adding missing chains, names of residue chains), adding necessary parametrizations. `Output?`</p>
 
-    <h3 class="revealfromtop">Immunogenicity</h3>
-    <p class="reveal">order to look at if there is a difference for our recombinat variants we wanted to investigate if the mutations made a difference for autoantibodies. By focusing on B-cells we tried various tools, among them IEDB, from our preliminary results there was not much of a difference but the results need to be validated in a clinical setting.</p>
-
+    <h4>Immunogenicity</h4>
+    <p>order to look at if there is a difference for our recombinat variants we wanted to investigate if the mutations made a difference for autoantibodies. By focusing on B-cells we tried various tools, among them IEDB, from our preliminary results there was not much of a difference but the results need to be validated in a clinical setting.</p>
+    </div>
   </section>
 
     <section id="tag4">
