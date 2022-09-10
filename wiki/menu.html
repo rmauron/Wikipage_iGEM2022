@@ -19,7 +19,7 @@
 
         <!---- PROJECT section ---->
         <li class="nav-item  dropdown dropdown-mega position-static">
-          <a class="nav-link dropdown-toggle center" href="#" data-bs-auto-close="outside">Project</a>
+          <a class="nav-link dropdown-toggle center" href="{{ url_for('pages', page='description') }}" data-bs-auto-close="outside">Project</a>
             <div class="dropdown-menu shadow">
               <div class="mega-content px-4">
                 <div class="container-fluid">
@@ -61,7 +61,7 @@
 
         <!---- PEOPLE section ---->
         <li class="nav-item  dropdown dropdown-mega position-static">
-          <a class="nav-link dropdown-toggle center" href="#" data-bs-auto-close="outside">People</a>
+          <a class="nav-link dropdown-toggle center" href="{{ url_for('pages', page='team') }}" data-bs-auto-close="outside">People</a>
             <div class="dropdown-menu shadow">
               <div class="mega-content px-4">
                 <div class="container-fluid">
@@ -96,7 +96,7 @@
 
       <!---- HUMAN PRACTICES section ---->
         <li class="nav-item dropdown dropdown-mega position-static">
-            <a class="nav-link dropdown-toggle center" href="#" data-bs-auto-close="outside">Human Practices</a>
+            <a class="nav-link dropdown-toggle center" href="{{ url_for('pages', page='contribution') }}" data-bs-auto-close="outside">Human Practices</a>
             <div class="dropdown-menu shadow">
               <div class="mega-content px-4">
                 <div class="container-fluid">
