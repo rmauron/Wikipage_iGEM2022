@@ -97,7 +97,7 @@ p {
 }
 
 a {
-   color:#2A95B1;
+   color:#2A7F93;
    text-decoration: none;
 }
 
@@ -245,7 +245,7 @@ section:last-of-type {
 }
   
 .active { /*needed for the JS*/
-   color: #e41b17; 
+   color: #e94949; 
    font-weight: 600;
 }
 
@@ -279,11 +279,11 @@ nav li a {
   font-weight: 500;
   transition: all ease-out 100ms;
   padding: 4px;
-  color: #2A95B1
+  color: #2A7F93
 }
 
 nav li a:hover {
-  color: #e41b17;
+  color: #e94949;
   font-size: 18px;
 }
 /* SIDE BAR STOP*/
@@ -444,7 +444,7 @@ nav li a:hover {
 }
 
 .flashbox:hover {
-   background-color: #2A95B1;
+   background-color: #2A7F93;
 }
 
 .flashbox_pages {
@@ -461,22 +461,22 @@ nav li a:hover {
    text-decoration: none;
 }
 .flashbox_pages:hover {
-   background-color: #2A95B1;
+   background-color: #2A7F93;
 }
 
 .fa_pages {
-   color: #2A95B1
+   color: #2A7F93
 }
 .flashbox_pages:hover .fa_pages {
-   color: #e41b17
+   color: #e94949
 }
 
 .p_pages, .a_pages {
-   color:#2A95B1;
+   color:#2A7F93;
    text-decoration: none;
 }
 .flashbox_pages:hover .p_pages, .a_pages {
-   color: #e41b17;
+   color: #e94949;
 }
 
 /*end of flashbox*/
@@ -577,7 +577,7 @@ nav li a:hover {
  /* The actual content */
  .content-timeline {
    padding: 20px 30px;
-   background-color: rgba(42,149,177,0.4766281512605042);
+   background-color: #85bcc1;
    position: relative;
    border-radius: 5px; /*round angles*/
  }
@@ -629,8 +629,8 @@ nav li a:hover {
    position: relative;
    width: 200px;
    height:200px;
-   color:#2A95B1;
-   background-color: #333;
+   color:#2A7F93;
+   background-color: #17375e;
    text-align: center;
    line-height: 190px;
    cursor: pointer;
@@ -665,11 +665,11 @@ nav li a:hover {
 
 /*font awesome*/
 .fa {
-   color:#2A95B1;
+   color:#2A7F93;
 }
 
 .fa:hover{
-   color:#e41b17;
+   color:#e94949;
 }
 /*end font awesome*/
 
