@@ -1,6 +1,6 @@
 body { padding-top: 0px; }
 .left-aligned { margin-left: auto; }
-.bg-dark { background-color: #17375e /*#343a40*/ !important; }
+.bg-dark { background-color: #343a40 !important; }
 
 /* CALLOUT */
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
@@ -464,10 +464,10 @@ nav li a:hover {
    background-color: #30afb4;
 }
 .fa_pages {
-   color: #e94949
+   color: #e94949 !important;
 }
 .flashbox_pages:hover .fa_pages {
-   color: #17375e;
+   color: #17375e !important;
 }
 .p_pages, .a_pages {
    color:#e94949;
