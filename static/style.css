@@ -437,8 +437,9 @@ nav li a:hover {
    border-radius: 5px;
    font-size: 20px;
    text-align:center;
-   align-items: center; 
-   justify-content: center;
+   line-height: 80px;
+   /*align-items: center; 
+   justify-content: center;*/
    text-decoration: none;
 }
 
@@ -454,8 +455,9 @@ nav li a:hover {
    border-radius: 5px;
    font-size: 20px;
    text-align:center;
-   align-items: baseline; 
-   justify-content: center;
+   line-height: 80px;
+   /*align-items: baseline; 
+   justify-content: center;*/
    text-decoration: none;
 }
 .flashbox_pages:hover {
