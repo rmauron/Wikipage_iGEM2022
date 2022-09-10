@@ -432,8 +432,8 @@ nav li a:hover {
 .flashbox {
    width: 160px;
    height: 80px;
-   background:  rgba(228,27,23,0.11388305322128855) ;
-   box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.18951330532212884);
+   background:  rgba(42,149,177,0.5) ;
+   box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.15);
    border-radius: 5px;
    font-size: 20px;
    text-align:center;
@@ -450,8 +450,8 @@ nav li a:hover {
 .flashbox_pages {
    width: 265px;
    height: 80px;
-   background:  rgba(228,27,23,0.11388305322128855) ;
-   box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.18951330532212884);
+   background:  rgba(42,149,177,0.5) ;
+   box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.15);
    border-radius: 5px;
    font-size: 20px;
    text-align:center;
