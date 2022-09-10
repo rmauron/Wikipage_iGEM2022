@@ -577,7 +577,7 @@ nav li a:hover {
  /* The actual content */
  .content-timeline {
    padding: 20px 30px;
-   background-color: #2A95B1;
+   background-color: rgba(42,149,177,0.4766281512605042);
    position: relative;
    border-radius: 5px; /*round angles*/
  }
