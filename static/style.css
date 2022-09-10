@@ -510,7 +510,7 @@ nav li a:hover {
  
  /* Container around content */
  .container-timeline {
-   padding: 10px 40px;
+   padding: 10px 20px;
    position: relative;
    background-color: transparent/*lightgrey*/;
    width: 50%;
@@ -549,8 +549,8 @@ nav li a:hover {
    top: 22px;
    width: 0;
    z-index: 1;
-   right: 30px;
-   border: medium solid white;
+   right: 10px;
+   border: medium solid grey;
    border-width: 10px 0 10px 10px;
    border-color: transparent transparent transparent grey;
  }
@@ -563,8 +563,8 @@ nav li a:hover {
    top: 22px;
    width: 0;
    z-index: 1;
-   left: 30px;
-   border: medium solid white;
+   left: 10px;
+   border: medium solid grey;
    border-width: 10px 10px 10px 0;
    border-color: transparent grey transparent transparent;
  }
