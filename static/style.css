@@ -512,7 +512,7 @@ nav li a:hover {
  .container-timeline {
    padding: 10px 40px;
    position: relative;
-   background-color: lightgrey;
+   background-color: transparent/*lightgrey*/;
    width: 50%;
    
  }
