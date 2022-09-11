@@ -689,7 +689,8 @@ nav li a:hover {
 /*button to top*/
 #btn-back-to-top {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 70px;
+  right: 70px;
   display: none;
+  transition: 0.5s ease-in-out;
 }
