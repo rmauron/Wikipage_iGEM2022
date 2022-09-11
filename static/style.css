@@ -693,4 +693,11 @@ nav li a:hover {
   right: 70px;
   display: none;
   transition: 0.5s ease-in-out;
+  background-color: #30afb4; 
+  color: white;
 }
+
+#btn-back-to-top:hover {
+   background-color: #e94949;
+}
+
