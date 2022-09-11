@@ -680,6 +680,7 @@ nav li a:hover {
 /*font awesome*/
 .fa {
    color:#30afb4;
+   transition: 0.3s;
 }
 
 .fa:hover{
