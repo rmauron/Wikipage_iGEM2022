@@ -35,6 +35,10 @@ nav {
    position:relative;
    top: 0 !important;
 }
+nav li a {
+   color:#2A7F93;
+   font-size: 500;
+}
 
 .center {
    text-align: center;
