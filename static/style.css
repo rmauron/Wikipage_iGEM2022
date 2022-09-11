@@ -686,4 +686,10 @@ nav li a:hover {
 }
 /*end font awesome*/
 
-
+/*button to top*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+}
