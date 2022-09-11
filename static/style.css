@@ -615,10 +615,17 @@ nav li a:hover {
 
 /*FLIPCARD*/
 .scene {
-   width:100%;
-   display: flex;
-   /*justify-content: space-between;*/
-   perspective: 800px;
+  width:100%;
+  perspective: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px){
+   .scene {
+      padding-left: 25%;
+      }
 }
 
 .flipcard {
