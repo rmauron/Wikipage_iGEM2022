@@ -692,7 +692,7 @@ nav li a:hover {
   bottom: 70px;
   right: 70px;
   display: none;
-  transition: 1s ease-in;
+  transition: 0.3s;
   background-color: #30afb4; 
   color: white;
 }
