@@ -433,7 +433,7 @@ nav li a:hover {
 @media (max-width: 1000px) {
    .box {
       flex-direction: column;
-      position: center;
+      margin:0 auto;  
       padding: 10px;
    }
 }
@@ -457,7 +457,7 @@ nav li a:hover {
 @media (max-width: 1000px) {
    .flashbox {
       flex-direction: column;
-      position: center;
+      margin:0 auto;  
       padding: 10px;
    }
 }
