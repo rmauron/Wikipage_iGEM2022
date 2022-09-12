@@ -102,8 +102,13 @@ p {
 
 a {
    color:#2A7F93;
+   font-weight: bold;
    text-decoration: none;
 }
+a:hover{
+   color: #e94949 !important; 
+   text-decoration: underline;
+} 
 
 /* Switch dark-light*/
 .form-check {
