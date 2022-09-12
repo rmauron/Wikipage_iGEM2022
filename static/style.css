@@ -142,6 +142,11 @@ a {
    left: 0%;
 }
 
+.nav-link {
+   color: black;
+   font-weight:400;
+}
+
 /*
 .navbar-toggler {
    border: none;
