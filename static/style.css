@@ -13,7 +13,7 @@ body { padding-top: 0px; }
 .bd-callout-danger { border-left-color:#d9534f }
 
 /* footer */
-footer p { color: text-dark !important}
+footer p { color: text-light !important}
 footer a { color: text-dark; font-weight: bold; text-decoration: none; }
 footer a:hover { color: text-dark; text-decoration: underline; }
 
