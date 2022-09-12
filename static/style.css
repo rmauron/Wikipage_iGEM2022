@@ -50,7 +50,7 @@ body{
   font-weight: 300;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 18px;
    background: rgb(233,73,73);
    background: linear-gradient(90deg, rgba(233,73,73,0.12) 0%, rgba(255,255,255,0) 35%, rgba(42,127,147,0.23) 100%);
    color:#333;
@@ -288,7 +288,7 @@ nav li a {
 
 nav li a:hover {
   color: #e94949;
-  font-size: 18px;
+  font-size: 20px;
 }
 /* SIDE BAR STOP*/
 /*make the side bar disappear in function of the width*/
