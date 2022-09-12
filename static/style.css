@@ -324,7 +324,7 @@ nav li a:hover {
 
 /*progress bar*/
 .progress-container {
-   position: fixed;
+   position: fixed !important;
    top: 0 !important;
    z-index: 3;
    width: 100%;
