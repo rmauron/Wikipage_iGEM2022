@@ -107,7 +107,6 @@ a {
 }
 a:hover{
    color: #e94949 !important; 
-   text-decoration: underline;
 } 
 
 /* Switch dark-light*/
