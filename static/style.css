@@ -105,6 +105,11 @@ a {
    text-decoration: none;
 }
 
+/* Switch dark-light*/
+.form-check {
+   padding: auto;
+}
+
 /* animation logo START */
 .static-gif {
    position:absolute;
