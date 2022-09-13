@@ -770,13 +770,13 @@ input {
    display: flex;
    justify-content: space-between;
    padding: 1em;
-   background: #2A95B1;
+   background: #85bcc1;
    font-weight: bold;
    cursor: pointer;
   /* Icon */
 }
 .tab-label:hover {
-   background: #1a252f;
+   background: #2a8093ac;
 }
 .tab-label::after {
    content: "\276F";
