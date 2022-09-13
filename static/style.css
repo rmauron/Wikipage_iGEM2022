@@ -788,7 +788,7 @@ input {
 .tab-content {
    max-height: 0;
    padding: 0 1em;
-   color: #2a8093ac;
+   color: black;
    background: white;
    transition: all 0.35s;
 }
