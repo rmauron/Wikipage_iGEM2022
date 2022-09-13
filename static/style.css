@@ -788,7 +788,7 @@ input {
 .tab-content {
    max-height: 0;
    padding: 0 1em;
-   color: #1a252f;
+   color: #2a8093ac;
    background: white;
    transition: all 0.35s;
 }
@@ -800,10 +800,10 @@ input {
    cursor: pointer;
 }
 .tab-close:hover {
-   background: #1a252f;
+   background: #2a8093ac;
 }
 input:checked + .tab-label {
-   background: #1a252f;
+   background: #2a8093ac;
 }
 input:checked + .tab-label::after {
    transform: rotate(90deg);
