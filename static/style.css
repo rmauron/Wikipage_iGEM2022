@@ -889,7 +889,7 @@ input:checked ~ .tab-content {
    left: 0;
    padding: 20px;
    position: absolute;
-   top: 60%;
+   top: 58%;
    z-index: 3;
 }
 
