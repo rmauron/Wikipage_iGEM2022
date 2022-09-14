@@ -2,7 +2,7 @@
 
 <!-- Header -->
 {% block header %}
-<header class="py-5 mb-5" id="header" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%),url(https://static.igem.wiki/teams/4214/wiki/picture.png);">
+<header class="py-5 mb-5" id="header" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%),url(https://static.igem.wiki/teams/4214/wiki/implementation/header-from-unsplash.jpeg);">
   <div class="container h-100">
     <div class="row h-100">
       <div class="col-lg-12">
@@ -52,36 +52,94 @@
         <h2 class="revealfromtop">The timeline</h2>
     
         <div class="timeline">
+
           <div class="container-timeline left revealfromleft">
             <div class="content-timeline">
               <h2>Trials</h2>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <p>Currently what we have done is selected particular mutant variants, based on literature, cloned them into a display capable, commercially available plasmid and inserted the mutations using site directed mutagenesis through E.coli. These were transfected into HEK293 cells to look at expression, colocalization, followed by a panel of antibody based validation studies. Paralelly, modeling and immunogenicity studies in silico were attempted. We choose these steps since we want to make sure we have a method for developing proteins that evade autoantibodies and later can be produced in E.coli. The in silico studies helped us understand what happens thermodynamically and structurally, as well as predicting immune response. 
+</p>
             </div>
           </div>
+
           <div class="container-timeline right revealfromright">
             <div class="content-timeline">
               <h2>Manufacturing</h2>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <p>In order to implement our therapeutic protein for combatting pernicious anemia we would have to scale up what we have done so far. This would firstly need more engineering cycles, until the results are significant and exceed expectations! Furthermore we would need to check our results with additional validation methods with more controls, more variants, more antibodies and so on. To scale up, we would take the pipeline we have developed and parallelize the procedures and speed them up to whatever extent possible without compromising on the quality of the work. This would be done for continued development of BIG IF, and possibly other protein therapeutics using the same pipeline. 
+</p>
             </div>
           </div>
+
           <div class="container-timeline left revealfromleft">
             <div class="content-timeline">
               <h2>Challenges</h2>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <p>In order for our idea to reach and benefit the consumer we would have to design the product as a therapeutic drug. It can’t be sold as a supplement since it is intended to treat a disease. This means that it has to be approved by the FDA and EMEA in order to reach consumers. 
+</p>
             </div>
           </div>
+
           <div class="container-timeline right revealfromright">
             <div class="content-timeline">
               <h2>MVP</h2>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <p>
+Pharmacological studies will give us answers around catabolism - involving important considerations like pharmacodynamics and pharmacokinetics, binding capacity, patient factors such as genetics and overall health, solubility, and uptake. They are an important part of the preclinical studies. It is also important to consider potential side effects and possible interactions with other drugs. For the preclinical work the toxicity has to be assessed in vivo and in vitro, in cell and animal model organisms. Depending on the results from the preclinical studies the therapeutic could move on to clinical studies.
+</p>
             </div>
           </div>
+
           <div class="container-timeline left revealfromleft">
             <div class="content-timeline">
               <h2>End users and finished product</h2>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <p>For the phase I clinical studies the dosage and safety is assessed on a small cohort of normal and healthy humans. This will green light phase II - for determining potential side effects, as well as efficacy. In the second phase, the trial lasts longer and involves more participants with the disease. The third and fourth phase trials have the same purpose as the second phase trial but go one for longer or involve more participants. Finally there is a drug review where the data is analyzed and assessed, weighing harms and benefits for the therapeutic.
+</p>
             </div>
           </div>
+
+          <div class="container-timeline right revealfromright">
+            <div class="content-timeline">
+              <h2>???</h2>
+              <p>
+To produce our modified intrinsic factor we plan to use E.coli and engineer it into a cell factory. The cells would be grown in a bioreactor under optimal conditions. Then the therapeutic would be induced, harvested, separated, purified, suspended in a suitable medium and delivered to the drug production facility. The proteins would then be checked to make sure the structure is intact and then packed into pills or another suitable method for delivery. 
+</p>
+            </div>
+          </div>
+
+          <div class="container-timeline left revealfromleft">
+            <div class="content-timeline">
+              <h2>Some challenges and some unanswered questions to address</h2>
+              <h3>Engineering</h3>
+              <p>
+                Are the mutations successful in producing an Human Gastric Intrinsic Factor that can serve the intended purpose?
+                How reliably can the protein be expressed on the cell surface?
+                How reliable are the antibody based validation assays for confirming the evasion of auto-antibodies?
+                Will the engineered protein be able to treat all patients with different genotypes and corresponding phenotypes?
+
+              </p>
+              
+              <h3>Production</h3>
+              <p>
+                How reliable is the E. coli as a cell factory to produce our proteins for therapeutic use?
+                Optimizing large scale production.
+              </p>
+
+              <h3>Efficacy and Economics</h3>
+              <p>
+                Does it have better efficacy with improved clinical outcomes for patients compared with traditional remedies?
+                How cost effective is this approach than other treatments?
+              </p>
+
+            </div>
+          </div>
+
+          <div class="container-timeline right revealfromright">
+            <div class="content-timeline">
+              <h2>???</h2>
+              <p>
+Now we have reached our consumers - people with pernicious anemia! Ideally they would be able to take a pill which releases our modified intrinsic factor in the stomach where B12 would be taken up at a higher rate than previously. The upscaling and an optimized production would make the treatment reasonably cost effective and accessible to people all around the globe making pernicious anemia a more manageable condition to live with! 
+</p>
+            </div>
+          </div>
+
+
         </div>
       </section>
 
