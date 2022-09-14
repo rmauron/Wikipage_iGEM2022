@@ -717,6 +717,12 @@ nav li a:hover {
   background-color: #30afb4; 
   color: white;
 }
+@media screen and (max-width: 600px){
+   #btn-back-to-top {
+      bottom: 30px;
+      right: 30px;
+      }
+}
 
 #btn-back-to-top:hover {
    background-color: #e94949;
