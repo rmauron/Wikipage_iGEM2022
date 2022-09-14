@@ -158,6 +158,11 @@ a:hover{
    font-weight:400;
 }
 
+.navbar {
+   position:relative;
+   z-index:2
+}
+
 /*
 .navbar-toggler {
    border: none;
