@@ -820,7 +820,7 @@ input:checked + .tab-label::after {
    transform: rotate(90deg);
 }
 input:checked ~ .tab-content {
-   max-height: auto/*100vh*/;
+   max-height: 200vh; /*!!! LENGTH OF REFERENCES !!!*/
    padding: 1em;
 }
 /*end collapsible*/
