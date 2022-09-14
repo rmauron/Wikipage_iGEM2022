@@ -902,7 +902,7 @@ input:checked ~ .tab-content {
 .card__category{
    color: rgba(255,255,255,0.7);
    font-size: 1.3rem;
-   margin-bottom: 5px;
+   margin-bottom: 4px;
    text-transform: uppercase;
 }
 
@@ -910,7 +910,7 @@ input:checked ~ .tab-content {
    color: rgba(255,255,255,0.9);
    font-size: 1.6rem;
    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-   line-height: 1.2;
+   line-height: 1;
    word-spacing: 1vw;
 }
 
