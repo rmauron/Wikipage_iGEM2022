@@ -727,7 +727,7 @@ nav li a:hover {
   display: none;
   transition: 0.3s;
   background-color: #30afb4; 
-  color: white;
+  color: #e65c4f;
 }
 @media screen and (max-width: 600px){
    #btn-back-to-top {
@@ -786,14 +786,14 @@ input {
 }
 .tab {
    width: 100% !important;
-   color: white;
+   color: #e65c4f;
    overflow: hidden;
 }
 .tab-label {
    display: flex;
    justify-content: space-between;
    padding: 1em;
-   background: #78a6c8;
+   background: #326789;
    font-weight: bold;
    cursor: pointer;
   /* Icon */
@@ -812,7 +812,7 @@ input {
    max-height: 0;
    padding: 0 1em;
    color: black;
-   background: white;
+   background: #e65c4f;
    transition: all 0.35s;
 }
 .tab-close {
@@ -826,7 +826,7 @@ input {
    background: #326789;
 }
 input:checked + .tab-label {
-   background: #326789;
+   background: #e65c4f;
 }
 input:checked + .tab-label::after {
    transform: rotate(90deg);
