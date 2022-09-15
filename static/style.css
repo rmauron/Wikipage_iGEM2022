@@ -786,7 +786,7 @@ input {
 }
 .tab {
    width: 100% !important;
-   color: #e65c4f;
+   color: white;
    overflow: hidden;
 }
 .tab-label {
@@ -812,7 +812,7 @@ input {
    max-height: 0;
    padding: 0 1em;
    color: black;
-   background: #e65c4f;
+   background: white;
    transition: all 0.35s;
 }
 .tab-close {
@@ -826,7 +826,7 @@ input {
    background: #326789;
 }
 input:checked + .tab-label {
-   background: #e65c4f;
+   background: #326789;
 }
 input:checked + .tab-label::after {
    transform: rotate(90deg);
