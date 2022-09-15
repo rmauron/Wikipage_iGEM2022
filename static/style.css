@@ -315,7 +315,7 @@ nav li a {
   font-weight: 500;
   transition: all ease-out 100ms;
   padding: 4px;
-  color: #326789
+  color: #326789;
 }
 
 nav li a:hover {
@@ -674,7 +674,7 @@ nav li a:hover {
    position: relative;
    width: 200px;
    height:200px;
-   color:#326789;
+   color:#e9eef2;
    background-color: #78a6c8;
    text-align: center;
    line-height: 190px;
@@ -710,7 +710,7 @@ nav li a:hover {
 
 /*font awesome*/
 .fa {
-   color:#30afb4;
+   color:white;
    transition: 0.3s;
 }
 
@@ -726,7 +726,7 @@ nav li a:hover {
   right: 70px;
   display: none;
   transition: 0.3s;
-  background-color: #30afb4; 
+  background-color: #78a6c8; 
   color: #e65c4f;
 }
 @media screen and (max-width: 600px){
@@ -737,7 +737,7 @@ nav li a:hover {
 }
 
 #btn-back-to-top:hover {
-   background-color: #e65c4f;
+   background-color: #78a6c8;
 }
 
 
@@ -786,7 +786,7 @@ input {
 }
 .tab {
    width: 100% !important;
-   color: white;
+   color: #e9eef2;
    overflow: hidden;
 }
 .tab-label {
@@ -812,7 +812,7 @@ input {
    max-height: 0;
    padding: 0 1em;
    color: black;
-   background: white;
+   background: #e9eef2;
    transition: all 0.35s;
 }
 .tab-close {
@@ -934,8 +934,8 @@ input:checked ~ .tab-content {
 
 .card__caption{
    color: transparent;
-   font-size: .8rem;
-   line-height: 0.8;
+   font-size: 1.1rem;
+   line-height: 1;
    padding-top: 8px;
 }
 
