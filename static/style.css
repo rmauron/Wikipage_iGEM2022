@@ -458,8 +458,8 @@ nav li a:hover {
 .flashbox {
    width: 160px;
    height: 80px;
-   background-color: darkblue;
-   color:white;
+   background-color: #326789;
+   color:#e9eef2;
    /*transition: 0.3s;*/
    box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.15);
    border-radius: 5px;
@@ -480,13 +480,13 @@ nav li a:hover {
 }
 
 .flashbox:hover {
-   background-color: darkblue;
+   background-color: #326789;
 }
 
 .flashbox_pages {
    width: 265px;
    height: 80px;
-   background-color: darkblue;
+   background-color: #326789;
    opacity: 0.8;
    transition: 0.3s;
    box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.15);
@@ -499,25 +499,25 @@ nav li a:hover {
    text-decoration: none;
 }
 .flashbox_pages:hover {
-   background-color: darkblue;
+   background-color: #326789;
 }
 .fa_pages {
-   color: white !important;
+   color: #e9eef2 !important;
 }
 /**/
 .flashbox_pages:hover .fa_pages {
-   color: red !important;
+   color: #e65c4f !important;
 }
 
 .p_pages, .a_pages {
-   color:white;
+   color:#e9eef2;
    text-decoration: none;
 }
-/*
+/**/
 .flashbox_pages:hover .p_pages, .a_pages {
-   color: #17375e;
+   color: #e65c4f;
 }
-*/
+
 /*end of flashbox*/
 
 
