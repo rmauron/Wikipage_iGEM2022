@@ -799,6 +799,7 @@ input {
   /* Icon */
 }
 .tab-label:hover {
+   color: #e65c4f;
    background: #326789;
 }
 .tab-label::after {
