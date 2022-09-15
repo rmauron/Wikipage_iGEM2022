@@ -488,7 +488,7 @@ nav li a:hover {
    height: 80px;
    background-color: #326789;
    opacity: 0.8;
-   transition: 0.3s;
+   /*transition: 0.3s;*/
    box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.15);
    border-radius: 5px;
    font-size: 20px;
