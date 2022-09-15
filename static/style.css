@@ -947,3 +947,18 @@ input:checked ~ .tab-content {
 }
 /*style CARDS end*/
 
+
+/*iframe disappear*/
+.box-pdf {
+   display: none !important;
+}
+@media screen and (max-width: 600px){
+   .iframe-pdf {
+      display: none;
+      }
+   .box-pdf {
+      display: flex !important;
+   }
+}
+/*end iframe-button*/
+
