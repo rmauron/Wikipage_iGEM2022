@@ -786,7 +786,7 @@ input {
 }
 .tab {
    width: 100% !important;
-   color: #326789;
+   color: white;
    overflow: hidden;
 }
 .tab-label {
@@ -819,7 +819,7 @@ input {
    display: flex;
    justify-content: flex-end;
    padding: 1em;
-   background: #78a6c8;
+   background: #326789;
    cursor: pointer;
 }
 .tab-close:hover {
