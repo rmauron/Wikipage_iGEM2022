@@ -710,7 +710,7 @@ nav li a:hover {
 
 /*font awesome*/
 .fa {
-   color:white;
+   color:#e9eef2;
    transition: 0.3s;
 }
 
@@ -727,7 +727,7 @@ nav li a:hover {
   display: none;
   transition: 0.3s;
   background-color: #78a6c8; 
-  color: #e65c4f;
+  color: #e9eef2;
 }
 @media screen and (max-width: 600px){
    #btn-back-to-top {
@@ -738,6 +738,7 @@ nav li a:hover {
 
 #btn-back-to-top:hover {
    background-color: #78a6c8;
+   color: #e65c4f;
 }
 
 
