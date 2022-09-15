@@ -12,6 +12,17 @@ body { padding-top: 0px; }
 .bd-callout-warning { border-left-color:#f0ad4e }
 .bd-callout-danger { border-left-color:#d9534f }
 
+/*
+my new color palette:
+*/
+darkblue: #326789
+lightblue: #78a6c8
+white: #e9eef2
+red: #e65c4f
+
+
+
+
 /* footer */
 footer p { /*color: text-light !important*/}
 footer a {/* color: text-dark;*/ font-weight: bold; text-decoration: none; }
@@ -447,8 +458,8 @@ nav li a:hover {
 .flashbox {
    width: 160px;
    height: 80px;
-   background-color: #85bcc1;
-   color:#e94949;
+   background-color: darkblue;
+   color:white;
    /*transition: 0.3s;*/
    box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.15);
    border-radius: 5px;
@@ -469,13 +480,14 @@ nav li a:hover {
 }
 
 .flashbox:hover {
-   background-color: #2a8093ac;
+   background-color: darkblue;
 }
 
 .flashbox_pages {
    width: 265px;
    height: 80px;
-   background-color: #85bcc1;
+   background-color: darkblue;
+   opacity: 0.8;
    transition: 0.3s;
    box-shadow: 5px 5px 5px 5px rgba(42,149,177,0.15);
    border-radius: 5px;
@@ -487,18 +499,18 @@ nav li a:hover {
    text-decoration: none;
 }
 .flashbox_pages:hover {
-   background-color: #2a8093ac;
+   background-color: darkblue;
 }
 .fa_pages {
-   color: #e94949 !important;
+   color: white !important;
 }
-/*
+/**/
 .flashbox_pages:hover .fa_pages {
-   color: #17375e !important;
+   color: red !important;
 }
-*/
+
 .p_pages, .a_pages {
-   color:#e94949;
+   color:white;
    text-decoration: none;
 }
 /*
