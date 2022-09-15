@@ -26,7 +26,7 @@ red: #e65c4f
 /* footer */
 footer p { /*color: text-light !important*/}
 footer a {/* color: text-dark;*/ font-weight: bold; text-decoration: none; }
-footer a:hover { color: #e94949 !important; text-decoration: underline; }
+footer a:hover { color: #e65c4f !important; text-decoration: underline; }
 
 /*footer style STOPS*/
 
@@ -119,7 +119,7 @@ a {
    text-decoration: none;
 }
 a:hover{
-   color: #e94949 !important; 
+   color: #e65c4f !important; 
 } 
 
 /* Switch dark-light*/
@@ -281,7 +281,7 @@ section:last-of-type {
 }
   
 .active { /*needed for the JS*/
-   color: #e94949; 
+   color: #e65c4f; 
    font-weight: 600;
 }
 
@@ -315,11 +315,11 @@ nav li a {
   font-weight: 500;
   transition: all ease-out 100ms;
   padding: 4px;
-  color: #2A7F93
+  color: #326789
 }
 
 nav li a:hover {
-  color: #e94949;
+  color: #e65c4f;
   font-size: 20px;
 }
 /* SIDE BAR STOP*/
@@ -615,7 +615,7 @@ nav li a:hover {
  /* The actual content */
  .content-timeline {
    padding: 20px 30px;
-   background-color: #85bcc1;
+   background-color: #78a6c8;
    position: relative;
    border-radius: 5px; /*round angles*/
  }
@@ -674,8 +674,8 @@ nav li a:hover {
    position: relative;
    width: 200px;
    height:200px;
-   color:#30afb4;
-   background-color: #17375e;
+   color:#326789;
+   background-color: #78a6c8;
    text-align: center;
    line-height: 190px;
    cursor: pointer;
@@ -715,7 +715,7 @@ nav li a:hover {
 }
 
 .fa:hover{
-   color:#e94949;
+   color:#e65c4f;
 }
 /*end font awesome*/
 
@@ -737,7 +737,7 @@ nav li a:hover {
 }
 
 #btn-back-to-top:hover {
-   background-color: #e94949;
+   background-color: #e65c4f;
 }
 
 
@@ -786,7 +786,7 @@ input {
 }
 .tab {
    width: 100% !important;
-   color: #e94949;
+   color: #326789;
    overflow: hidden;
 }
 .tab-label {
@@ -799,7 +799,7 @@ input {
   /* Icon */
 }
 .tab-label:hover {
-   background: #2a8093ac;
+   background: #326789;
 }
 .tab-label::after {
    content: "\276F";
