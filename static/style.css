@@ -294,7 +294,7 @@ section:last-of-type {
   padding-left: 0%; /*to be aligned to title*/
   display: flex;
   float: left;
-  /*background-color: lightblue;*/
+  /*background-color: #78a6c8;*/
   position: sticky;
   z-index: 0;
 }
@@ -793,7 +793,7 @@ input {
    display: flex;
    justify-content: space-between;
    padding: 1em;
-   background: #85bcc1;
+   background: #78a6c8;
    font-weight: bold;
    cursor: pointer;
   /* Icon */
@@ -819,14 +819,14 @@ input {
    display: flex;
    justify-content: flex-end;
    padding: 1em;
-   background: #2A95B1;
+   background: #78a6c8;
    cursor: pointer;
 }
 .tab-close:hover {
-   background: #2a8093ac;
+   background: #326789;
 }
 input:checked + .tab-label {
-   background: #2a8093ac;
+   background: #326789;
 }
 input:checked + .tab-label::after {
    transform: rotate(90deg);
