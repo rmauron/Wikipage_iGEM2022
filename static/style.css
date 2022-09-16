@@ -55,6 +55,7 @@ nav li a {
 .center {
    text-align: center;
    align-item: center;
+   vertical-align:middle; 
 }
 
 body{
