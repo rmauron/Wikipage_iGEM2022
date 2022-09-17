@@ -677,9 +677,10 @@ nav li a:hover {
    width: 200px;
    height:200px;
    color:white;
+   font-size:10;
    background-color: #78a6c8;
    text-align: center;
-   line-height: 190px;
+   line-height: 1px;
    cursor: pointer;
    transition: 1s ease-in-out;
    transform-style: preserve-3d;
