@@ -674,7 +674,7 @@ nav li a:hover {
 .flipcard {
    position: relative;
    width: 300px;
-   height:150px; /*to check to have rectangles*/
+   height:300px; /*to check to have rectangles*/
    color:white;
    font-size:10;
    background-color: #326789;
