@@ -26,6 +26,12 @@
       document.body.classList.add('text-light');
     }
 
+    if (document.body.classList.contains('carousel-dark')) {
+      document.body.classList.replace('carousel-dark', 'carousel-light');
+    } else {
+      document.body.classList.add('carousel-light');
+    }
+
     // Tables
     var tables = document.querySelectorAll('table');
     for (var i = 0; i < tables.length; i++) {
@@ -55,6 +61,12 @@
       document.body.classList.replace('text-light', 'text-dark');
     } else {
       document.body.classList.add('text-dark');
+    }
+
+    if (document.body.classList.contains('carousel-light')) {
+      document.body.classList.replace('carousel-light', 'carousel-dark');
+    } else {
+      document.body.classList.add('carousel-dark');
     }
 
     // Tables
