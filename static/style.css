@@ -148,7 +148,7 @@ a:hover{
    display: block;
 }
 .phone_menu {
-   display: none;
+   display: none !important;
 }
 
 @media screen and (max-width: 600px) {
