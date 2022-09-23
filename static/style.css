@@ -867,7 +867,7 @@ input:checked + .tab-label::after {
    transform: rotate(90deg);
 }
 input:checked ~ .tab-content {
-   max-height: 200vh; /*!!! LENGTH OF REFERENCES !!!*/
+   max-height: 600vh; /*!!! LENGTH OF REFERENCES !!!*/
    padding: 1em;
 }
 /*end collapsible*/
