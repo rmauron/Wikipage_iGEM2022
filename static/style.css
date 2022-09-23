@@ -356,10 +356,17 @@ nav li a:hover {
 
 .light_sidebar {
    font-size: 16px;
-   padding-left: 20px;
+   padding-left: 15px;
 }
 .light_sidebar:hover {
    font-size: 17px;
+}
+.light2_sidebar {
+   font-size: 14px;
+   padding-left: 25px;
+}
+.light2_sidebar:hover {
+   font-size: 15px;
 }
 /* end of new code FOR SIDE BAR */
 
