@@ -151,12 +151,12 @@ a:hover{
    display: none;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
    .screen_menu {
-     display: none;
+     display: none !important;
    }
    .phone_menu {
-      display: block;
+      display: block !important;
    }
 }
 
