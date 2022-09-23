@@ -144,6 +144,22 @@ a:hover{
 /* animation logo STOP */
 
 /* dropdown navbar START */
+.screen_menu {
+   display: block;
+}
+.phone_menu {
+   display: none;
+}
+
+@media (max-width: 600px) {
+   .screen_menu {
+     display: none;
+   }
+   .phone_menu {
+      display: block;
+   }
+}
+
 .dropdown:hover .dropdown-menu {
    display: block;
    margin-top: 0; /* remove the gap so it doesn't close*/
