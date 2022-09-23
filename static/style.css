@@ -336,6 +336,10 @@ nav li a:hover {
 .list-group-item {
    transition: all ease-out 100ms;
 }
+
+.light_sidebar {
+   font-weight: lighter;
+}
 /* end of new code FOR SIDE BAR */
 
 
