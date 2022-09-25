@@ -5,7 +5,7 @@ const ani_texts = document.getElementsByClassName('animation_text');
 
 const frameCount = 115;
 const currentFrame = index => (
-  `./pill/${index.toString().padStart(4, '0')}.png`
+  `https://static.igem.wiki/teams/4214/wiki/home/0000/${index.toString().padStart(4, '0')}.png`
 )   
 
 const preloadImages = () => {
