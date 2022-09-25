@@ -275,7 +275,7 @@ a:hover{
 
 /*homepage scrolling*/
 .container_canvas {
-  height: 600vh;
+  height: 300vh;
   background-color:transparent;
   position: relative;
 }
