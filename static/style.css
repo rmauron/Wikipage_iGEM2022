@@ -516,6 +516,7 @@ nav li a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  margin-top: 50px; /*space top box*/
 }
 
 @media (max-width: 1000px) {
