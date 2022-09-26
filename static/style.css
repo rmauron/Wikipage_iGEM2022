@@ -53,10 +53,15 @@ nav li a {
 }
 
 .center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
    text-align: center;
    align-item: center;
    vertical-align:middle; 
 }
+
 
 body{
   font-family: 'Roboto', sans-serif;
