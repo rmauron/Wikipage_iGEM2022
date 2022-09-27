@@ -1065,18 +1065,17 @@ td, th {
   border: 1px solid white;
   padding: 8px;
 }
-tr:nth-child(even){background-color: transparent;}
+/*tr:nth-child(even){background-color: transparent;}*/
 
 tr:hover {
    background-color: #e65c4f;
-   opacity: 0.1;
-   color: white;}
+   opacity: 0.1;}
 
 th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
   background-color: black;
-  color: white;
+  /*color: white;*/
 }
 /*end table*/
