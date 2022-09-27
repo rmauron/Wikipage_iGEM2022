@@ -179,6 +179,14 @@ a:hover{
 .nav-link {
    color: black;
    font-weight:400;
+   font-size: 16px;
+   text-decoration: none;
+   display: block;
+   transition: all ease-out 100ms;
+}
+
+.nav-link:hover {
+   color:#e41b17 !important;
 }
 
 .navbar {
@@ -331,8 +339,9 @@ section:last-of-type {
 }
   
 .active { /*needed for the JS*/
-   color: #e65c4f; 
-   font-weight: 600;
+   color: #e65c4f !important; 
+   font-weight: 600 !important;
+   font-size: 18px;
 }
 
 /* SIDE BAR START*/
@@ -348,15 +357,15 @@ section:last-of-type {
   z-index: 0;
 }
 
-nav ul {
+.nav-ul-sidebar {
   padding: 0;
 }
 
-nav li {
+.nav-ul-li-sidebar {
   list-style: none;
 }
 
-nav li a {
+.nav-ul-li-a-sidebar {
   text-align: left !important;
   text-decoration: none;
   text-transform: uppercase;
@@ -367,7 +376,7 @@ nav li a {
   color: #326789;
 }
 
-nav li a:hover {
+.nav-ul-li-a-sidebar:hover {
   color: #e65c4f;
   font-size: 20px;
 }
