@@ -34,9 +34,10 @@ footer a:hover { color: #e65c4f !important; text-decoration: underline; }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+/*
 *{
    font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
-}
+}*/
 
 html {
    scroll-behavior: smooth;
@@ -62,7 +63,6 @@ nav li a {
    vertical-align:middle; 
 }
 
-
 body{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -76,19 +76,6 @@ body{
   text-align: justify;
   line-height: 1.6;
   word-spacing: 1.15px;
-}
-
-/*
-@font-face {
-  font-family: 'times new roman';
-    src: url('fonts/od.otf');
-    font-style: normal;
-    font-weight: normal;
-} 
-*/
-
-.od {
-    font-family: 'Times New Roman', Times, serif !important;
 }
 
 header {
