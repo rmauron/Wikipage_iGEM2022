@@ -1067,7 +1067,10 @@ td, th {
 }
 tr:nth-child(even){background-color: transparent;}
 
-tr:hover {background-color: #e65c4f; opacity: 0.1;}
+tr:hover {
+   background-color: #e65c4f;
+   opacity: 0.1;
+   color: white;}
 
 th {
   padding-top: 12px;
