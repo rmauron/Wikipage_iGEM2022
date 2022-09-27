@@ -1,9 +1,5 @@
-//change font
-document.querySelector('button').addEventListener("click", e=>{
-  document.body.classList.toggle("od");
-});
+//change font button
 
-//change button content
 const btn = document.getElementById('font-style');
 
 btn.addEventListener('click', function handleClick() {
@@ -11,7 +7,13 @@ btn.addEventListener('click', function handleClick() {
 
   if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
     btn.textContent = 'Back to original';
+    document.getElementById("font").style.fontFamily = "Times New Roman, Times, serif";
+    document.getElementById("font").style.fontSize = "150%";
+
   } else {
     btn.textContent = initialText;
+    document.getElementById("font").style.fontFamily = "Roboto, sans-serif";
+    document.getElementById("font").style.fontSize = "100%";
+
   }
 });
