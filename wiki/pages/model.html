@@ -22,9 +22,13 @@
       <nav class="navigation">
         <ul class="nav-ul-sidebar">
           <li class="nav-ul-li-sidebar">
-            <a class="nav-ul-li-a-sidebar" href="#tag1">Content1</a>
-            <a class="nav-ul-li-a-sidebar" href="#tag2">Content2</a>
-            <a class="nav-ul-li-a-sidebar" href="#tag3">Content3</a>
+            <a class="nav-ul-li-a-sidebar" href="#tag1">Mutant creation</a>
+
+            <a class="nav-ul-li-a-sidebar" href="#tag2">Docking and MD</a>
+              <a class="nav-ul-li-a-sidebar light_sidebar" href="#tag2_1">Docking</a>
+              <a class="nav-ul-li-a-sidebar light_sidebar" href="#tag2_2">Molecular  Dynamics</a>
+              <a class="nav-ul-li-a-sidebar light_sidebar" href="#tag2_3">Immunogenicity </a>
+
             <a class="nav-ul-li-a-sidebar" href="#references">References</a>
           </li>
         </ul>
@@ -38,7 +42,28 @@
     <div class="main-content">
 
       <section id="tag1">
-        <h2 class="revealfromtop">Content1</h2> <!--carousel for 17 pictures -->
+        <h2 class="revealfromtop">Content1</h2>
+        <p class="reveal">To address the challenging task of protein design, we performed thorough modelling to select the best candidates to be tested in the lab.</p>
+
+        <p class="reveal">The first step in the process of engineering an Intrinsic Factor (IF) that can evade the autoantibodies is to identify the epitope on the IF and engineer an IF that can evade the clearance mediated by autoantibodies. Based on previous knowledge <a href="#references">[1]</a>, the residues in the alpha helix region adjacent to the cobalamin (vitamin B12) binding pocket:  256Ser, 258Lys, 262Tyr and 265Val were to be mutated. Optimal mutations to substitute the residues with other or “similar” residues were decided and engineered in silico.</p>
+
+        <figure>
+          <img src="https://static.igem.wiki/teams/4214/wiki/description/description.gif" class="img-fluid reveal" alt="Rotating structure of B12-IF complex">
+          <figcaption>
+            <p><i style="font-weight:bold;">Model.</i><i> Structure of IF + B12 + cubulin with amino acids highlighted</i></p>
+          </figcaption>
+        </figure>
+        
+        <p class="reveal">Then, we designed our mutants based on the rationale of preserving structure as much as possible. This principle was chosen as the antibody binding region is in close proximity to the B12 binding region. Thus, mutagenesis should prevent IF from binding to autoimmune antibodies while preserving ligand-receptor binding affinity. For this purpose, we used BLOSUM62 matrix <a href="#references">[2]</a> to detect closely related amino acids. These are the ones whose substitution is well tolerated in evolution.</p>
+
+        <p class="reveal">We performed protein structure predictions to verify that the designed mutants would preserve the properties of the wild-type intrinsic factor. We utilised a well-known tool called AlphaFold2 <a href="#references">[3]</a> and used it as ColabFold <a href="#references">[4]</a>. Structures of all 21 mutants were obtained as PDB files, visualised and structurally aligned to the wild-type IF crystallography structure (PDB ID: 2pmv) using PyMol  <a href="#references">[5]</a>. This enabled us to refine the list of tested mutants excluding the improperly folded ones.</p>        
+        
+        # structure with alignment
+
+        
+        
+        
+        <!--carousel for 17 pictures -->
           <div class="container center reveal">
             <div id="carouselExampleIndicators4" class="carousel carousel-light slide" data-interval="false">
               <div class="carousel-indicators">
@@ -126,33 +151,16 @@
             </div>
           </div>
           
-        <p></p>
-        <p class="reveal">
-          Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so. Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-        </p>
       </section>
+
+
 
       <section id="tag2">
-        <h2 class="revealfromtop">Content2</h2>
-        <figure class="reveal">
-          <img src="https://static.igem.wiki/teams/4214/wiki/picture.png" class="img-fluid reveal" alt="inclusivity picture">
-          <figcaption>
-            <p><i style="font-weight:bold;">Title.</i><i> This is a figure caption.</i></p>
-          </figcaption>
-        </figure>
-        <p></p>
-        <p class="reveal">
-          Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
-          Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-          So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward. Thrown any behind afford either the set depend one temper. Instrument melancholy in acceptance collecting frequently be if. Zealously now pronounce existence add you instantly say offending. Merry their far had widen was. Concerns no in expenses raillery formerly.
-          Kept in sent gave feel will oh it we. Has pleasure procured men laughing shutters nay. Old insipidity motionless continuing law shy partiality. Depending acuteness dependent eat use dejection. Unpleasing astonished discovered not nor shy. Morning hearted now met yet beloved evening. Has and upon his last here must.
-          Delightful remarkably mr on announcing themselves entreaties favourable. About to in so terms voice at. Equal an would is found seems of. The particular friendship one sufficient terminated frequently themselves. It more shed went up is roof if loud case. Delay music in lived noise an. Beyond genius really enough passed is up.
-          Smallest directly families surprise honoured am an. Speaking replying mistress him numerous she returned feelings may day. Evening way luckily son exposed get general greatly. Zealously prevailed be arranging do. Set arranging too dejection september happiness. Understood instrument or do connection no appearance do invitation. Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry plate you share. My resolve arrived is we chamber be removal.
-        </p>
+        <h2 class="revealfromtop">Docking and MD</h2>
       </section>
 
-      <section id="tag3">
-        <h2 class="revealfromtop">Content3</h2>
+      <section id="tag2_1">
+        <p class="reveal">The final step of the modelling consisted of screening for potent therapeutic candidates. We performed docking studies to ensure that the binding affinity of engineered protein is at least on par with the wild-type IF.  Docking studies were performed in 2 steps. First, we predicted the binding energy. AutoDock Vina <a href="#references">[6]</a> tool was selected for this task as it is a well-established tool for docking simulations. Energy refinement was performed using NNscore 2.0 neural network <a href="#references">[7]</a>. The NNScore 2.0 scoring function was used to estimate the binding energy and dissociation constant, as it is more accurate than the AutoDock Vina scoring function.</p>
 
         <table>
           <tr>
@@ -257,14 +265,8 @@
           </tr>
         </table>
 
-   
-        <p class="reveal">
-          Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
-          Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-        </p>
-
+        <!-- dropdowns of model -->
         <div class="row">
-
           <div class="col-md-3 form-floating reveal">
             <form id="form1" method="post">
               <label class="label-dropdown" for="floatingSelect">Model 1:</label>
@@ -318,8 +320,45 @@
 
         </div>
         
+
+      <p class="reveal">The most promising candidates were selected to be tested in wet lab experiments. We found that most proposed mutants have similar or better binding affinity to vitamin B12. Therefore, those results indicate that our mutant selection pipeline is adequate and applicable to the research question.</p>
       </section>
 
+
+      <section id="tag2_2">
+        <h2 class="revealfromtop">Molecular  Dynamics</h2>
+   
+        <p class="reveal">To have a closer look at the interactions at molecular level, attempts were made to model the IF-B12, protein-ligand complex for molecular dynamics study using GROMACS <a href="#references">[8]</a> software. Some of our initial tasks included pre-processing of the available crystallography structure data and topology generation. As the available structure is not fully resolved for the entire protein, a tool called Swiss-PDB viewer <a href="#references">[9]</a> was used to fill in the missing atoms (predict structure) and the structure was cleaned of glycosylation and other unwanted atoms were removed using Chimera <a href="#references">[10]</a>. For MD simulations, our force field of choice was CHARMM36 <a href="#references">[11]</a> which is well established for protein studies and widely accepted in the scientific community. However, a ligand such as B12 is not a recognized entity in the force field. Thus, it was important to process the topology files separately (for IF and B12) and it served as the bottleneck of our experiment.</p>
+
+        <p class="reveal">One of the most challenging tasks in molecular simulation is the proper processing of ligands. Introducing new entities into the framework of the force field requires careful consideration and validation, often in the form of various quantum mechanical calculations <a href="#references">[12]</a>. This could be a very laboursome and tedious process. For preparing the ligand topology, an automated tool CGenFF <a href="#references">[13]</a> was used. The input file for the tool was generated using another software Avogadro <a href="#references">[14]</a>. An advantage of using CGenFF is that it returns penalty scores for each parameter and our penalty scores were larger than 50, which generally require manual reparametrization. The scores were exceptionally high around the corrin ring and metal ion - cobalt. Thus, we had to resort to other means.</p>   
+        <p class="reveal">Due to lack of prior knowledge and time constraints, despite all our efforts, we were unable to complete the model.</p>
+
+      </section>
+
+      <section id="tag2_3">
+        <h2 class="revealfromtop">Immunogenicity </h2>
+   
+        <p class="reveal">Since we are modifying the protein, there is a high chance that artificial modifications could trigger an additional immunogenic response. Thus, we decided to screen our candidates for immunogenicity to ensure that the produced mutants do not trigger immunogenic responses themselves. Our focus lies primarily on possible responses from B lymphocytes <a href="#references">[15]</a>.</p>
+
+        <p class="reveal">We performed screens for continuous as well as discontinuous epitopes for possible antibodies of an immunogenetic response. The difference between them is that the discontinuous considers the folding while the linear only takes the ordered amino acids into account <a href="#references">[16]</a>.</p>   
+        <p class="reveal">After performing an extensive literature review, we proceeded with the online tool IEDB (Immune Epitope Database and Analysis Resource) <a href="#references">[17]</a>, more specifically the tools ElliPro for discontinuous and Antigen Sequence Properties for the linear epitopes. ElliPro employs a clustering algorithm combined with Thornton's method (focusing on protruding amino acid residues) for making predictions <a href="#references">[18]</a>. The tool Antigen Sequence Properties utilizes several methods (Chou and Fasman beta turn prediction, Emini surface accessibility scale, Karplus and Schulz flexibility scale, Kolaskar and Tongaonkar antigenicity scale, Parker Hydrophilicity Prediction, Bepipred-1.0 Linear Epitope Prediction, and BepiPred-2.0: Sequential B-Cell Epitope Predictor). In short, these methods consider beta turns, surface accessibility probability, mobility of protein segments, physicochemical properties of residues and hydrophilicity. Furthermore, they apply a hidden Markov model, the propensity scale method, and a random forest algorithm.</p>
+        <p class="reveal">We expected to get statistically significant differences between wild-type and mutant proteins. However, these expectations were not met for both the linear epitope predictions and the discontinuous ones. For the discontinuous predictions, the wild type caused an immunogenicity score of 202,907 and the mutant with the lowest immunogenicity (a lower score correlates to a lowered predicted chance of autoimmune response) scored 202,578. To conclude, the mutants were not predicted to have significantly altered immunogenicity. This could arise due to several reasons:
+
+          <ol>
+            <li>
+              There is no significant difference in autoantibody binding meaning that the previously described epitope is not the actual one.
+            </li>
+
+            <li>The previously described epitope is the actual one. However, our rationale chosen for the mutant design is not applicable to this case. Therefore, mutations with a stronger effect on protein structure should have been selected.
+            </li>
+
+            <li>
+          Single point mutations introduce very minor changes in structure that do not allow selected tools to detect any significant difference between them. However, it could still be enough to disrupt antibody binding in vitro.
+            </li>
+          </ol>
+        </p>
+
+      </section>
 
       <section id="references">
         <!-- REFERENCES !!! -->
@@ -331,31 +370,165 @@
               <div class="tab-content">
                 <ol>
                   <li>
-                    <p><!--authors here-->Authors<br>
-                    <!--paper titles--><b style="font-weight: bold !important;">Title</b><br>
-                    <!-- journal's name--><i>Journal's name</i><br>
-                    <!-- link to artile--><a href="#" target="_blank">A link</a>
+                    <p>Guéant JL, Safi A, Aimone-Gastin I, Rabesona H, Bronowicki JP, Plénat F, Bigard MA, and Haertlé T<br>
+                    <b style="font-weight: bold !important;">Autoantibodies in pernicious anemia type I patients recognize sequence 251-256 in human intrinsic factor</b><br>
+                    <i>Proc Assoc Am Physicians, vol. 109, no. 5, pp. 462-469, 1997</i><br>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/9285945/" target="_blank">"PMID: 9285945"</a>
                     </p>
-                  <hr>
+                    <hr>
                   </li>
 
-                  <li>
-                    <p><!--authors here-->Authors<br>
-                    <!--paper titles--><b style="font-weight: bold !important;">Title</b><br>
-                    <!-- journal's name--><i>Journal's name</i><br>
-                    <!-- link to artile--><a href="#" target="_blank">A link</a>
-                    </p>
-                  <hr>
-                  </li>
-                  
-                  <li>
-                    <p><!--authors here-->Authors<br>
-                    <!--paper titles--><b style="font-weight: bold !important;">Title</b><br>
-                    <!-- journal's name--><i>Journal's name</i><br>
-                    <!-- link to artile--><a href="#" target="_blank">A link</a>
-                    </p>
-                  <hr>
-                  </li>
+                    <li>
+                      <p>S Henikoff and J G Henikoff<br>
+                      <b style="font-weight: bold !important;">Amino acid substitution matrices from protein blocks</b><br>
+                      <i>Proc Natl Acad Sci USA, vol. 89, no. 22, pp. 10915–10919, 1992</i><br>
+                      <a href="https://doi.org/10.1073%2Fpnas.89.22.10915" target="_blank"> DOI: 10.1073/pnas.89.22.10915</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>J Jumper, R Evans, A Pritzel, et al.<br>
+                      <b style="font-weight: bold !important;">Highly accurate protein structure prediction with AlphaFold</b><br>
+                      <i>Nature, vol. 596, pp. 583-589, 2021</i><br>
+                      <a href="https://doi.org/10.1038/s41586-021-03819-2" target="_blank">DOI: 10.1038/s41586-021-03819-2</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>M. Mirdita, K. Schütze, Y. Moriwaki, et al.<br>
+                      <b style="font-weight: bold !important;">ColabFold: making protein folding accessible to all</b><br>
+                      <i>Nat Methods, vol. 19, pp. 679–682, 2022</i><br>
+                      <a href="https://doi.org/10.1038/s41592-022-01488-1" target="_blank">DOI: 10.1038/s41592-022-01488-1</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>Schrödinger, LLC<br>
+                      <b style="font-weight: bold !important;">The PyMOL Molecular Graphics System, Version 2.5</b><br>
+                      <i>Schrödinger, LLC, 2021</i><br>
+                      <a href="https://pymol.org/2/#page-top" target="_blank">Read it</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>O. Trott and A.J. Olson<br>
+                      <b style="font-weight: bold !important;">AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading</b><br>
+                      <i>J Comput Chem., vol. 31, no. 2, pp. 455-461, 2009</i><br>
+                      <a href="https://doi.org/10.1002/jcc.21334" target="_blank">DOI: 10.1002/jcc.21334</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>J. D. Durrant and J. A. McCammon<br>
+                      <b style="font-weight: bold !important;">NNScore 2.0: A Neural-Network Receptor–Ligand Scoring Function</b><br>
+                      <i>J Chem Inf Model., vol. 51, no. 11, pp. 2897-2903, 2011</i><br>
+                      <a href="https://doi.org/10.1021/ci2003889" target="_blank">DOI: 10.1021/ci2003889</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>P. Bauer, B. Hess, and E. Lindahl<br>
+                      <b style="font-weight: bold !important;">GROMACS 2022.3 Manual</b><br>
+                      <i>Zenodo, 2022</i><br>
+                      <a href="https://doi.org/10.5281/zenodo.7037337" target="_blank">DOI: 10.5281/zenodo.7037337</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>N. Guex, and M.C. Peitsch<br>
+                      <b style="font-weight: bold !important;">SWISS-MODEL and the Swiss-PdbViewer: An environment for comparative protein modeling</b><br>
+                      <i>Electrophoresis, vol. 18, no. 15, pp. 2714-2723, 1997</i><br>
+                      <a href="https://doi.org/10.1002/elps.1150181505" target="_blank">DOI: 10.1002/elps.1150181505</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>E.F. Pettersen, T.D. Goddard, C.C Huang, G.S. Couch, D.M. Greenblatt, E.C. Meng, and T.E. Ferrin TE<br>
+                      <b style="font-weight: bold !important;">UCSF Chimera--a visualization system for exploratory research and analysis</b><br>
+                      <i>J Comput Chem., vol. 25, no. 13, pp. 1605-1612, 2004</i><br>
+                      <a href="https://doi.org/10.1002/jcc.20084" target="_blank">DOI: 10.1002/jcc.20084</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>J. Huang, S. Rauscher, G. Nawrocki, T. Ran, M. Feig, B.L. de Groot, H. Grubmuller, and Jr. A.D. MacKerell<br>
+                      <b style="font-weight: bold !important;">CHARMM36m: An Improved Force Field for Folded and Intrinsically Disordered Proteins</b><br>
+                      <i>Nat Methods, vol. 14, pp. 71-73, 2016</i><br>
+                      <a href="http://dx.doi.org/10.1038/nmeth.4067" target="_blank">DOI: 10.1038/nmeth.4067</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>J.A. Lemkul<br>
+                      <b style="font-weight: bold !important;">From Proteins to Perturbed Hamiltonians: A Suite of Tutorials for the GROMACS-2018 Molecular Simulation Package, v1.0</b><br>
+                      <i>Living J. Comp. Mol. Sci., vol. 1, no. 1, 2018</i><br>
+                      <a href="	https://doi.org/10.33011/livecoms.1.1.5068" target="_blank">DOI: 10.33011/livecoms.1.1.5068</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>K. Vanommeslaeghe, E. Hatcher, C. Acharya, S. Kundu, S. Zhong, J. E. Shim, E. Darian, O. Guvench, P. Lopes, I. Vorobyov, and Jr. A.D. MacKerell<br>
+                      <b style="font-weight: bold !important;">CHARMM General Force Field (CGenFF): A force field for drug-like molecules compatible with the CHARMM all-atom additive biological force fields</b><br>
+                      <i>J. Comput. Chem., vol. 13, no. 4, pp. 671-690, 2010</i><br>
+                      <a href="http://dx.doi.org/10.1002/jcc.21367" target="_blank">DOI: 10.1002/jcc.21367</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>M. D. Hanwell, D. E. Curtis, D. C. Lonie, T. Vandermeersch, E. Zurek, and G. R. Hutchison<br>
+                      <b style="font-weight: bold !important;">Avogadro: an advanced semantic chemical editor, visualization, and analysis platform</b><br>
+                      <i>J. Cheminform., vol. 4, no. 1, p. 17, 2012</i><br>
+                      <a href="https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-4-17" target="_blank">DOI: 10.1186/1758-2946-4-17</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>Johns Hopkins Medicine<br>
+                      <b style="font-weight: bold !important;">The Immune System</b><br>
+                      <i>Johns Hopkins Medicine</i><br>
+                      <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/the-immune-system" target="_blank">Read it</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>T. C. Liang<br>
+                      <b style="font-weight: bold !important;">Epitopes</b><br>
+                      <i>Encyclopedia of Immunology (Second Edition), pp. 825-827, 1998</i><br>
+                      <a href="https://doi.org/10.1006/rwei.1999.0219" target="_blank">DOI: 10.1006/rwei.1999.0219</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>R. Vita, S. Mahajan, J. A. Overton, et. al.<br>
+                      <b style="font-weight: bold !important;">The Immune Epitope Database (IEDB): 2018 update</b><br>
+                      <i>Nucleic Acids Res., vol. 47, no. D1, pp. D339-D343, 2019</i><br>
+                      <a href="https://doi.org/10.1093/nar/gky1006" target="_blank">DOI: 10.1093/nar/gky1006</a>
+                      </p>
+                      <hr>
+                    </li>
+
+                    <li>
+                      <p>J. Ponomarenko, H.H. Bui, W. Li, N. Fusseder, P.E. Bourne, A. Sette, and B. Peters<br>
+                      <b style="font-weight: bold !important;">ElliPro: a new structure-based tool for the prediction of antibody epitopes</b><br>
+                      <i>BMC bioinformatics, vol. 9, no. 514, 2008</i><br>
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/19055730/" target="_blank">DOI: 10.1186/1471-2105-9-514</a>
+                      </p>
+                    </li>
 
                 </ol>
               </div>
