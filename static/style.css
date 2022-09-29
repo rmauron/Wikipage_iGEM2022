@@ -1084,6 +1084,7 @@ th {
 /*button dyslexic*/
 .dyslexic {
    background-color: #326789 !important;
+   color: white;
 }
 .dyslexic:hover {
    background-color:  #e65c4f !important;
