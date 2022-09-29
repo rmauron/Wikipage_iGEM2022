@@ -42,7 +42,7 @@
     <div class="main-content">
 
       <section id="tag1">
-        <h2 class="revealfromtop">Content1</h2>
+        <h2 class="revealfromtop">Mutant creation</h2>
         <p class="reveal">To address the challenging task of protein design, we performed thorough modelling to select the best candidates to be tested in the lab.</p>
 
         <p class="reveal">The first step in the process of engineering an Intrinsic Factor (IF) that can evade the autoantibodies is to identify the epitope on the IF and engineer an IF that can evade the clearance mediated by autoantibodies. Based on previous knowledge <a href="#references">[1]</a>, the residues in the alpha helix region adjacent to the cobalamin (vitamin B12) binding pocket:  256Ser, 258Lys, 262Tyr and 265Val were to be mutated. Optimal mutations to substitute the residues with other or “similar” residues were decided and engineered in silico.</p>
@@ -160,6 +160,7 @@
       </section>
 
       <section id="tag2_1">
+        <h3 class="revealfromtop">Docking</h3>
         <p class="reveal">The final step of the modelling consisted of screening for potent therapeutic candidates. We performed docking studies to ensure that the binding affinity of engineered protein is at least on par with the wild-type IF.  Docking studies were performed in 2 steps. First, we predicted the binding energy. AutoDock Vina <a href="#references">[6]</a> tool was selected for this task as it is a well-established tool for docking simulations. Energy refinement was performed using NNscore 2.0 neural network <a href="#references">[7]</a>. The NNScore 2.0 scoring function was used to estimate the binding energy and dissociation constant, as it is more accurate than the AutoDock Vina scoring function.</p>
 
         <table>
@@ -326,7 +327,7 @@
 
 
       <section id="tag2_2">
-        <h2 class="revealfromtop">Molecular  Dynamics</h2>
+        <h3 class="revealfromtop">Molecular  Dynamics</h3>
    
         <p class="reveal">To have a closer look at the interactions at molecular level, attempts were made to model the IF-B12, protein-ligand complex for molecular dynamics study using GROMACS <a href="#references">[8]</a> software. Some of our initial tasks included pre-processing of the available crystallography structure data and topology generation. As the available structure is not fully resolved for the entire protein, a tool called Swiss-PDB viewer <a href="#references">[9]</a> was used to fill in the missing atoms (predict structure) and the structure was cleaned of glycosylation and other unwanted atoms were removed using Chimera <a href="#references">[10]</a>. For MD simulations, our force field of choice was CHARMM36 <a href="#references">[11]</a> which is well established for protein studies and widely accepted in the scientific community. However, a ligand such as B12 is not a recognized entity in the force field. Thus, it was important to process the topology files separately (for IF and B12) and it served as the bottleneck of our experiment.</p>
 
@@ -336,7 +337,7 @@
       </section>
 
       <section id="tag2_3">
-        <h2 class="revealfromtop">Immunogenicity </h2>
+        <h3 class="revealfromtop">Immunogenicity </h3>
    
         <p class="reveal">Since we are modifying the protein, there is a high chance that artificial modifications could trigger an additional immunogenic response. Thus, we decided to screen our candidates for immunogenicity to ensure that the produced mutants do not trigger immunogenic responses themselves. Our focus lies primarily on possible responses from B lymphocytes <a href="#references">[15]</a>.</p>
 
