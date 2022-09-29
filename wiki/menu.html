@@ -133,7 +133,7 @@
         <li>
           <div class="d-flex">
             <div class="">
-              <button id="font-style" type="button" class="btn btn-light">Dyslexic friendly</button>
+              <button id="font-style" type="button" class="btn dyslexic">Dyslexic friendly</button>
             </div>
           </div>
         </li>
@@ -152,21 +152,18 @@
         </li>
       </ul>
 
-<!--- previous menu igem
+    </div>
+  </div>
+</nav>
 
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+<!--- all the pages
+
             <li><a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Team</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='collaborations') }}">Collaborations</a></li>
-          </ul>
-        </li>
 
-        <!---- PROJECT
-        <li class="nav-item dropdown dropdown-mega position-static">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Project
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{ url_for('pages', page='communication') }}">Communication</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a></li>
@@ -177,37 +174,15 @@
             <li><a class="dropdown-item" href="{{ url_for('pages', page='partnership') }}">Partnership</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
-          </ul>
-        </li>
 
-        <!---- PARTS
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Parts
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{ url_for('pages', page='part-collection') }}">Part Collection</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='parts') }}">Parts</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='improve') }}">Improve</a></li>
-          </ul>
-        </li>
 
-        <!---- SAFETY
-        <li class="nav-item">
           <a class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
-        </li>
 
-        <!---- HUMAN PRACTICES
-        <li class="nav-item">
           <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
-        </li>
 
-        <!---- AWARDS
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Awards
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a></li>
@@ -217,126 +192,6 @@
             <li><a class="dropdown-item" href="{{ url_for('pages', page='plant') }}">Plant</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='software') }}">Software</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='sustainable') }}">Sustainable</a></li>
-          </ul>
-        </li>
+
 ---->
-    </div>
 
-
-
-<!-- phone menu 
-<div ="phone_menu">
-<div class=" collapse navbar-collapse" style="padding-left: 6%;">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <!---- PROJECT section 
-        <li class="nav-item  dropdown dropdown-mega position-static">
-          <a class="nav-link dropdown-toggle center" href="{{ url_for('pages', page='description') }}" data-bs-auto-close="outside">Project</a>
-            <div class="dropdown-menu shadow">
-              <div class="mega-content px-4">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-12 col-sm-4 col-md-4 py-5">
-                      <div class="list-group list-group-flush">
-                        <a class="list-group-item" href="{{ url_for('pages', page='description') }}">Description</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='dry-lab') }}">Dry lab</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='engineering') }}">Engineering</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='model') }}">Model</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='software') }}">Software</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='parts') }}">Parts overview</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='results') }}">Results</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of concept</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='implementation') }}">Implementation</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='safety') }}">Safety</a>
-                      </div>                    
-                    </div>
-                  </div>  
-                </div>
-              </div>
-            </div>
-        </li>
-
-        <!---- PEOPLE section 
-        <li class="nav-item  dropdown dropdown-mega position-static">
-          <a class="nav-link dropdown-toggle center" href="{{ url_for('pages', page='team') }}" data-bs-auto-close="outside">People</a>
-            <div class="dropdown-menu shadow">
-              <div class="mega-content px-4">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-12 col-sm-4 col-md-4 py-5">
-                      <div class="list-group list-group-flush">
-                        <a class="list-group-item" href="{{ url_for('pages', page='team') }}">Team</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='partnership') }}">Partnership</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='collaborations') }}">Collaborations</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a>
-                      </div>                    
-                    </div>
-                  </div>  
-                </div>
-              </div>
-            </div>
-        </li>
-
-
-      <!---- HUMAN PRACTICES section 
-        <li class="nav-item dropdown dropdown-mega position-static">
-            <a class="nav-link dropdown-toggle center" href="{{ url_for('pages', page='contribution') }}" data-bs-auto-close="outside">Human Practices</a>
-            <div class="dropdown-menu shadow">
-              <div class="mega-content px-4">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-12 col-sm-4 col-md-4 py-5">
-                      <div class="list-group list-group-flush">
-                        <a class="list-group-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a>                      
-                        <a class="list-group-item" href="{{ url_for('pages', page='education') }}">Education & Communication</a>
-                        <a class="list-group-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
-                      </div>                  
-                    </div>
-                  </div>  
-                </div>
-              </div>
-            </div>
-          </li>
-
-        <!---- MUTANT GENERATOR 
-          <li class="nav-item dropdown dropdown-mega position-static">
-              <a class="nav-link center" href="{{ url_for('pages', page='mutant-generator') }}" data-bs-auto-close="outside">Mutant Generator</a>
-          </li>
-      </ul>
-
-      <!----To the Right 
-      <ul class="navbar-nav center">
-        <li>
-          <div class="d-flex">
-            <div class="ms-auto mt-3 me-3">
-              <button id="font-style">Dyslexic friendly</button>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="d-flex">
-            <div class="form-check form-switch ms-auto mt-3 me-3">
-              <label class="form-check-label ms-3" for="lightSwitch">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
-                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                </svg>
-              </label>
-              <input class="form-check-input" type="checkbox" id="lightSwitch"/>
-            </div>
-          </div>
-        </li>
-      </ul>
-
-    </div>
-</div>--> 
-
-
-
-
-  </div>
-</nav>

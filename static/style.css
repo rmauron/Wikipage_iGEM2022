@@ -1080,3 +1080,11 @@ th {
   color: white;
 }
 /*end table*/
+
+/*button dyslexic*/
+.dyslexi {
+   background-color: #326789 !important;
+}
+.dyslexic:hover {
+   background-color:  #e65c4f !important;
+}
