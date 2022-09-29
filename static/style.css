@@ -1068,7 +1068,9 @@ td, th {
 
 tr:hover {
    background-color: #e65c4f;
-   opacity: 0.1;}
+   color: white;
+   /*opacity: 0.1;*/
+   }
 
 th {
   padding-top: 12px;
