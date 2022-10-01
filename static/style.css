@@ -631,7 +631,7 @@ section:last-of-type {
    font-weight: lighter !important;
    background-color: #326789;
    text-align: justify;
-   /*line-height: 1; ???*/
+   line-height: 1; 
    cursor: pointer;
    transition: 1s ease-in-out;
    transform-style: preserve-3d;
