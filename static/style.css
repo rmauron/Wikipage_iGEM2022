@@ -469,7 +469,6 @@ section:last-of-type {
 .flashbox_pages:hover .p_pages, .a_pages {
    color: #e65c4f;
 }
-
 /*end of flashbox*/
 
 
@@ -771,8 +770,6 @@ input:checked ~ .tab-content {
    padding: 1em;
 }
 /*end collapsible*/
-
-
 
 
 /*card for TEAM section*/
