@@ -869,7 +869,7 @@ input:checked ~ .tab-content {
    font-weight: lighter !important;
    line-height: 1;
    padding-top: 8px;
-   hyphens: auto;
+   hyphens: auto !important;
 }
 
 .card:hover .card__caption{
