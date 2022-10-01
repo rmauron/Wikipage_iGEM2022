@@ -631,8 +631,6 @@ section:last-of-type {
    font-weight: lighter !important;
    background-color: #326789;
    text-align: justify;
-   vertical-align: middle !important;
-   align-items: center;
    line-height: 1; /*???*/
    cursor: pointer;
    transition: 1s ease-in-out;
@@ -651,6 +649,8 @@ section:last-of-type {
    height: 100%;
    backface-visibility: hidden;
    transition: 1s ease-in-out;
+   display: flex;
+   align-items: center;
 }
 
 .flipcard-img {
