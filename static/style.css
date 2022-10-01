@@ -632,6 +632,7 @@ section:last-of-type {
    background-color: #326789;
    text-align: justify;
    vertical-align: middle !important;
+   align-items: center;
    line-height: 1; /*???*/
    cursor: pointer;
    transition: 1s ease-in-out;
