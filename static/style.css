@@ -628,9 +628,10 @@ section:last-of-type {
    height:300px; /*to check to have rectangles*/
    color:white;
    font-size:10;
-   font-style: normal;
+   font-weight: lighter !important;
    background-color: #326789;
-   text-align: center;
+   text-align: justify;
+   vertical-align: middle;
    line-height: 1; /*???*/
    cursor: pointer;
    transition: 1s ease-in-out;
