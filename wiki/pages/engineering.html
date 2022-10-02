@@ -42,7 +42,6 @@
               <a class="nav-ul-li-a-sidebar light_sidebar" href="#tag4_3">Test</a> 
               <a class="nav-ul-li-a-sidebar light_sidebar" href="#tag4_4">Learn</a>
 
-            <a class="nav-ul-li-a-sidebar" href="#references">References</a>
           </li>
         </ul>
       </nav>
@@ -56,7 +55,7 @@
 
       <section id="tag1">
         <h2 class="revealfromtop">Introduction</h2>
-            <p class="reveal">Our goal was to engineer a recombinant Intrinsic Factor (called ‘BiG-IF’) that the autoantibodies against Pernicious anaemia (PA) cannot bind to while maintaining its vitamin B12 affinity, through site-directed mutagenesis (SDM). Unlike other systems, a biological system is more complex and challenging to engineer. And with such systems, often our understanding is limited and the pace is reduced. Thus, it is important to have a comprehensive process with a very tight-knit feedback loop. This was accomplished by executing the carefully curated DBTL engineering cycle, consisting of  design, build, test and learn stages, while running several feedback loops in parallel.</p>
+            <p class="reveal">Our goal was to engineer a recombinant Intrinsic Factor (called ‘BiG-IF’) that the autoantibodies against Pernicious anemia (PA) cannot bind to while maintaining its vitamin B12 affinity, through site-directed mutagenesis (SDM). Unlike other systems, a biological system is more complex and challenging to engineer. And with such systems, often our understanding is limited and the pace is reduced. Thus, it is important to have a comprehensive process with a very tight-knit feedback loop. This was accomplished by executing the carefully curated DBTL engineering cycle, consisting of  design, build, test and learn stages, while running several feedback loops in parallel.</p>
 
             <figure class="reveal">
               <img src="https://static.igem.wiki/teams/4214/wiki/engineering/engineering-cycle.png" class="img-fluid reveal" alt="engineering cycle">
@@ -64,9 +63,7 @@
                 <p><i style="font-weight:bold;">Figure.</i><i> Engineering cycle representing the design, build, test and learn stages</i></p>
               </figcaption>
             </figure>
-
       </section>
-
 
       <section id="tag2" style="margin-bottom:30px;">
         <h2 class="revealfromtop">Engineering Cycle - Phase I</h2>
@@ -78,85 +75,79 @@
           <p class="reveal">
             <i class="fa fa-solid fa-lightbulb"></i> After a thorough literature review, IF mutants were designed using the BLOSUM62 substitution matrix to preserve the wild-type structure as much as possible.<br> 
             <i class="fa fa-solid fa-lightbulb"></i> Since the IF being a mammalian protein, a display vector, pDisplayTM (display vector) from Thermo Fisher was selected as the transfection vector.<br>               
-            <i class="fa fa-solid fa-lightbulb"></i> 2 vectors, 1SB2C3 and pet26B+(production vectors), was also chosen to enable the production of the protein in a bacterial system and for downstream purification and isolation.<br>          
+            <i class="fa fa-solid fa-lightbulb"></i> A production vector, 1SB2C3, was also chosen to enable the production of the protein in a bacterial system and for downstream purification and isolation.<br>          
             <i class="fa fa-solid fa-lightbulb"></i> Wet lab experiments were designed to clone and amplify the wild-type plasmids.<br> 
           </p>
       </section>
 
       <section id="tag2_2">
-        <h3 class="revealfromtop">Test</h3>
+        <h3 class="revealfromtop">Build</h3>
           <p class="reveal">
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
+            <i class="fa fa-solid fa-flask"></i> The mutant structures were built using AlphaFold.<br>
+            <i class="fa fa-solid fa-flask"></i> The IF gene was cloned into the display and production vectors using restriction cloning.<br>
+            <i class="fa fa-solid fa-flask"></i> The SDM was initiated for the mutants in phases.<br>
           </p>
       </section>
 
       <section id="tag2_3">
-        <h3 class="revealfromtop">Learn</h3>
+        <h3 class="revealfromtop">Test</h3>
           <p class="reveal">
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
+            <i class="fa fa-solid fa-dna"></i> Of all the structures built, the improperly folded mutants were excluded and the rest were further subjected to in-silico modelling.<br>
+            <i class="fa fa-solid fa-dna"></i> To assess the strength of binding, docking studies were carried out using Autodock Vina and Mutabind2 for B12 and cubilin receptor respectively.<br>
+            <i class="fa fa-solid fa-dna"></i> Immunogenicity studies were performed to check for introduction of novel epitopes in the mutants.<br>
+            <i class="fa fa-solid fa-dna"></i> The sequencing results from cloning of the display vector, revealed that IF had indeed been inserted into the expression vector but had an unintended stop codon after the IF sequence but right before the PDGFR sequence.<br>
           </p>
       </section>
 
       <section id="tag2_4">
-        <h3 class="revealfromtop">Build</h3>      
+        <h3 class="revealfromtop">Learn</h3>      
           <p class="reveal">
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
+            <i class="fa fa-solid fa-book"></i> Mutants binding affinities to both B12 and cubilin receptor, which are essential for the internalization of the B12-IF complex, were evaluated along with the immunogenicity scores and the most promising candidates were selected to be tested in the wet lab.<br>
+            <i class="fa fa-solid fa-book"></i> The stop codon in the sequencing results of all the clones and the wildtype resulted from the improper amplification of the IF gene fragment prior to the insertion of the newer restriction sites for cloning. This had to be removed to ensure a successful display of the protein.<br>
+            <i class="fa fa-solid fa-book"></i> The mutations were unsuccessful in the first attempt at SDM as the primer design did not align with the SDM kit we were using.<br>
+            <i class="fa fa-solid fa-book"></i> In our attempt to produce the mammalian protein, we chose a bacterial system that is proficient at production but it, theoretically, lacked an ability to produce a fully folded protein that can be successfully isolated and purified. This prompted us to pick a new plasmid, and a new strategy to bring the protein out into the periplasm using a Pel B leader sequence.<br>
           </p>
       </section>
       
-
-
       <section id="tag3" style="margin-bottom:30px;">
         <h2 class="revealfromtop">Engineering Cycle - Phase II</h2>
       </section>
 
       <section id="tag3_1">
         <h3 class="revealfromtop">Design</h3>
-
           <p class="reveal">
-            <i class="fa fa-solid fa-lightbulb"></i> Extremely we promotion remainder eagerness enjoyment an.<br> 
-            <i class="fa fa-solid fa-lightbulb"></i> Extremely we promotion remainder eagerness enjoyment an.<br>               
-            <i class="fa fa-solid fa-lightbulb"></i> Extremely we promotion remainder eagerness enjoyment an.<br>          
-            <i class="fa fa-solid fa-lightbulb"></i> Extremely we promotion remainder eagerness enjoyment an.<br> 
+            <i class="fa fa-solid fa-lightbulb"></i> A new set of primers were designed carefully to possess the necessary overlapping bases at and around the mutation site.<br> 
+            <i class="fa fa-solid fa-lightbulb"></i> A new primer pair was designed to remove the stop-codon from the expression vector.<br>               
+            <i class="fa fa-solid fa-lightbulb"></i> Wet lab experiments were designed to clone, mutate and amplify the wild-type and the mutant plasmids.<br>          
+            <i class="fa fa-solid fa-lightbulb"></i> Transfection experiments were designed for HEK293 suspension culture.<br> 
           </p>
       </section>
 
       <section id="tag3_2">
-        <h3 class="revealfromtop">Test</h3>
+        <h3 class="revealfromtop">Build</h3>
           <p class="reveal">
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
+            <i class="fa fa-solid fa-flask"></i> The mutations were incorporated into the expression vector in iterative steps from single to triple mutations with varying levels of progress.<br>
+            <i class="fa fa-solid fa-flask"></i> The Stop-codons from all the mutants were removed from the plasmids using SDM and the plasmids were plasmid prepped to ensure adequate concentration needed for transfection.<br>
+            <i class="fa fa-solid fa-flask"></i> Recombinant production of IF from BL21 cells was attempted with 2 different concentrations of IPTG with limited success.<br>
+            <i class="fa fa-solid fa-flask"></i> The mutant vectors were transfected into HEK293F, suspension cells.<br>
           </p>
       </section>
 
       <section id="tag3_3">
-        <h3 class="revealfromtop">Learn</h3>
+        <h3 class="revealfromtop">Test</h3>
           <p class="reveal">
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
+            <i class="fa fa-solid fa-dna"></i> The Sequencing of the mutations revealed that the SDM’s were successful with the desired substitutions. <br>
+            <i class="fa fa-solid fa-dna"></i> The transfection efficiency appeared to be too low with minimal GFP being expressed.<br>
+            <i class="fa fa-solid fa-dna"></i> The results on the Western blot revealed that the IF is expressed on the surface as well as in the cytoplasm which was undesirable as we needed maximum IF to be displayed on the surface.<br>
+            <i class="fa fa-solid fa-dna"></i> The Flow cytometry results proved to be inconclusive.<br>
+            <i class="fa fa-solid fa-dna"></i> The Recombinant production of IF in bacteria did not yield any definite band in the size range expected hence warranting a change in strategy.<br>
           </p>
       </section>
 
       <section id="tag3_4">
-        <h3 class="revealfromtop">Build</h3>      
+        <h3 class="revealfromtop">Learn</h3>      
           <p class="reveal">
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
+            <i class="fa fa-solid fa-book"></i> The WB results confirmed that there was a band in the the size range that we were expecting, but without any controls nor double antibody binding, we could not reliably conclude the results.<br>
           </p>
       </section>
 
@@ -169,85 +160,35 @@
         <h3 class="revealfromtop">Design</h3>
 
           <p class="reveal">
-            <i class="fa fa-solid fa-lightbulb"></i> Extremely we promotion remainder eagerness enjoyment an.<br> 
-            <i class="fa fa-solid fa-lightbulb"></i> Extremely we promotion remainder eagerness enjoyment an.<br>               
-            <i class="fa fa-solid fa-lightbulb"></i> Extremely we promotion remainder eagerness enjoyment an.<br>          
-            <i class="fa fa-solid fa-lightbulb"></i> Extremely we promotion remainder eagerness enjoyment an.<br> 
+            <i class="fa fa-solid fa-lightbulb"></i> A Pet26b+ plasmid was chosen to clone the IF gene containing the His-tag into and lead it into the periplasm.<br> 
+            <i class="fa fa-solid fa-lightbulb"></i> A positive control of the pure IF protein for the SDS-Page and WB was ordered.<br>               
+            <i class="fa fa-solid fa-lightbulb"></i> The WB was planned to run with antibodies against the IF protein and the Myc Tag which immediately superceded the IF insertion in the expression vector.<br>          
           </p>
       </section>
 
       <section id="tag4_2">
-        <h3 class="revealfromtop">Test</h3>
+        <h3 class="revealfromtop">Build</h3>
           <p class="reveal">
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-flask"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
+            <i class="fa fa-solid fa-flask"></i> The display vector was transfected into HEK293 adherent cells and fluorescent WB and fluorescence microscopy(FM) was performed.<br>
+            <i class="fa fa-solid fa-flask"></i> The protein was produced using the new production vector against the previous vector in three different inducer concentrations.<br>
           </p>
       </section>
 
       <section id="tag4_3">
-        <h3 class="revealfromtop">Learn</h3>
+        <h3 class="revealfromtop">Test</h3>
           <p class="reveal">
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-dna"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
+            <i class="fa fa-solid fa-dna"></i> The WB revealed that there was indeed a production of the variant 20201 but failed to show any wild-type production.<br>
+            <i class="fa fa-solid fa-dna"></i> The HEK293 adherent cells failed to adhere firmly to cover slips thereby not yielding any FM imaging.<br>
           </p>
       </section>
 
       <section id="tag4_4">
-        <h3 class="revealfromtop">Build</h3>      
+        <h3 class="revealfromtop">Learn</h3>      
           <p class="reveal">
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
-            <i class="fa fa-solid fa-book"></i>Extremely we promotion remainder eagerness enjoyment an.<br>
+            <i class="fa fa-solid fa-book"></i> Poly-D-Lysine was utilized to coat the wells and the coverslips and FM was re-attempted.<br>
+            <i class="fa fa-solid fa-book"></i> A new wild-type clone was used to generate a band in the desired size range.<br>
           </p>
       </section>
-
-      <section id="references">
-        <!-- REFERENCES !!! -->
-        <h2 class="revealfromtop">References</h2>
-          <div class="tabs reveal">
-            <div class="tab">
-              <input type="checkbox" id="chck1">
-              <label class="tab-label" for="chck1">References</label>
-              <div class="tab-content">
-                <ol>
-                  <li>
-                    <p><!--authors here-->Authors<br>
-                    <!--paper titles--><b style="font-weight: bold !important;">Title</b><br>
-                    <!-- journal's name--><i>Journal's name</i><br>
-                    <!-- link to artile--><a href="#" target="_blank">A link</a>
-                    </p>
-                  <hr>
-                  </li>
-
-                  <li>
-                    <p><!--authors here-->Authors<br>
-                    <!--paper titles--><b style="font-weight: bold !important;">Title</b><br>
-                    <!-- journal's name--><i>Journal's name</i><br>
-                    <!-- link to artile--><a href="#" target="_blank">A link</a>
-                    </p>
-                  <hr>
-                  </li>
-                  
-                  <li>
-                    <p><!--authors here-->Authors<br>
-                    <!--paper titles--><b style="font-weight: bold !important;">Title</b><br>
-                    <!-- journal's name--><i>Journal's name</i><br>
-                    <!-- link to artile--><a href="#" target="_blank">A link</a>
-                    </p>
-                  <hr>
-                  </li>
-
-                </ol>
-              </div>
-            </div>  
-          </div>
-      </section>
-
 
       <section>
         <div class="box">
