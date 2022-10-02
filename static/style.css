@@ -875,7 +875,7 @@ input:checked ~ .tab-content {
 
 .card:hover .card__caption{
    color: rgba(255,255,255,0.9);
-   text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.30);
+   text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.40);
    transition: 1.3s;
 }
 /*style CARDS end*/
