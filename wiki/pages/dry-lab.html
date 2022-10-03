@@ -23,10 +23,7 @@
       <ul class="nav-ul-sidebar">
         <li class="nav-ul-li-sidebar">
           <a class="nav-ul-li-a-sidebar" href="#tag1">Introduction</a>
-          <a class="nav-ul-li-a-sidebar" href="#tag2">Engineering</a>
-          <a class="nav-ul-li-a-sidebar" href="#tag3">Modelling</a>
-          <a class="nav-ul-li-a-sidebar" href="#tag4">Software</a>
-          <a class="nav-ul-li-a-sidebar" href="#tag5">Wikipage</a>
+          <a class="nav-ul-li-a-sidebar" href="#tag2">Wikipage</a>
         </li>
       </ul>
     </nav>
@@ -37,97 +34,44 @@
   <!-- Include chapters here -->
   <div class="col-lg-9">
     <div class="main-content">
-    <div class="row mt-4">
-        <div class="col-lg-4">
-          <h2 class="revealfromtop">Engineering</h2>
-          <p class="reveal">
-            Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.</p>
-        </div>
-
-        <div class="col-lg-4">
-          <h2 class="revealfromtop">Model</h2>
-          <p class="reveal">
-            Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.</p>
-        </div>
-
-        <div class="col-lg-4">
-          <h2 class="revealfromtop">Model</h2>
-          <p class="reveal">
-            Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
-Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.</p>
-        </div>
-
-    </div>
-
-
-
-
-
-
+    
       <section id="tag1">
-        <h2 class="revealfromtop">Introduction</h2>
-        <p class="reveal">
-          Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
-          Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-        </p>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+              <h2 class="revealfromtop">Engineering</h2>
+              <p class="reveal">To achieve our goal of engineering a recombinant Intrinsic Factor (BiG-IF), mutants were designed based on the rationale of preserving structure as much as possible and screened using different in-silico modelling techniques to be tested in wet lab experiments. For which the corresponding primers were designed for site-directed mutagenesis (SDM).</p>
+
+              <div class="box_page">
+                <a href="{{ url_for('pages', page='engineering') }}" class="a_pages"><div class="reveal flashbox_pages"><p class="p_pages">Engineering <i class="fa fa-solid fa-arrow-right fa_pages"></i></p></div></a>
+              </div>
+
+            </div>
+
+            <div class="col-lg-4">
+              <h2 class="revealfromtop">Model</h2>
+              <p class="reveal">No successful wet lab experiment can be performed without proper modelling. To get insights into how desired mutations will affect the structure of IF and its binding properties with B12 and cubilin, a multistep modelling pipeline was performed. Starting with protein structure predictions of all proposed mutants to docking and immunogenicity studies.</p>
+
+              <div class="box_page">
+                <a href="{{ url_for('pages', page='model') }}" class="a_pages"><div class="reveal flashbox_pages"><p class="p_pages">Model <i class="fa fa-solid fa-arrow-right fa_pages"></i></p></div></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <h2 class="revealfromtop">Software</h2>
+              <p class="reveal">Introducing our very own ProMutor - Protein Mutant Generator
+    A user-friendly web tool for selecting potent mutants of your choice. Given a nucleotide or protein sequence, the tool provides a list of mutants ranked based on their effects on protein structure, as well as predicting their potential effect from clinical data.</p>
+
+              <div class="box_page">
+                <a href="{{ url_for('pages', page='software') }}" class="a_pages"><div class="reveal flashbox_pages"><p class="p_pages">Software <i class="fa fa-solid fa-arrow-right fa_pages"></i></p></div></a>
+
+                <a href="{{ url_for('pages', page='promutor') }}" class="a_pages"><div class="reveal flashbox_pages"><p class="p_pages">ProMutor <i class="fa fa-solid fa-arrow-right fa_pages"></i></p></div></a>
+              </div>
+
+            </div>
+        </div>
       </section>
 
       <section id="tag2">
-        <h2 class="revealfromtop">Engineering</h2>
-        <div class="reveal">
-          <h4>Choosing mutants</h4>
-          <p>
-          `Did we use **GEMME** or SeqDesign in the end?` We predicted what mutants would give us the desired propeties of our recombinat protein, which in our case is an intrinsic factor that avoids the anti-IF antibody from binding. The idea is to weaken the antibody binding!</p>
-
-          <h4>Plasmid Design</h4>
-          <p>In benchling and SnapGene the plasmid for the recombinat protein was designed. We considered expression, restriction sites, promoter, primer binding site, cell type, shine dalgarno sequence, kozak sequence, removing introns, totalt size, backbone and histidine tag. Our reasons for including the His-tag was easier purification. In the end we choose the pSB2K3 backbone because…</p>
-
-          <h4>Primer Design</h4>
-          <p>Next up we designed primers for site directed mutagenesis in order to make our variants of recombinant IF proteins. For this we wanted to make sure the restriction sites were amplified. For this the tool [Kozane](https://www.kozane.app) was used. We considered overhang and melting temperature in the design. `What settings were used?`</p>
-        </div>
-
-        <div class="box_page">
-          <a href="{{ url_for('pages', page='engineering') }}" class="a_pages"><div class="reveal flashbox_pages"><p class="p_pages">Engineering <i class="fa fa-solid fa-arrow-right fa_pages"></i></p></div></a>
-        </div>
-
-      </section>
-
-      <section id="tag3">
-        <h2 class="revealfromtop">Model</h2>
-        <div class="reveal">
-        <h4>Docking Studies</h4>
-        <p>Docking was done in order to look at what effects the mutations had on binding affinities, both thermodynamical parameters and geometric ones. For this autodock vina was used, looking at Human Intrinsic Factor and Cobalamin.
-
-        In addition the tool Mutabind2 was used to look at the change in free energy (DDG) for Intrinsic Factor-Cobalamin bound to its receptor Cubilin. In addition alanine-screening was done to look at what residues play a crucial role in the bioactivity of IF.</p> 
-
-        <h4>Modelling</h4>
-        <p>After carefully evalutating a bunch of different tools we decided on using GROMCS for modelling. The purpose of this was looking at the molecular dynamics. For this we had to consider the solvent, the force field, preparing the structure (adding hydrogen atoms, adding missing chains, names of residue chains), adding necessary parametrizations. `Output?`</p>
-
-        <h4>Immunogenicity</h4>
-        <p>order to look at if there is a difference for our recombinat variants we wanted to investigate if the mutations made a difference for autoantibodies. By focusing on B-cells we tried various tools, among them IEDB, from our preliminary results there was not much of a difference but the results need to be validated in a clinical setting.</p>
-        </div>
-
-        <div class="box_page">
-          <a href="{{ url_for('pages', page='model') }}" class="a_pages"><div class="reveal flashbox_pages"><p class="p_pages">Model <i class="fa fa-solid fa-arrow-right fa_pages"></i></p></div></a>
-        </div>
-      </section>
-
-      <section id="tag4">
-        <h2 class="revealfromtop">Software</h2>
-        <p class="reveal">
-    We made a software that takes the amino acid sequence or protein sequence and prepares data for alphafold in order to make predicted structures for recombinant proteins. With the predicted structures there are endless possibilities to predict properties which is useful for getting insights about theraputic parameters.  
-        </p>
-
-        <div class="box_page">
-          <a href="{{ url_for('pages', page='software') }}" class="a_pages"><div class="reveal flashbox_pages"><p class="p_pages">Software <i class="fa fa-solid fa-arrow-right fa_pages"></i></p></div></a>
-
-          <a href="{{ url_for('pages', page='promutor') }}" class="a_pages"><div class="reveal flashbox_pages"><p class="p_pages">ProMutor <i class="fa fa-solid fa-arrow-right fa_pages"></i></p></div></a>
-        </div>
-      </section>
-
-      <section id="tag5">
         <h2 class="revealfromtop">Wikipage</h2>
         <p class="reveal">Priority has been the user-friendliness experience and accessibility of the information. The pages organized in a logical order are accessible by using the menu with only 1 click or by reading the wikipage from start to end using the “previous/next” buttons at the bottom of every page. The side menu allows the user to navigate through the page or simply jump to a specific section of interest. The non-overwhelming organization of the references into a dropdown allows the most agreeable experience. "Inclusive and accessible" is the page's motto primarily achieved by the pleasant and sober font style, the color choice that allows colorblind people to detect shapes in both dark and light modes, particular font style and size make the wiki dyslexic-friendly and descriptive figure captions allow for screen-reader usage. The dynamic elements integrated successfully add life to the wikipage which keeps the user entertained!</p>
       </section>
