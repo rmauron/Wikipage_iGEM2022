@@ -469,6 +469,13 @@ section:last-of-type {
 .flashbox_pages:hover .p_pages, .a_pages {
    color: #e65c4f;
 }
+@media (max-width: 1000px) {
+   .flashbox_pages {
+      flex-direction: column;
+      align-items:center;  
+      margin-top: 10px !important;
+   }
+}
 /*end of flashbox*/
 
 
