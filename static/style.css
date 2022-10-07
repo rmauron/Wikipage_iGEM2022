@@ -706,7 +706,7 @@ section:last-of-type {
 /* General*/
 input {
    position: absolute;
-   opacity: 1;
+   opacity: 0;
    z-index: -1;
 }
 .row {
