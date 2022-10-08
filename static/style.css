@@ -640,7 +640,7 @@ section:last-of-type {
    color:white;
    font-size:10;
    font-weight: lighter !important;
-   background-color: #326789;
+   background-color: #326789 !important;
    text-align: justify;
    line-height: 1; 
    cursor: pointer;
