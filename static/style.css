@@ -34,8 +34,8 @@ footer a:hover { color: #e65c4f !important; text-decoration: underline; }
 }*/
 
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 html {
