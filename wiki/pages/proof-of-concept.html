@@ -22,11 +22,14 @@
       <nav class="navigation">
         <ul class="nav-ul-sidebar">
           <li class="nav-ul-li-sidebar">
-            <a class="nav-ul-li-a-sidebar" href="#tag1">Background</a>
-            <a class="nav-ul-li-a-sidebar" href="#tag2">Mutation and Plasmid Production in E.coli</a>
-            <a class="nav-ul-li-a-sidebar" href="#tag3">Changes in Binding Properties</a>
-            <a class="nav-ul-li-a-sidebar" href="#tag4">Immunogenicity</a>
+            <a class="nav-ul-li-a-sidebar" href="#tag1">Concept</a>
+            <a class="nav-ul-li-a-sidebar" href="#tag2">Proof of Concept</a>
+            <a class="nav-ul-li-a-sidebar" href="#tag3">Evidence for our BigIF</a>
+
+            <a class="nav-ul-li-a-sidebar" href="#tag4">Future perspectives to address the research question</a>
             <a class="nav-ul-li-a-sidebar" href="#tag5">Mammalian cell culture findings</a>
+            <a class="nav-ul-li-a-sidebar" href="#references">References</a>
+
           </li>
         </ul>
       </nav>
@@ -38,17 +41,10 @@
   <div class="col-lg-9">
     <div class="main-content">
       <section id="tag1">
-        <h2 class="revealfromtop">Background</h2>
-        <p class="reveal">In order to have a functional Gastric Intrinsic Factor (IF) that could evade the immune system, it first need to carry mutations that would alter its ability to interact with auto-antibodies, while effectively binding to Vitamin B12. For this purpose, the IF gene sequence was first incorporated in a high copy number plasmid that is suitable for high expression and display. This was followed by the introduction of the mutations into gene by site-directed mutagenesis and transformation amplification in bacteria.</p>
+        <h2 class="revealfromtop">Concept</h2>
+        <p class="reveal">In order to have a functional Gastric Intrinsic Factor (IF) that could evade the immune system, it first needs to carry mutations that would alter its ability to interact with auto-antibodies, while effectively binding to Vitamin B12. 
+To achieve this objective, we identified the epitope sequence on the IF binding to the auto-antibodies<a href="#references">[1]</a><a href="#references">[2]</a>. With extensive literature backing <a href="#references">[3]</a><a href="#references">[4]</a><a href="#references">[5]</a> and using principles of rational design, we engineered a series of mutants to alter the binding and tested them against these antibodies. These mutants harboured mutations ranging from single to triple amino acid changes that were created sequentially.
 
-        <p class="reveal">The mammalian cell culture, being the final validation tool for our design, was the most important aspect of proof of concept for us! The purpose of that experiment was to investigate how the binding of antibodies differs when comparing our engineered IF (intrinsic factor) to that of the wild type.  As shown in the engineering success page we used an iterative approach with parallel dry lab and recurring wet lab engineering cycles, to confirm the working of our engineered protein. We also took a step towards validating the mutated protein using confirmatory assays and techniques. In addition we also did docking studies in order to check if the mutations would maintain the essential functions for B12 uptake while changing thermodynamic properties for the antibody binding region.</p>
-      </section>
-
-      <section id="tag2">
-        <h2 class="revealfromtop">Mutation and Plasmid Production in E.coli</h2>
-        <p></p>
-        <p class="reveal">Through the experiments involving E.coli, we proved that our method and our primers worked for conducting the site-directed mutagenesis and getting the plasmid we desired. In order to achieve this, the plasmids containing the intrinsic factor were first mutated using the primers that we had designed, followed by transformation and sequencing. The sequencing results revealed that the mutations were successful and could be further used for production in mammalian cell lines.<br><br>
-The list of functional mutants are as follows:<br>
         <div style="padding-left:30px;">
           <i class="fa fa-solid fa-check"></i> Mutant_101 - S256T + K258R<br>
           <i class="fa fa-solid fa-check"></i> Mutant_201 - S256T + Y262F<br>
@@ -62,22 +58,40 @@ The list of functional mutants are as follows:<br>
         </p>
       </section>
 
-      <section id="tag3">
-        <h2 class="revealfromtop">Changes in Binding Properties</h2>
-        <p class="reveal">For proof of concept in silico we did docking studies to look at the change in Gibbs free energy. This was done with the help of Autodock Vina and Mutabind2. In order to get the structure predictions of our mutated variants we used Alphafold. We observed changes in Gibbs free energy compared to the wild type. This made us more confident that the mutations didn’t impair structure that is essential for B12 uptake while still differing in antibody binding regions. With autodock vina we concluded that the mutations K258RY262F and S256TK258RY262FV265I showed the best scores. For making sure that the binding properties between cubilin and IF still remained functional we used mutabind2 and concluded that the mutations do not cause any unintended effects with regards to the function. 
-        </p>
+      <section id="tag2">
+        <h2 class="revealfromtop">Proof of Concept</h2>
+        <h3 class="revealfromtop">In silico evidence</h3>
+        <p class="reveal">Our modelling investigations in AlphaFold <a href="#references">[6]</a> provided enough evidence that the substitutions of the amino acids on the epitope did not significantly alter the secondary structure, and hence leaving the conformation unchanged. This was a step in the right direction as it gave confidence to proceed with the mutagenesis in the wet lab.</p>
+
+<p class="reveal">We probed the docking of B12 to the binding cleft of the IF mutants using Auto Dock Vina <a href="#references">[7]</a> as seen in the graphical description below. The scores and values revealed with high confidence that we retained or improved the avidity of its binding.</p>
 
         <figure class="reveal">
-          <img src="https://static.igem.wiki/teams/4214/wiki/proof-of-concept/frame-2-general-structure.png" class="img-fluid reveal center" style="max-height:600px;" alt="Mutated IF with B12 docked, mesh structure">
+          <img src="https://static.igem.wiki/teams/4214/wiki/proof-of-concept/mesh-1.png" class="img-fluid reveal center" style="max-height:600px;" alt="Mutated IF with B12 docked, mesh structure">
           <figcaption>
-            <p><i style="font-weight:bold;">Figure. </i><i>Model of mutated IF with B12 docked, mesh structure</i></p>
+            <p><i style="font-weight:bold;">Figure. </i><i>Mutated IF (20201) with B12 docked, viewed as a mesh structure</i></p>
           </figcaption>
         </figure>
+        <p></p>
+        <figure class="reveal">
+          <img src="https://static.igem.wiki/teams/4214/wiki/proof-of-concept/docking-image.png" class="img-fluid reveal center" style="max-height:600px;" alt="Mutated IF with B12 docked, mesh structure">
+          <figcaption>
+            <p><i style="font-weight:bold;">Figure. </i><i>A graphical representation of the binding energies (kcal/mol) and dissociation constant (Kd, pM) values of the binding of B12 to IF_wt and the mutants</i></p>
+          </figcaption>
+        </figure>
+
+
+      <h3 class="revealfromtop">In vitro investigations</h3>
+              <p class="reveal">Image analysis was performed to compare the fluorescence intensity of the binding of epitope unspecific antibody between mutant 20201 and mutant 201. Student T-test returned a p value which was less than 0.05 indicating that in mutant 20201 the binding of epitope unspecific antibody was very low. Our hypothesis is that the conversion of valine to isoleucine, serine to threonine as well as tyrosine to phenylalanine induced a structural change in the mutant protein causing a structural hindrance to epitope unspecific antibody binding. Since the only change was the introduction of new amino acids in the epitope region, this could be one of the reasons for the reduced binding.</p>
+              <p class="reveal">We did observe a stronger B12 binding in the mutants as compared to the wild type in our in silico experiments. Eventhough matching scores and values obtained from the softwares like Alpha Fold <a href="#references">[6]</a> increases the confidence in our hypothesis we were not able to observe it in vitro. Thus we need to work on the binding of the specific antibody and B12 to our mutated protein. 
+In line with this, we also evaluated the production efficiency of our mammalian protein in a bacterial system, E. coli. We only manage to breach small ground in establishing that we were able to induce the expression but, need more purification attempts to produce a functional and pure protein. We also performed immunogenicity studies to have a futuristic perspective of how our engineered protein would  behave in our body. </p>
 
       </section>
 
       <section id="tag4">
-        <h2 class="revealfromtop">Immunogenicity</h2>
+        <h2 class="revealfromtop">Future perspectives to address the research question</h2>
+
+
+
         <p class="reveal">We tested immunogenicity in silico, looking at both the continuous and discontinuous epitopes. We decided to screen our candidates for immunogenicity both to make sure that we get the response we want as well as to make sure that the mutagenesis does not raise additional autoimmune responses. The predicted results for our mutants showed almost no difference. We expected to get statistically significant differences between wild-type and mutant proteins. As a concept, the in silico studies would have shown a difference if the structure was significantly changed since it depends on the structural properties.</p>
       </section>
 
@@ -97,22 +111,100 @@ The list of functional mutants are as follows:<br>
         <h2 class="revealfromtop">Future perspectives to address the research question</h2>
         <p class="reveal">
           <div style="padding-left:30px;">
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
-          <i class="fa fa-solid fa-check"></i> .<br>
+          <i class="fa fa-solid fa-check"></i> Finding the ideal concentration and incubation time for vitamin B12 binding using ELISA (enzyme-linked immunosorbent assay) and OD studies.<br>
+          <i class="fa fa-solid fa-check"></i> Investigating the IF-B12 binding in different pH using in-vitro and in-silico experiments.<br>
+          <i class="fa fa-solid fa-check"></i> Utilizing the heightened expression level at 48 hours as supported by the WB.<br>
+          <i class="fa fa-solid fa-check"></i> Reconsider and test Human Embryonic Kidney cells (HEK293) cell lines against Chinese Hamster Ovary (CHO) cell lines for protein production.<br>
+          <i class="fa fa-solid fa-check"></i> Reconsider also stable transfection technique over transient transfection and production of stable cell lines for achieving easier repeatability of the experiment.<br>
+          <i class="fa fa-solid fa-check"></i> Select using Geneticin and refine the selection using sensitive and assay specific secondary antibodies.<br>
+          <i class="fa fa-solid fa-check"></i> Sort the displaying cells using a myc coupled magnetic beads technique to concentrate the cells.<br>
+          <i class="fa fa-solid fa-check"></i> Reconsider techniques like SPR (Surface Plasmon Resonance) and ELISA for assessing B12 and IF binding.<br>
+          <i class="fa fa-solid fa-check"></i> Purify the autoimmune antibody from the patient's serum as there is no commercially  available monoclonal antibody against the autoantibody binding region of  IF.<br>
+          <i class="fa fa-solid fa-check"></i> Molecular dynamics study for interactions between IF and B12 as well as IF and the autoantibodies.<br>
+          <i class="fa fa-solid fa-check"></i> Crystallizing the protein structure of IF with autoantibody would open a lot of areas for silico experiments and modelling studies.<br>
+          <i class="fa fa-solid fa-check"></i> Furthermore, we can iterate from the results obtained from in-silico experiments and in-vitro experiments for efficient optimisation.<br>
+          <i class="fa fa-solid fa-check"></i> In addition to all this, in the era of decoding genes through genomics, we can perform a GWAS (Genome-wide association studies) study on the populations with high incidence of Pernicious anemia to identify the differences in the genome level that establishes the phenotype.<br>
+          <i class="fa fa-solid fa-check"></i> Also consider sequencing the genome of the patients to enable for a personalized medicine approach.<br>
           </div>
         </p>
+      </section>
+
+      <section id="references">
+        <!-- REFERENCES !!! -->
+        <h2 class="revealfromtop">References</h2>
+          <div class="tabs reveal">
+            <div class="tab">
+              <input type="checkbox" id="chck1">
+              <label class="tab-label" for="chck1">References</label>
+              <div class="tab-content">
+                <ol>
+                  <li
+                    <p>Wuerges, J., Geremia, S., & Randaccio, L. (2007).<br>
+                    <b style="font-weight: bold !important;">Structural study on ligand specificity of human vitamin B12 transporters</b><br>
+                    <i>Biochemical Journal, 403(Pt 3), 431.</i><br>
+                    <a href=" " target="_blank">DOI:  https://doi.org/10.1042/BJ20061394</a>
+                    </p>
+                    <hr>
+                  </li>
+
+                  <li
+                    <p>>Wagstaff, M., Broughton, A., & Jones, F. R. (1973). <br>
+                    <b style="font-weight: bold !important;">The kinetics of intrinsic factor-vitamin B12 binding</b><br>
+                    <i> BBA - General Subjects, 320(2), 406–415.</i><br>
+                    <a href=" https://doi.org/10.1016/0304-4165(73)90322-X" target="_blank"></a>
+                    </p>
+                    <hr>
+                  </li>
+
+                  <li>
+                    <p>MINIREVIEW-Watanabe, F. (2007).<br>
+                    <b style="font-weight: bold !important;">Vitamin B 12 Sources and Bioavailability</b><br>
+                    <i> Exp Biol Med, 232, 1266–1274.</i><br>
+                    <a href=" https://doi.org/10.3181/0703-MR-67" target="_blank">DOI: 10.1038/s41586-021-03819-2</a>
+                    </p>
+                    <hr>
+                  </li>
+
+                  <li>
+                    <p>Morales-Gutierrez, J., Díaz-Cortés, S., Montoya-Giraldo, M. A., Zuluaga, A. F., An D Iaz-Cort, S., & Montoya-Giraldo, A. (n.d.).<br>
+                    <b style="font-weight: bold !important;">Clinical Toxicology Toxicity induced by multiple high doses of vitamin B 12 during pernicious anemia treatment: a case report Toxicity induced by multiple high doses of vitamin B 12 during pernicious anemia treatment: a case report.</b><br>
+                    <i> </i><br>
+                    <a href=" https://doi.org/10.1080/15563650.2019.1606432" target="_blank"></a>
+                    </p>
+                    <hr>
+                  </li>
+
+                  <li>
+                    <p>Degnan, P. H., Taga, M. E., & Goodman, A. L. (2014)<br>
+                    <b style="font-weight: bold !important;"> Vitamin B12 as a Modulator of Gut Microbial Ecology.</b><br>
+                    <i> Cell Metabolism, 20(5), 769–778</i><br>
+                    <a href="  https://doi.org/10.1016/J.CMET.2014.10.002" target="_blank"></a>
+                    </p>
+                    <hr>
+                  </li>
+
+                  <li>
+                    <p>J. Jumper, R. Evans, A. Pritzel, et al.<br>
+                    <b style="font-weight: bold !important;">Highly accurate protein structure prediction with AlphaFold</b><br>
+                    <i>Nature, vol. 596, pp. 583-589, 2021</i><br>
+                    <a href="https://doi.org/10.1038/s41586-021-03819-2" target="_blank">DOI: 10.1038/s41586-021-03819-2</a>
+                    </p>
+                    <hr>
+                  </li>
+
+                  <li>
+                    <p>O. Trott and A. J. Olson<br>
+                    <b style="font-weight: bold !important;">AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading</b><br>
+                    <i>J Comput Chem., vol. 31, no. 2, pp. 455-461, 2009</i><br>
+                    <a href="https://doi.org/10.1002/jcc.21334" target="_blank">DOI: 10.1002/jcc.21334</a>
+                    </p>
+                    <hr>
+                  </li>
+
+                </ol>
+              </div>
+            </div>  
+          </div>
       </section>
 
       <section>
