@@ -33,6 +33,11 @@ footer a:hover { color: #e65c4f !important; text-decoration: underline; }
    font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
 }*/
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
    scroll-behavior: smooth;
 }
