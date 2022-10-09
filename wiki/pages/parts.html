@@ -24,10 +24,9 @@
           <li class="nav-ul-li-sidebar">
             <a class="nav-ul-li-a-sidebar" href="#tag1">Introduction</a>
             <a class="nav-ul-li-a-sidebar" href="#tag2">BBa_K4214000</a>
-            <a class="nav-ul-li-a-sidebar" href="#tag3">BBa_K4214001</a>
-            <a class="nav-ul-li-a-sidebar" href="#tag4">BBa_K4214002</a>
-            <a class="nav-ul-li-a-sidebar" href="#tag5">BBa_K4214003</a>
-            <a class="nav-ul-li-a-sidebar" href="#tag6">BBa_K4214004</a>
+            <a class="nav-ul-li-a-sidebar" href="#tag3">BBa_K4214002</a>
+            <a class="nav-ul-li-a-sidebar" href="#tag4">BBa_K4214003</a>
+            <a class="nav-ul-li-a-sidebar" href="#tag5">BBa_K4214004</a>
           </li>
         </ul>
       </nav>
@@ -63,15 +62,6 @@
                   <td>1211 bp</td>
                 </tr>
 
-                <!-- part 2 -->
-                <tr>
-                  <td><a href="http://parts.igem.org/Part:BBa_K4214001" target="_blank">BBa_K4214001</a></th>
-                  <td>Coding</td>
-                  <td>signal peptide + hGIF + His-tag</td>
-                  <td>iGEM Stockholm 2022</td>
-                  <td>1153 bp</td>
-                </tr>
-
                 <!-- part 3 -->
                 <tr>
                   <td><a href="http://parts.igem.org/Part:BBa_K4214002" target="_blank">BBa_K4214002</a></th>
@@ -105,7 +95,9 @@
       <section id="tag2">
         <h2 class="revealfromtop">BBa_K4214000</h2>
         <p></p>
-        <p class="reveal">This part codes for human Gastric Intrinsic Factor (GIF). We used the human sequence of the gene. The gene is located in chromosome 11q12.1. This gene is a part of cobalamin transporters group. It is essential for the absorption of vitamin B12. Mutations in this gene may lead to pernicious anaemia.</p>
+        <p class="reveal">This part codes for human Gastric Intrinsic Factor protein (AA19-417). The gene is located in chromosome 11q12.1. This gene is a part of cobalamin transporters group. It is essential for the absorption of vitamin B12. Mutations in this gene may lead to pernicious anaemia.</p> 
+
+        <p class="reveal">We removed the native signal peptide (AA1-18) from the N-terminal in order to obtain a sequence that can be worked with more easily in bacterial and mammalian systems. Since we used a surface display expression vector which already includes an IgK leader sequence and other flanking sequences, we did not need the GIF signal sequence.</p>
         <figure class="reveal">
           <img src="https://static.igem.wiki/teams/4214/wiki/parts/if.png" class="img-fluid reveal" alt="inclusivity picture">
           <figcaption>
@@ -115,21 +107,9 @@
       </section>
 
       <section id="tag3">
-        <h2 class="revealfromtop">BBa_K4214001</h2>
-        <p></p>
-        <p class="reveal">This part codes for the same human GIF as BBa_K4214000, flanked by a signal peptide and a polyhistidine tag. The signal peptide is used in humans for secretion of intrinsic factor, while we added the His6-tag in order to facilitate purification of the protein. </p>
-        <figure class="reveal">
-          <img src="https://static.igem.wiki/teams/4214/wiki/parts/signal-if-his.png" class="img-fluid reveal" alt="inclusivity picture">
-          <figcaption>
-            <p><i style="font-weight:bold;">Figure.</i><i> Signal peptide Human GIF with His6-tag (BBa_K4214001)</i></p>
-          </figcaption>
-        </figure>
-      </section>
-
-      <section id="tag4">
         <h2 class="revealfromtop">BBa_K4214002</h2>
         <p></p>
-        <p class="reveal">Human GIF with His6-tag. This part has the signal peptide from BBa_K4214001 removed, as it is not required for bacterial expression. This removal was performed by using primers that excluded the signal peptide. This part was used to produce and purify our Human GiF.</p>
+        <p class="reveal">Human GIF with His6-tag. This part has the native signal peptide removed, as it is not required for bacterial expression or in our mammalian expression vector. This part was used to produce and purify our Human GIF in bacteria, through the composite parts <a href="http://parts.igem.org/Part:BBa_K4214003" target="_blank">BBa_K421403</a> (with LacI promotor) and <a href="http://parts.igem.org/Part:BBa_K4214004" target="_blank">BBa_K421404</a> (with LacI promotor and pelB leader sequence).</p>
         <figure class="reveal">
           <img src="https://static.igem.wiki/teams/4214/wiki/parts/if-his.png" class="img-fluid reveal" alt="inclusivity picture">
           <figcaption>
@@ -138,10 +118,10 @@
         </figure>
       </section>
 
-      <section id="tag5">
+      <section id="tag4">
         <h2 class="revealfromtop">BBa_K4214003</h2>
         <p></p>
-        <p class="reveal">LacI (BBa_J04500) and Human GIF with His6-tag. This part is a composite part from BBa_K4214002 with the addition of LacI sequence (BBa_J04500). The LacI  sequence is used in order to induce our protein expression with IPTG.</p>
+        <p class="reveal">LacI (<a href="http://parts.igem.org/Part:BBa_J04500" target="_blank">BBa_J04500</a>) and Human GIF with His6-tag. This part is a composite part from BBa_K4214002 with the addition of LacI sequence (<a href="http://parts.igem.org/Part:BBa_J04500" target="_blank">BBa_J04500</a>). The LacI sequence is used in order to induce our protein expression with IPTG, and the 6xHis-tag was used for protein purification.</p>
         <figure class="reveal">
           <img src="https://static.igem.wiki/teams/4214/wiki/parts/laci-if-his.png" class="img-fluid reveal" alt="inclusivity picture">
           <figcaption>
@@ -150,10 +130,10 @@
         </figure>
       </section>
 
-      <section id="tag6">
+      <section id="tag5">
         <h2 class="revealfromtop">BBa_K4214004</h2>
         <p></p>
-        <p class="reveal">LacI (BBa_J04500) and pelB sequence (BBa_J32015) and Human GIF with His6-tag. This part is a composite part from BBa_K4214002 with the addition of pelB sequence(BBa_J32015) and LacI (BBa_J04500). The pelB sequence is used in order to express our protein in the periplasm. The enzymes in the periplasm of E.coli can add disulfide bonds in our protein, ensuring its correct conformation. This part was used to produce and purify our Human GiF.</p>
+        <p class="reveal">LacI (<a href="http://parts.igem.org/Part:BBa_J04500" target="_blank">BBa_J04500</a>) and pelB sequence (<a href="http://parts.igem.org/Part:BBa_J32015" target="_blank">BBa_J32015</a>)  and Human GIF with His6-tag. This part is a composite part from BBa_K4214002 with the addition of pelB sequence (<a href="http://parts.igem.org/Part:BBa_J32015" target="_blank">BBa_J32015</a>) and LacI (<a href="http://parts.igem.org/Part:BBa_J04500" target="_blank">BBa_J04500</a>). The pelB sequence is used in order to transport our protein to the periplasm. The enzymes in the periplasm of E. coli can add disulfide bonds in our protein, ensuring its correct conformation. This part was used to produce and purify our Human GIF. </p>
         <figure class="reveal">
           <img src="https://static.igem.wiki/teams/4214/wiki/parts/laci-pelb-if-his.png" class="img-fluid reveal" alt="inclusivity picture">
           <figcaption>
