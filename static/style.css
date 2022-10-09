@@ -955,8 +955,8 @@ th {
 }
 
 video {
-   width:1200px;
-   height:800px;
+   width:1200px !important;
+   height:auto;
 }
 
 @media screen and (max-width: 600px){
