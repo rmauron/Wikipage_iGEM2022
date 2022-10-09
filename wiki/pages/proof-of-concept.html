@@ -40,7 +40,7 @@
       <section id="tag1">
         <h2>Concept</h2>
         <p>In order to have a functional gastric intrinsic factor (IF) that could evade the immune system, it first needs to carry mutations that would alter its ability to interact with autoantibodies, while effectively binding to vitamin B12. 
-To achieve this objective, we identified the epitope sequence on the IF binding to the autoantibodies <a href="#references">[1]</a><a href="#references">[2]</a>. With extensive literature backing <a href="#references">[3]</a><a href="#references">[4]</a><a href="#references">[5]</a> and using principles of rational design, we engineered a series of mutants to alter the binding and tested them against these antibodies. These mutants harboured mutations ranging from single to triple amino acid changes that were created sequentially.
+To achieve this objective, we selected the amino acids on the epitope of IF that binds to the autoantibodies <a href="#references">[1]</a><a href="#references">[2]</a>. With extensive literature backing <a href="#references">[3]</a><a href="#references">[4]</a><a href="#references">[5]</a> and using principles of rational design, we engineered a series of mutants to alter the binding and tested them against these antibodies. These mutants harboured mutations ranging from single to triple amino acid changes that were created sequentially.
 
         <div style="padding-left:30px; line-height: 1.2;">
           <i class="fa fa-solid fa-check"></i> Mutant_101 - S256T + K258R<br>
@@ -60,7 +60,7 @@ To achieve this objective, we identified the epitope sequence on the IF binding 
         <h3 class="revealfromtop">In silico evidence</h3>
         <p class="reveal">Our modelling investigations in AlphaFold <a href="#references">[6]</a> provided enough evidence that the substitutions of the amino acids on the epitope did not significantly alter the secondary structure, and hence leaving the conformation unchanged. This was a step in the right direction as it gave confidence to proceed with the mutagenesis in the wet lab.</p>
 
-        <p class="reveal">We probed the docking of B12 to the binding cleft of the IF mutants using Auto Dock Vina <a href="#references">[7]</a> as seen in the graphical description below. The scores and values revealed with high confidence that we retained or improved the avidity of its binding.</p>
+        <p class="reveal">We probed the docking of B12 to the binding cleft of the IF mutants using AutoDock Vina <a href="#references">[7]</a> as seen in the graphical description below. The scores and values revealed with high confidence that we retained or improved the avidity of its binding.</p>
 
         <figure class="reveal">
           <img src="https://static.igem.wiki/teams/4214/wiki/proof-of-concept/mesh-1.png" class="img-fluid reveal center" style="max-height:600px;" alt="Mutated IF with B12 docked, mesh structure">
@@ -72,14 +72,13 @@ To achieve this objective, we identified the epitope sequence on the IF binding 
         <figure class="reveal">
           <img src="https://static.igem.wiki/teams/4214/wiki/proof-of-concept/docking-image.png" class="img-fluid reveal center" style="max-height:600px;" alt="Mutated IF with B12 docked, mesh structure">
           <figcaption>
-            <p><i style="font-weight:bold;">Figure. </i><i>A graphical representation of the binding energies (kcal/mol) and dissociation constant (Kd, pM) values of the binding of B12 to IF_wt and the mutants</i></p>
+            <p><i style="font-weight:bold;">Figure. </i><i>A graphical representation of the binding energies (kcal/mol) and dissociation constant (Kd, pM) values of the binding of B12 to wtIF and the mutants</i></p>
           </figcaption>
         </figure>
 
         <h3 class="revealfromtop">In vitro investigations</h3>
-          <p class="reveal">Image analysis was performed to compare the fluorescence intensity of the binding of epitope unspecific antibody between mutant 20201 and mutant 201. Student T-test returned a p value which was less than 0.05 indicating that in mutant 20201 the binding of epitope unspecific antibody was very low. Our hypothesis is that the conversion of valine to isoleucine, serine to threonine as well as tyrosine to phenylalanine induced a structural change in the mutant protein causing a structural hindrance to epitope unspecific antibody binding. Since the only change was the introduction of new amino acids in the epitope region, this could be one of the reasons for the reduced binding.</p>
-          <p class="reveal">We did observe a stronger B12 binding in the mutants as compared to the wild type in our in silico experiments. Eventhough matching scores and values obtained from the softwares like Alpha Fold <a href="#references">[6]</a> increases the confidence in our hypothesis we were not able to observe it in vitro. Thus we need to work on the binding of the specific antibody and B12 to our mutated protein. 
-In line with this, we also evaluated the production efficiency of our mammalian protein in a bacterial system, <i>E. coli</i>. We only manage to breach small ground in establishing that we were able to induce the expression but, need more purification attempts to produce a functional and pure protein. We also performed immunogenicity studies to have a futuristic perspective of how our engineered protein would  behave in our body. </p>
+          <p class="reveal">Utilizing mammalian surface display technologies, we analyzed the binding of IF to B12 as well as the commercially available antibodies (Atlas Antibodies - Cat: HPA040774) produced against the particular epitope of our interest and another one which was not produced against this epitope (Sinobiological - Cat: 13544-R012). We employed the concept of surface display thereby achieving an extracellular display of IF for our antibody binding studies. In addition to that we required a mammalian system to enable the proper translation of the transfected protein. For this purpose, the IF gene sequence was first incorporated in a suitable plasmid that is ideal for high expression and display. Mutations were introduced in the gene by site-directed mutagenesis (SDM) which was followed by transformation and amplification of the successful mutants in bacteria.</p>
+          <p class="reveal">The mammalian cell culture, being the final validation tool for our design, was the most important aspect of proof of concept for us! The purpose of the experiment was to investigate how the binding of antibodies to our mutant IFs differ compared to that of the wild type. As explained in the engineering page we used an iterative approach with parallel dry lab and recurring wet lab engineering cycles, to confirm the working of our engineered protein. Western blot assays confirmed that we were able to successfully achieve a high expression of our target protein in the HEK 293T cell lines. The antibody binding assays in immunocytochemistry hinted at the fact that one of our mutants, 20201, was able to successfully evade binding to epitope unspecific antibody when compared to its counterpart double mutant 201. More investigations are required to conclude whether the mutants evade the epitope specific antibodies or not.</p>
 
         <figure class="reveal">
           <img src="https://static.igem.wiki/teams/4214/wiki/proof-of-concept/picture1.png" class="img-fluid reveal center" style="max-height:600px;" alt="Mutated IF with B12 docked, mesh structure">
@@ -92,8 +91,8 @@ In line with this, we also evaluated the production efficiency of our mammalian 
       <section id="tag3">
         <h2 class="revealfromtop">Evidence for our Big-IF</h2>
 
-        <p class="reveal">Image analysis was performed to compare the fluorescence intensity of the binding of epitope unspecific antibody between mutant 20201 and mutant 201. Student T-test returned a p value which was less than 0.05 indicating that in mutant 20201 the binding of epitope unspecific antibody was very low. Our hypothesis is that the conversion of valine to isoleucine, serine to threonine as well as tyrosine to phenylalanine induced a structural change in the mutant protein causing a structural hindrance to epitope unspecific antibody binding. Since the only change was the introduction of new amino acids in the epitope region, this could be one of the reasons for the reduced binding.</p>
-        <p class="reveal">We did observe a stronger B12 binding in the mutants as compared to the wild type in our in silico experiments. Eventhough matching scores and values obtained from the softwares like Alpha Fold[6] increases the confidence in our hypothesis we were not able to observe it in vitro. Thus we need to work on the binding of the specific antibody and B12 to our mutated protein.</p>
+        <p class="reveal">Image analysis was performed to compare the fluorescence intensity of the binding of epitope unspecific antibody between mutant 20201 and mutant 201. Student T-test returned a p value which was less than 0.05 indicating that in mutant 20201 the binding of epitope unspecific antibody was very low. Our hypothesis is that the conversion of valine to isoleucine induced a structural change in the mutant protein causing a structural hindrance to epitope unspecific antibody binding. Since the only change was the introduction of new amino acids in the epitope region, this could be one of the reasons for the reduced binding.</p>
+        <p class="reveal">We did observe a stronger B12 binding in the mutants as compared to the wild type in our in silico experiments. Eventhough matching scores and values obtained from the softwares like AlphaFold <a href="#references">[6]</a> increases the confidence in our hypothesis we were not able to observe it in vitro. Thus we need to work on the binding of the specific antibody and B12 to our mutated protein.</p>
         <p class="reveal">In line with this, we also evaluated the production efficiency of our mammalian protein in a bacterial system, <i>E. coli</i>. We only manage to breach small ground in establishing that we were able to induce the expression but, need more purification attempts to produce a functional and pure protein. We also performed immunogenicity studies to have a futuristic perspective of how our engineered protein would  behave in our body.</p>
       </section>
 
@@ -102,20 +101,20 @@ In line with this, we also evaluated the production efficiency of our mammalian 
 
         <p class="reveal">
           <div style="padding-left:30px; line-height: 1.2;">
-          <i class="fa fa-solid fa-check"></i> Finding the ideal concentration and incubation time for vitamin B12 binding using ELISA (enzyme-linked immunosorbent assay) and OD studies.<br>
-          <i class="fa fa-solid fa-check"></i> Investigating the IF-B12 binding in different pH using in-vitro and in-silico experiments.<br>
-          <i class="fa fa-solid fa-check"></i> Utilizing the heightened expression level at 48 hours as supported by the WB.<br>
-          <i class="fa fa-solid fa-check"></i> Reconsider and test Human Embryonic Kidney cells (HEK 293) cell lines against Chinese Hamster Ovary (CHO) cell lines for protein production.<br>
-          <i class="fa fa-solid fa-check"></i> Reconsider also stable transfection technique over transient transfection and production of stable cell lines for achieving easier repeatability of the experiment.<br>
-          <i class="fa fa-solid fa-check"></i> Select using Geneticin and refine the selection using sensitive and assay specific secondary antibodies.<br>
+          <i class="fa fa-solid fa-check"></i> Find the ideal concentration and incubation time for vitamin B12 binding using ELISA (enzyme-linked immunosorbent assay) and OD studies.<br>
+          <i class="fa fa-solid fa-check"></i> Investigate the IF-B12 binding at different pH in in-vitro and in-silico experiments.<br>
+          <i class="fa fa-solid fa-check"></i> Utilise the heightened expression level at 48 hours as supported by the WB.<br>
+          <i class="fa fa-solid fa-check"></i> Reconsider Human Embryonic Kidney cells (HEK293) in favour of Chinese Hamster Ovary (CHO) cells for protein production.<br>
+          <i class="fa fa-solid fa-check"></i> Reconsider transient transfection in favour of stable transfection technique and production of stable cell lines for achieving easier repeatability of the experiment.<br>
+          <i class="fa fa-solid fa-check"></i> Select succesfully transfected cells using Geneticin and refine it using sensitive and assay specific secondary antibodies.<br>
           <i class="fa fa-solid fa-check"></i> Sort the displaying cells using a myc coupled magnetic beads technique to concentrate the cells.<br>
-          <i class="fa fa-solid fa-check"></i> Reconsider techniques like SPR (Surface Plasmon Resonance) and ELISA for assessing B12 and IF binding.<br>
-          <i class="fa fa-solid fa-check"></i> Purify the autoimmune antibody from the patient's serum as there is no commercially  available monoclonal antibody against the autoantibody binding region of  IF.<br>
-          <i class="fa fa-solid fa-check"></i> Molecular dynamics study for interactions between IF and B12 as well as IF and the autoantibodies.<br>
-          <i class="fa fa-solid fa-check"></i> Crystallizing the protein structure of IF with autoantibody would open a lot of areas for silico experiments and modelling studies.<br>
-          <i class="fa fa-solid fa-check"></i> Furthermore, we can iterate from the results obtained from in-silico experiments and in-vitro experiments for efficient optimisation.<br>
-          <i class="fa fa-solid fa-check"></i> In addition to all this, in the era of decoding genes through genomics, we can perform a GWAS (Genome-wide association studies) study on the populations with high incidence of Pernicious anemia to identify the differences in the genome level that establishes the phenotype.<br>
-          <i class="fa fa-solid fa-check"></i> Also consider sequencing the genome of the patients to enable for a personalized medicine approach.<br>
+          <i class="fa fa-solid fa-check"></i> Consider techniques like SPR (Surface Plasmon Resonance) for assessing B12 and IF binding.<br>
+          <i class="fa fa-solid fa-check"></i> Purify the autoimmune antibody from the patient's serum as there is no commercially  available monoclonal antibody against the autoantibody binding region of  IF for futher assays.<br>
+          <i class="fa fa-solid fa-check"></i> Perform molecular dynamics study for interactions between IF and B12 as well as IF and the autoantibodies.<br>
+          <i class="fa fa-solid fa-check"></i> Crystallise the protein structure of IF with autoantibody to open a lot of areas for silico experiments and modelling studies.<br>
+          <i class="fa fa-solid fa-check"></i> Iterate from the results obtained from in-silico experiments and in-vitro experiments for efficient optimisation.<br>
+          <i class="fa fa-solid fa-check"></i> Perform a GWAS (Genome-wide association studies) study on the populations with high incidence of Pernicious anemia to identify the differences in the genome level that establishes the phenotype.<br>
+          <i class="fa fa-solid fa-check"></i> Consider sequencing the genome of the patients to enable for a personalized medicine approach.<br>
           </div>
         </p>
       </section>
