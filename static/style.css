@@ -959,7 +959,7 @@ th {
    height:auto;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
    .video-big
    {
    width: 400px !important;
@@ -972,7 +972,7 @@ th {
    height:auto;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
    .video-small
    {
    width: 300px !important;
