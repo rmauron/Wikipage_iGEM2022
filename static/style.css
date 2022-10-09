@@ -954,9 +954,15 @@ th {
   padding-top: 20px;
 }
 
+video {
+   width:1200;
+   height:800;
+}
+
 @media screen and (max-width: 600px){
-   .container-video
+   video
    {
-      width: 400px;
+   width: 400px !important;
+   height:auto;
    }
 }
