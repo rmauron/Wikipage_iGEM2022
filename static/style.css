@@ -954,15 +954,28 @@ th {
   padding-top: 20px;
 }
 
-video {
+.video-big {
    width:1200px !important;
    height:auto;
 }
 
 @media screen and (max-width: 600px){
-   video
+   .video-big
    {
    width: 400px !important;
+   height:auto;
+   }
+}
+
+.video-small {
+   width:600px !important;
+   height:auto;
+}
+
+@media screen and (max-width: 600px){
+   .video-small
+   {
+   width: 300px !important;
    height:auto;
    }
 }
