@@ -25,7 +25,7 @@
             <a class="nav-ul-li-a-sidebar" href="#tag1">Mutant creation</a>
             <a class="nav-ul-li-a-sidebar" href="#tag2">Docking and MD</a>
               <a class="nav-ul-li-a-sidebar light_sidebar" href="#tag2_1">Docking</a>
-              <a class="nav-ul-li-a-sidebar light_sidebar" href="#tag2_2">Molecular  Dynamics</a>
+              <a class="nav-ul-li-a-sidebar light_sidebar" href="#tag2_2">Molecular Dynamics</a>
               <a class="nav-ul-li-a-sidebar light_sidebar" href="#tag2_3">Immunogenicity </a>
             <a class="nav-ul-li-a-sidebar" href="#references">References</a>
           </li>
@@ -42,7 +42,7 @@
       <section id="tag1">
         <p>To address the challenging task of protein design, we performed thorough modelling to select the best candidates to be tested in the lab.</p>
 
-        <p>The first step in the process of engineering an intrinsic factor (IF) that can evade the autoantibodies is to identify the epitope on the IF and engineer an IF that can evade the clearance mediated by autoantibodies. Based on previous knowledge <a href="#references">[1]</a>, the residues in the alpha helix region adjacent to the cobalamin (vitamin B12) binding pocket:  256Ser, 258Lys, 262Tyr and 265Val were to be mutated. Optimal mutations to substitute the residues with other or “similar” residues were decided and engineered in silico.</p>
+        <p>The first step in the process of engineering an intrinsic factor (IF) that can evade the autoantibodies is to identify the epitope on the IF and engineer an IF that can evade the clearance mediated by autoantibodies. Based on previous knowledge <a href="#references">[1]</a>, the residues in the alpha helix region adjacent to the cobalamin (vitamin B12) binding pocket: 256Ser, 258Lys, 262Tyr and 265Val were to be mutated. Optimal mutations to substitute the residues with other or “similar” residues were decided and engineered in silico.</p>
 
         <figure>
           <img src="https://static.igem.wiki/teams/4214/wiki/model/model.gif" class="img-fluid reveal" alt="Structure of IF + B12 + cubulin with amino acids highlighted">
@@ -122,7 +122,7 @@
             <p><i style="font-weight:bold;">Carousel.</i><i> Ribbon structure of variants of the epitope with mutations highlighted (orange)</i></p>
           </figcaption>
 
-          <p class="reveal">We performed protein structure predictions to verify that the designed mutants would preserve the properties of the wild type intrinsic factor. We utilised a well-known tool called AlphaFold2 <a href="#references">[3]</a> and used it as ColabFold <a href="#references">[4]</a>. Structures of all 21 mutants were obtained as PDB files, visualised and structurally aligned to the wild type IF crystallography structure (PDB ID: 2pmv) using PyMol  <a href="#references">[5]</a>. This enabled us to refine the list of tested mutants excluding the improperly folded ones.</p>   
+          <p class="reveal">We performed protein structure predictions to verify that the designed mutants would preserve the properties of the wild type intrinsic factor. We utilised a well-known tool called AlphaFold2 <a href="#references">[3]</a> and used it as ColabFold <a href="#references">[4]</a>. Structures of all 21 mutants were obtained as PDB files, visualised and structurally aligned to the wild type IF crystallography structure (PDB ID: 2pmv) using PyMol <a href="#references">[5]</a>. This enabled us to refine the list of tested mutants excluding the improperly folded ones.</p> 
 
         <figure>
             <img src="https://static.igem.wiki/teams/4214/wiki/model/align.png" class="img-fluid reveal" alt="Immunogenicity predictions with discontinuous epitope">
@@ -140,7 +140,7 @@
 
       <section id="tag2_1">
         <h3 class="revealfromtop">Docking</h3>
-        <p class="reveal">The final step of the modelling consisted of screening for potent therapeutic candidates. We performed docking studies to ensure that the binding affinity of engineered protein is at least on par with the wild type IF.  Docking studies were performed in 2 steps. First, we predicted the binding energy. AutoDock Vina <a href="#references">[6]</a> tool was selected for this task as it is a well-established tool for docking simulations. Energy refinement was performed using NNscore 2.0 neural network <a href="#references">[7]</a>. The NNScore 2.0 scoring function was used to estimate the binding energy and dissociation constant, as it is more accurate than the AutoDock Vina scoring function.</p>
+        <p class="reveal">The final step of the modelling consisted of screening for potent therapeutic candidates. We performed docking studies to ensure that the binding affinity of engineered protein is at least on par with the wild type IF. Docking studies were performed in 2 steps. First, we predicted the binding energy. AutoDock Vina <a href="#references">[6]</a> tool was selected for this task as it is a well-established tool for docking simulations. Energy refinement was performed using NNscore 2.0 neural network <a href="#references">[7]</a>. The NNScore 2.0 scoring function was used to estimate the binding energy and dissociation constant, as it is more accurate than the AutoDock Vina scoring function.</p>
 
         <table>
           <tr>
@@ -340,11 +340,11 @@
 
 
       <section id="tag2_2">
-        <h3 class="revealfromtop">Molecular  Dynamics</h3>
+        <h3 class="revealfromtop">Molecular Dynamics</h3>
    
         <p class="reveal">To have a closer look at the interactions at molecular level, attempts were made to model the IF-B12, protein-ligand complex for molecular dynamics study using GROMACS <a href="#references">[10]</a> software. Some of our initial tasks included pre-processing of the available crystallography structure data and topology generation. As the available structure is not fully resolved for the entire protein, a tool called Swiss-PDB viewer <a href="#references">[11]</a> was used to fill in the missing atoms (predict structure) and the structure was cleaned of glycosylation and other unwanted atoms were removed using Chimera <a href="#references">[12]</a>. For MD simulations, our force field of choice was CHARMM36 <a href="#references">[13]</a> which is well established for protein studies and widely accepted in the scientific community. However, a ligand such as B12 is not a recognized entity in the force field. Thus, it was important to process the topology files separately (for IF and B12) and it served as the bottleneck of our experiment.</p>
 
-        <p class="reveal">One of the most challenging tasks in molecular simulation is the proper processing of ligands. Introducing new entities into the framework of the force field requires careful consideration and validation, often in the form of various quantum mechanical calculations <a href="#references">[14]</a>. This could be a very laboursome and tedious process. For preparing the ligand topology, an automated tool CGenFF <a href="#references">[15]</a> was used. The input file for the tool was generated using another software Avogadro <a href="#references">[16]</a>. An advantage of using CGenFF is that it returns penalty scores for each parameter and our penalty scores were larger than 50, which generally require manual reparametrization. The scores were exceptionally high around the corrin ring and metal ion - cobalt.</p>   
+        <p class="reveal">One of the most challenging tasks in molecular simulation is the proper processing of ligands. Introducing new entities into the framework of the force field requires careful consideration and validation, often in the form of various quantum mechanical calculations <a href="#references">[14]</a>. This could be a very laboursome and tedious process. For preparing the ligand topology, an automated tool CGenFF <a href="#references">[15]</a> was used. The input file for the tool was generated using another software Avogadro <a href="#references">[16]</a>. An advantage of using CGenFF is that it returns penalty scores for each parameter and our penalty scores were larger than 50, which generally require manual reparametrization. The scores were exceptionally high around the corrin ring and metal ion - cobalt.</p> 
         <p class="reveal">In the end, after trial and error, we were not able to implement successful parameterization which would accurately reflect a realistic model, due to lack of prior knowledge and time constraints.</p>
 
       </section>
@@ -362,7 +362,7 @@
 
         <p class="reveal">Since we are modifying the protein, there is a high chance that artificial modifications could trigger an additional immunogenic response. Thus, we decided to screen our candidates for immunogenicity to ensure that the produced mutants do not trigger immunogenic responses themselves. Our focus lies primarily on possible responses from B lymphocytes <a href="#references">[17]</a>.</p>
 
-        <p class="reveal">We performed screens for continuous as well as discontinuous epitopes for possible antibodies of an immunogenetic response. The difference between them is that the discontinuous takes into consideration the folding while the linear only takes the ordered amino acids into account <a href="#references">[18]</a>.</p>   
+        <p class="reveal">We performed screens for continuous as well as discontinuous epitopes for possible antibodies of an immunogenetic response. The difference between them is that the discontinuous takes into consideration the folding while the linear only takes the ordered amino acids into account <a href="#references">[18]</a>.</p> 
         <p class="reveal">After performing an extensive literature review, we proceeded with the online tool IEDB (Immune Epitope Database and Analysis Resource) <a href="#references">[19]</a>, more specifically the tools ElliPro for discontinuous and Antigen Sequence Properties for the linear epitopes. ElliPro employs a clustering algorithm combined with Thornton's method (focusing on protruding amino acid residues) for making predictions <a href="#references">[20]</a>. The tool Antigen Sequence Properties utilizes several methods that consider beta turns, surface accessibility probability, mobility of protein segments, physicochemical properties of residues and hydrophilicity. Furthermore, they apply a hidden Markov model, the propensity scale method, and a random forest algorithm.</p>
         <p class="reveal">We assumed that introduced mutations would lead to a detectable drop in immunogenicity. However, this hypothesis turned out to be invalid both for the linear epitope predictions and the discontinuous ones. We utilized the area under the per residue immunogenicity score curve (AUC) as a single-value metric to make immunogenicity prediction results comparable between mutants. For the discontinuous predictions, the wild type reached AUC of 202.1 and the mutant with the lowest immunogenicity (a lower score correlates to a lowered predicted chance of autoimmune response) at AUC 201.8. To conclude, the mutants were not predicted to have significantly altered immunogenicity. This could arise due to several reasons:
 
