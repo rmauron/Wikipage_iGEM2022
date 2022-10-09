@@ -953,3 +953,10 @@ th {
 .div_button {
   padding-top: 20px;
 }
+
+@media screen and (max-width: 600px){
+   .container-video
+   {
+      width: 400px;
+   }
+}
