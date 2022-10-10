@@ -958,9 +958,20 @@ th {
    width:1200px !important;
    height:auto;
 }
-
 @media screen and (max-width: 1000px){
    .video-big
+   {
+   width: 400px !important;
+   height:auto;
+   }
+}
+
+.video-medium {
+   width:900px !important;
+   height:auto;
+}
+@media screen and (max-width: 1000px){
+   .video-medium
    {
    width: 400px !important;
    height:auto;
@@ -971,7 +982,6 @@ th {
    width:600px !important;
    height:auto;
 }
-
 @media screen and (max-width: 1000px){
    .video-small
    {
