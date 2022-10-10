@@ -961,19 +961,19 @@ th {
 @media screen and (max-width: 1000px){
    .video-big
    {
-   width: 400px !important;
+   width: 450px !important;
    height:auto;
    }
 }
 
 .video-medium {
-   width:900px !important;
+   width:950px !important;
    height:auto;
 }
 @media screen and (max-width: 1000px){
    .video-medium
    {
-   width: 400px !important;
+   width: 450px !important;
    height:auto;
    }
 }
@@ -985,7 +985,7 @@ th {
 @media screen and (max-width: 1000px){
    .video-small
    {
-   width: 300px !important;
+   width: 450px !important;
    height:auto;
    }
 }
