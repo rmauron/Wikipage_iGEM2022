@@ -30,14 +30,7 @@ footer a:hover { color: #e65c4f !important; text-decoration: underline; }
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 */
 
-@font-face {
-   font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
-   src: url({{ url_for('static', filename = 'googlefont.css') }});
-}
 
-*{
-   font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
-}
 
 * {
   -webkit-font-smoothing: antialiased !important;
