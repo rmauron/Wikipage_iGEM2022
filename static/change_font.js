@@ -13,7 +13,7 @@ btn.addEventListener('click', function handleClick() {
   } else {
     btn.textContent = initialText;
     document.getElementById("font").style.fontFamily = "Source Sans Pro, Roboto, Arial, sans-serif";
-    document.getElementById("font").style.fontSize = "100%";
+    document.getElementById("font").style.fontSize = "112.5%";
 
   }
 });
