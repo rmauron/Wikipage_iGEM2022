@@ -684,14 +684,15 @@ section:last-of-type {
    color:#e65c4f;
 }
 
-.logo-svg path {
+.logo-svg {
   fill:#326789;
    transition: 0.3s;
 }
 
-.logo-svg:hover path {
+.logo-svg:hover {
   fill:#e65c4f;
 }
+
 /*end font awesome*/
 
 /*button to top*/
