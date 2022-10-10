@@ -684,6 +684,15 @@ section:last-of-type {
 .fa:hover{
    color:#e65c4f;
 }
+
+.logo-svg path {
+  fill:#326789;
+   transition: 0.3s;
+}
+
+.logo-svg:hover path {
+  fill:#e65c4f;
+}
 /*end font awesome*/
 
 /*button to top*/
