@@ -995,7 +995,7 @@ th {
 code[class*="language-"],
 pre[class*="language-"] {
 	color: black;
-   background-color: rgba(153, 153, 153, 0.482);
+   background-color: rgba(0, 0, 0, 0.098);
 	text-shadow: 0 1px white;
 	font-family: Consolas, Monaco, 'Andale Mono', monospace;
 	direction: ltr;
