@@ -47,29 +47,29 @@
           </figcaption>
         </figure>
 
-      <div stle="background-image: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%)">
+      <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
         <pre class="language-markup">
           <code>
-    def parse_msa(now):
-        seqs = defaultdict(str)
-        flag = False
-        for seq_record in SeqIO.parse(now + "/" + "try-hhlist.fas", "fasta") :
-            seqs[seq_record.name] = seq_record.seq
-            if not flag:
-                query = seq_record.name
-                flag = True
-        pos = [i for i in range(len(seqs[query])) if seqs[query].startswith('-', i)]
-        pos = pos[::-1]
-        for key, value in seqs.items():
-            temp = value
-            for p in pos:
-                temp = value[:p] + temp[p+1:]
-            print(len(temp))
-            seqs[key] = temp
-        with open(now + "/" + now + ".fasta", "w") as output_handle :
-            for i in seqs.items():
-                writer = SeqIO.FastaIO.FastaWriter(output_handle, wrap=50)
-                writer.write_record(SeqIO.SeqRecord(Seq.Seq(i[1]), id=i[0], name=i[0], description=""))
+  def parse_msa(now):
+      seqs = defaultdict(str)
+      flag = False
+      for seq_record in SeqIO.parse(now + "/" + "try-hhlist.fas", "fasta") :
+          seqs[seq_record.name] = seq_record.seq
+          if not flag:
+              query = seq_record.name
+              flag = True
+      pos = [i for i in range(len(seqs[query])) if seqs[query].startswith('-', i)]
+      pos = pos[::-1]
+      for key, value in seqs.items():
+          temp = value
+          for p in pos:
+              temp = value[:p] + temp[p+1:]
+          print(len(temp))
+          seqs[key] = temp
+      with open(now + "/" + now + ".fasta", "w") as output_handle :
+          for i in seqs.items():
+              writer = SeqIO.FastaIO.FastaWriter(output_handle, wrap=50)
+              writer.write_record(SeqIO.SeqRecord(Seq.Seq(i[1]), id=i[0], name=i[0], description=""))
           </code>
         </pre>
       </div>    
