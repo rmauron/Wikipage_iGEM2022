@@ -47,9 +47,9 @@
           </figcaption>
         </figure>
 
-
+      <div stle="background-image: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%)">
         <pre class="language-markup">
-          <code style="opacity: 0.3">
+          <code>
     def parse_msa(now):
         seqs = defaultdict(str)
         flag = False
@@ -71,8 +71,8 @@
                 writer = SeqIO.FastaIO.FastaWriter(output_handle, wrap=50)
                 writer.write_record(SeqIO.SeqRecord(Seq.Seq(i[1]), id=i[0], name=i[0], description=""))
           </code>
-      </pre>
-
+        </pre>
+      </div>    
 
         <p></p>
         <p class="reveal">
