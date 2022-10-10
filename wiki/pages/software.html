@@ -48,16 +48,28 @@
         </figure>
 
 
-        <pre class="language-markup" style="background-color: grey; opacity: 0.2;">
+        <pre class="language-markup">
           <code>
-          code in python ==> 
-            this is a tab
-              this is a second tab
-          
-          if I'm dying:
-            then I'm dead
-          else:
-            abort
+            def parse_msa(now):
+                seqs = defaultdict(str)
+                flag = False
+                for seq_record in SeqIO.parse(now + "/" + "try-hhlist.fas", "fasta") :
+                    seqs[seq_record.name] = seq_record.seq
+                    if not flag:
+                        query = seq_record.name
+                        flag = True
+                pos = [i for i in range(len(seqs[query])) if seqs[query].startswith('-', i)]
+                pos = pos[::-1]
+                for key, value in seqs.items():
+                    temp = value
+                    for p in pos:
+                        temp = value[:p] + temp[p+1:]
+                    print(len(temp))
+                    seqs[key] = temp
+                with open(now + "/" + now + ".fasta", "w") as output_handle :
+                    for i in seqs.items():
+                        writer = SeqIO.FastaIO.FastaWriter(output_handle, wrap=50)
+                        writer.write_record(SeqIO.SeqRecord(Seq.Seq(i[1]), id=i[0], name=i[0], description=""))
           </code>
       </pre>
 
