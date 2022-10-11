@@ -211,16 +211,152 @@ Run
 
       <section id="tag3_2">
         <h3 class="revealfromtop">Mutants generation</h3>
-
-        <p class="reveal">
-          Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
+        <h4>Input</h4>
+        <h5>Step 1: Choose your sequence type</h5>
+        <p>Is it a DNA (nucleotide bases) or Protein (amino acids) sequence?</p>
+        <p style="margin-bottom:60px;">
+        <code>
+protein
+        </code>
         </p>
 
+        <h5>Step 2: Insert your Sequence</h5>
+        <p>You can choose to upload a fasta file (.fasta, .fa, .fna, .fnn, .faa) or paste the sequence as follows:</p>
+
+      <div style="background-color: whitesmoke; border-radius: .2rem; font-style:monospace; text-align: justify; text-align-last: justify; opacity:0.75;">
+      <p style="margin-bottom:60px;"><code>   
+>sp|P27352|IF_HUMAN Cobalamin binding intrinsic factor OS=Homo sapiens OX=9606 GN=CBLIF PE=1 SV=2
+MAWFALYLLSLLWATAGTSTQTQSSCSVPSAQEPLVNGIQVLMENSVTSSAYPNPSILIA
+MNLAGAYNLKAQKLLTYQLMSSDNNDLTIGQLGLTIMALTSSCRDPGDKVSILQRQMENW
+APSSPNAEASAFYGPSLAILALCQKNSEATLPIAVRFAKTLLANSSPFNVDTGAMATLAL
+TCMYNKIPVGSEEGYRSLFGQVLKDIVEKISMKIKDNGIIGDIYSTGLAMQALSVTPEPS
+KKEWNCKKTTDMILNEIKQGKFHNPMSIAQILPSLKGKTYLDVPQVTCSPDHEVQPTLPS
+NPGPGPTSASNITVIYTINNQLRGVELLFNETINVSVKSGSVLLVVLEEAQRKNPMFKFE
+TTMTSWGLVVSSINNIAENVNHKTYWQFLSGVTPLNEGVADYIPFNHEHITANFTQY
+      </code></p>
+      </div>
 
 
-<iframe title="Stockholm: ProMutor Mutant Generation Tutorial (2022) [English]" width="560" height="315" src="https://video.igem.org/videos/embed/c4388aba-96e4-4817-9ef8-4639943e85c9" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+        <h5>Step 3: Insert the position of mutation(s)</h5>
+        <p>You can decide at which position you want to insert mutations</p>
+        <p style="margin-bottom:60px;"><code>
+28, 57, 97
+        </code></p>
+
+        <h5>Step 4: Insert the positions that are always of mutated</h5>
+        <p>If a position from the <i>STEP 3</i> has to be inserted in each generated sequence, you can specify it. Leave empty for a combinatory mix</p>
+        <p style="margin-bottom:60px;"><code>
+57
+        </code></p>
+ 
+
+        <h5>Step 5: Insert maximum number of mutation(s)</h5>
+        <p>Based on the postions from <i>STEP 3</i> you can choose how many mutation to include per sequence in maximum. In this tutorial we choose postions 28, 57, 97 (so 3 different positions), therefore we can decide to include up to 3 mutations per sequence. With the maximum number of mutations set to 3, the software generates singlets, doublets and triplets.</p>
+        <p style="margin-bottom:60px;"><code>
+3
+        </code></p>
+ 
+
+        <h5>Step 6: Choose structure preservation mode</h5>
+        <p>You can choose whether you want mutants with preserved or disrupted depending on the purpose. Preserved mode favoritise high similarity score while disrupted favoritise low similarity score.</p>
+        <p style="margin-bottom:60px;"><code>
+Preserved
+        </code></p>
 
 
+        <h5>Step 7: Choose the similarity matrix</h5>
+        <p>Depending on the divergence or pairwise identity desired, you can select among Blosum45, Blosum50, Blosum 62, Blosum80, Blosum90 or Pam30, Pam90 or even Pam250. By default, Blosum62 is selected.</p>
+        <p style="margin-bottom:60px;"><code>
+Blosum62
+        </code></p>
+
+
+        <h5>Step 8: Choose the database to be used</h5>
+        <p>Select against which database the MSA should be ran. Uniclust is recommended for more reliable prediction. Faster results may be produced with other choices.</p>
+        <p style="margin-bottom:60px;"><code>
+Uniclust
+        </code></p>
+
+
+        <h5>Step 9: Submit the form</h5>
+        <p>Press:</p>
+        <p style="margin-bottom:60px;"><code>
+Run
+        </code></p>
+
+      <p>Or you can watch the video bellow:</p>
+      <iframe title="Stockholm: ProMutor Mutant Generation Tutorial (2022) [English]" width="560" height="315" src="https://video.igem.org/videos/embed/c4388aba-96e4-4817-9ef8-4639943e85c9" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+
+
+        <h4>Output</h4>
+        <h5>Selected parameters</h5>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Argument</th>
+              <th>Chosen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sequence</td>
+              <td>&gt;sp|P27352|IF_HUMAN Cobalamin binding intrinsic factor OS=Homo sapiens OX=9606 G N=CBLIF PE=1 SV=2 MAWFALYLLSLLWATAGTSTQTQSSCSVPSAQEPLVNGIQVLMENSVTSSAYPNPSILIA MNLAGAYNLKAQKLLTYQLMSSDNNDLTIGQLGLTIMALTSSCRDPGDKVSILQRQMENW APSSPNAEASAFYGPSLAILALCQKNSEATLPIAVRFAKTLLANSSPFNVDTGAMATLAL TCMYNKIPVGSEEGYRSLFGQVLKDIVEKISMKIKDNGIIGDIYSTGLAMQALSVTPEPS KKEWNCKKTTDMILNEIKQGKFHNPMSIAQILPSLKGKTYLDVPQVTCSPDHEVQPTLPS NPGPGPTSASNITVIYTINNQLRGVELLFNETINVSVKSGSVLLVVLEEAQRKNPMFKFE TTMTSWGLVVSSINNIAENVNHKTYWQFLSGVTPLNEGVADYIPFNHEHITANFTQY</td>
+            </tr>
+            <tr>
+              <td>Matrix</td>
+              <td>Blosum62</td>
+            </tr>
+            <tr>
+              <td>Database</td>
+              <td>uniclust</td>
+            </tr>
+            <tr>
+              <td>Number of mutant</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Positions</td>
+              <td>28,57,97</td>
+            </tr>
+            <tr>
+              <td>Preserved</td>
+              <td>True</td>
+            </tr>
+            <tr>
+              <td>Input type</td>
+              <td>protein</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h5 style="margin-top:60px;">Mutant sequences and scores</h5>
+        <p>The mutant names are given together with their respective score in at table like bellow:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Scores:</th>
+              <th>Mutant Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I57V,M97L</td>
+              <td>-0.623305422209993</td>
+            </tr>
+            <tr>
+              <td>V28I,I57V</td>
+              <td>-0.867803185985955</td>
+            </tr>
+            <tr>
+              <td>V28I,I57V,M97L</td>
+              <td>-1.2911568830377</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Different function are then available to display or download the sequences freshly generated. Use the dropdown toggle to select a mutant. Then press the button <code>Show sequence</code> to display its sequence. You can also open the sequence in a new tab using the button <code>Open in new tab</code>. Every generated sequences are downloadable separately in fasta format by selecting the sequence of choice with the dropdown and pressing <code>Download fasta</code>. If every mutant sequences have to be downloaded in a single fasta file, use the button <code>Download every fasta</code>.</p>
 
       </section>
 
