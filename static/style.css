@@ -688,6 +688,9 @@ section:last-of-type {
 .fa:hover{
    color:#e65c4f;
 }
+svg:hover {
+  fill: #e65c4f !important;
+}
 
 .logo-svg {
   fill:#326789;
