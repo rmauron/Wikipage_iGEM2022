@@ -469,6 +469,9 @@ section:last-of-type {
 .flashbox_pages:hover .fa_pages {
    color: #e65c4f !important;
 }
+.flashbox_pages:hover svg {
+   fill: #e65c4f !important;
+}
 
 .p_pages, .a_pages {
    color:white;
