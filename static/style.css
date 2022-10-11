@@ -1013,7 +1013,7 @@ th {
 
 /* <code> */
 code {
-  font-family: 'Courier Prime', monospace;
+  font-family: monospace !important;
   font-size: 125%;
   color:black !important;
   opacity:0.75;
