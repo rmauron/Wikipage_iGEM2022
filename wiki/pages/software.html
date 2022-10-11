@@ -70,26 +70,112 @@
 
       <section id="tag3">
         <h2 class="revealfromtop">Tutorials</h2>
-
-        <p class="reveal">
-          Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
-        </p>
+        <p class="reveal">This tutorial explains how to set every parameters in order to efficiently use both the mode that are available (screening and mutants generation). For more detailed explanations, please visite the Gitlab.</p>
       </section>
 
       <section id="tag3_1">
         <h3 class="revealfromtop">Screening mode</h3>
-
-
-      <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <h4 class="revealfromtop">Input</h4>
+        <h5 class="revealfromtop">Step 1: Choose your sequence type</h5>
+        <p class="reveal">Is it a DNA (nucleotide bases) or Protein (amino acids) sequence?</p>
+        <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
         <pre class="language-markup">
           <code>
-  def parse_msa(now):
-      seqs = defaultdict(str)
+protein
+          </code>
+        </pre>
+      </div>
+
+        <h5 class="revealfromtop">Step 2: Insert your Sequence</h5>
+        <p class="reveal">You can choose to upload a fasta file (.fasta, .fa, .fna, .fnn, .faa) or paste the sequence as follows:</p>
+        <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <pre class="language-markup">
+          <code>
+>sp|P27352|IF_HUMAN Cobalamin binding intrinsic factor OS=Homo sapiens OX=9606 GN=CBLIF PE=1 SV=2
+MAWFALYLLSLLWATAGTSTQTQSSCSVPSAQEPLVNGIQVLMENSVTSSAYPNPSILIA
+MNLAGAYNLKAQKLLTYQLMSSDNNDLTIGQLGLTIMALTSSCRDPGDKVSILQRQMENW
+APSSPNAEASAFYGPSLAILALCQKNSEATLPIAVRFAKTLLANSSPFNVDTGAMATLAL
+TCMYNKIPVGSEEGYRSLFGQVLKDIVEKISMKIKDNGIIGDIYSTGLAMQALSVTPEPS
+KKEWNCKKTTDMILNEIKQGKFHNPMSIAQILPSLKGKTYLDVPQVTCSPDHEVQPTLPS
+NPGPGPTSASNITVIYTINNQLRGVELLFNETINVSVKSGSVLLVVLEEAQRKNPMFKFE
+TTMTSWGLVVSSINNIAENVNHKTYWQFLSGVTPLNEGVADYIPFNHEHITANFTQY
 
           </code>
         </pre>
-      </div>  
+      </div> 
 
+        <h5 class="revealfromtop">Step 3: Insert the position of mutation(s)</h5>
+        <p class="reveal">Set the position to 0 to enable screening mode</p>
+        <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <pre class="language-markup">
+          <code>
+0
+          </code>
+        </pre>
+      </div> 
+
+        <h5 class="revealfromtop">Step 4: Insert the positions that are always of mutated</h5>
+        <p class="reveal"></p>
+        <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <pre class="language-markup">
+          <code>
+Leave empty
+          </code>
+        </pre>
+      </div> 
+
+        <h5 class="revealfromtop">Step 5: Insert maximum number of mutation(s)</h5>
+        <p class="reveal"></p>
+        <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <pre class="language-markup">
+          <code>
+Leave empty
+          </code>
+        </pre>
+      </div> 
+
+        <h5 class="revealfromtop">Step 6: Choose structure preservation mode</h5>
+        <p class="reveal">By default:</p>
+        <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <pre class="language-markup">
+          <code>
+Preserved
+          </code>
+        </pre>
+      </div>
+
+        <h5 class="revealfromtop">Step 7: Choose the similarity matrix</h5>
+        <p class="reveal">By default:</p>
+        <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <pre class="language-markup">
+          <code>
+Blosum62
+          </code>
+        </pre>
+      </div> 
+
+        <h5 class="revealfromtop">Step 8: Choose the database to be used</h5>
+        <p class="reveal">Select against which database the MSA should be ran. Uniclust is recommended for more reliable prediction. Faster results may be produced with other choices.</p>
+        <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <pre class="language-markup">
+          <code>
+Uniclust
+          </code>
+        </pre>
+      </div> 
+
+        <h5 class="revealfromtop">Step 9: Submit the form</h5>
+        <p class="reveal">Press:</p>
+        <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <pre class="language-markup">
+          <code>
+Run
+          </code>
+        </pre>
+      </div> 
+
+      <p>Or you can watch the video bellow:</p>
+      <iframe title="Stockholm: ProMutor Screening Mode Tutorial (2022) [English]" width="560" height="315" src="https://video.igem.org/videos/embed/65018f06-d809-4951-a9c4-92242a610a91" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 
         <p class="reveal">
           Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
