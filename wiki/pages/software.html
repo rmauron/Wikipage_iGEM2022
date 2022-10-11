@@ -55,6 +55,13 @@
 
         <p class="reveal">The mutant generation pipeline begins with a wild-type sequence and a list of positions to be mutated. For instance, this could be a known epitope that is to be modified, post-translational modification sites that should be removed, etc. In addition, our tool could be used as a screening instrument for the effect of all possible single-point mutations. This would facilitate the screening for amino acids that are essential for the protein’s structure and function.</p>
 
+        <figure>
+          <img src="https://static.igem.wiki/teams/4214/wiki/software/promutor-scheme.png" class="img-fluid center" alt="heatmap">
+          <figcaption>
+            <p><i style="font-weight:bold;">Figure.</i><i> Schematic representation of the ProMutor pipeline.</i></p>
+          </figcaption>
+        </figure>
+
         <p class="reveal">Two modes enable various types of mutant generation. Once a mutation list is submitted, variants with either a similar WT structure (“Preserved” mode of the tool) or a significantly differing one (“Disrupted” mode of the tool) are designed. In both cases, substitution matrices such as BLOSUM or PAM are utilised for a pre-selection of amino acids. A wide choice of those (8) is provided to the user so that the prediction could be as tunable as possible. In cases of conserving structures, most similar amino acids are chosen as substitutes since it's supposed that evolutionary-tolerated amino acid substitutions cause neither major perturbations on the protein's structure nor on its function. On the contrary, when the protein structure should be completely disrupted, the mutations that are least tolerated in evolution are selected to proceed with.</p>
 
         <p class="reveal">After compiling a list of mutants for testing, ProMutor evaluates the effect of the proposed interventions by predicting their mutational outcomes. For this purpose, a software called GEMME is used, which evaluates mutations based on explicit modelling of the evolutionary history of natural sequences. In addition, GEMME is much faster than other existing tools. It takes into account only biologically meaningful and interpretable parameters and does not require any complex learning steps. Given input alignment, it generates a complete landscape of protein mutations in minutes. Extensive validation was performed to show that GEMME is on par or better than more complex tools. Moreover, GEMME could handle combinations of mutations and give reliable predictions for those.</p>
@@ -196,8 +203,8 @@ Run
 
 
         <h5 style="margin-top:60px;">Screening result</h5>
-        <p>The results of the screening are displayed on a Heatmap Figure. Amino acids positions of the protein are represented on the x-axis while each possible substitutions score are presented on the y-axis. 
-          The resulting multiple-sequence-alignment-based conservation scores <i><span>&#916;</span><span>&#916;</span>E</i> quantify how likely each of the 19 substitutions are in terms of what has been observed in the evolutionary record (y-axis), with <i><span>&#916;</span><span>&#916;</span>E</i> ≈ 0 corresponding to very conservative substitutions (have minor effect on protein structure) and the lower <i><span>&#916;</span><span>&#916;</span>E</i> is, the more likely those mutations disrupt protein's structure. Simply, this plot is a colour respresentation of how well mutations are structurally tolerated with red means that a mutation has low effect and blue, the mutation has a high effect on the protein structure.
+        <p>The results of the screening are displayed on a Heatmap Figure. Amino acids positions of the protein are represented on the x-axis while each possible conservation score is presented on the y-axis. 
+          The resulting <i><span>&#916;</span><span>&#916;</span>E</i> scores indicate evolutionary tolerance of all possible substitutions per position (y-axis). Here, highly variable positions have <i><span>&#916;</span><span>&#916;</span>E</i> ≈ 0 (have minor effect on protein structure) and more deleterious substitutions get lower <i><span>&#916;</span><span>&#916;</span>E</i> scores. Simply, this plot depicts the mutations effect on protein stucture with red and blue corresponding to low and high effect, respectively.
         </p>
 
         <figure>
