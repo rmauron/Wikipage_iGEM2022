@@ -41,56 +41,31 @@
 
       <section id="tag1">
         <h2 class="revealfromtop">Background</h2>
+          <p class="reveal">Protein design is essential for any protein engineering project. While designing new proteins is still challenging, improvement of existing ones by using site-directed mutagenesis seems to be feasible. As the amount of mutation sites space is huge, an in silico preselection of mutants is needed. Several tools are available that enable the prediction of the mutation effect on protein structures. However, they are complicated to use and they do not give any suggestions with which mutants to proceed in a particular experiment (reffs).</p>
 
+          <p class="reveal">In order to address this problem, we generated the powerful software ProMutor.</p>
 
-
-      <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
-        <pre class="language-markup">
-          <code>
-  def parse_msa(now):
-      seqs = defaultdict(str)
-      flag = False
-      for seq_record in SeqIO.parse(now + "/" + "try-hhlist.fas", "fasta") :
-          seqs[seq_record.name] = seq_record.seq
-          if not flag:
-              query = seq_record.name
-              flag = True
-      pos = [i for i in range(len(seqs[query])) if seqs[query].startswith('-', i)]
-      pos = pos[::-1]
-      for key, value in seqs.items():
-          temp = value
-          for p in pos:
-              temp = value[:p] + temp[p+1:]
-          print(len(temp))
-          seqs[key] = temp
-      with open(now + "/" + now + ".fasta", "w") as output_handle :
-          for i in seqs.items():
-              writer = SeqIO.FastaIO.FastaWriter(output_handle, wrap=50)
-              writer.write_record(SeqIO.SeqRecord(Seq.Seq(i[1]), id=i[0], name=i[0], description=""))
-          </code>
-        </pre>
-      </div>    
-
-        <p></p>
-        <p class="reveal">
-          Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child 
-        </p>
+          <p class="reveal">ProMutor is a flexible, easy-to-use, open-source platform for generating advantageous point mutants. In our software, wild-type sequences are used to suggest a list of potent mutations based on explicit modelling of evolutionary history. It enables the user to pick the variants of interest based on epistatic scores. To our knowledge, it is the first web-based software to tackle the complexity of protein design.</p>
       </section>
 
       <section id="tag2">
         <h2 class="revealfromtop">Description</h2>
 
-        <figure class="reveal">
-          <img src="https://static.igem.wiki/teams/4214/wiki/picture.png" class="img-fluid reveal" alt="inclusivity picture">
-          <figcaption>
-            <p><i style="font-weight:bold;">Title.</i><i> This is a figure caption</i></p>
-          </figcaption>
-        </figure>
-        <p></p>
-        <p class="reveal">
-          Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
-          Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.
-        </p>
+        <p class="reveal">We developed a web-based user-friendly tool to facilitate protein design. As a starting point, our tool takes either nucleotide or amino acid sequences. Multiple operation modes are offered to the client to make the process of mutant creation as customised as possible. Based on the desired protein design settings, ProMutor provides a list of mutants with the predicted effect of introduced mutations based on the epistatic effect and amino acid conservation across various species.</p>
+
+        <p class="reveal">The mutant generation pipeline begins with a wild-type sequence and a list of positions to be mutated. For instance, this could be a known epitope that is to be modified, post-translational modification sites that should be removed, etc. In addition, our tool could be used as a screening instrument for the effect of all possible single-point mutations. This would facilitate the screening for amino acids that are essential for the protein’s structure and function.</p>
+
+        <p class="reveal">Two modes enable various types of mutant generation. Once a mutation list is submitted, variants with either a similar WT structure (“Preserved” mode of the tool) or a significantly differing one (“Disrupted” mode of the tool) are designed. In both cases, substitution matrices such as BLOSUM or PAM are utilised for a pre-selection of amino acids. A wide choice of those (8) is provided to the user so that the prediction could be as tunable as possible. In cases of conserving structures, most similar amino acids are chosen as substitutes since it's supposed that evolutionary-tolerated amino acid substitutions cause neither major perturbations on the protein's structure nor on its function. On the contrary, when the protein structure should be completely disrupted, the mutations that are least tolerated in evolution are selected to proceed with.</p>
+
+        <p class="reveal">After compiling a list of mutants for testing, ProMutor evaluates the effect of the proposed interventions by predicting their mutational outcomes. For this purpose, a software called GEMME is used, which evaluates mutations based on explicit modelling of the evolutionary history of natural sequences. In addition, GEMME is much faster than other existing tools. It takes into account only biologically meaningful and interpretable parameters and does not require any complex learning steps. Given input alignment, it generates a complete landscape of protein mutations in minutes. Extensive validation was performed to show that GEMME is on par or better than more complex tools. Moreover, GEMME could handle combinations of mutations and give reliable predictions for those.</p>
+
+        <p class="reveal">For our purposes, HHblits and Uniclust database are chosen to create a multiple sequence alignment (MSA) required as an input for GEMME. By providing several databases (Uniclust, PDB70, PfamA, SCOP70), the user has the freedom to choose. However, we suggest Uniclust database due to greater search space and more reliable predictions.</p>
+
+        <p class="reveal">Once all steps are complete, the user gets a list of scored point mutants as well as their sequences. In order to enable reproducibility, all inputs and outputs are interpreted and reported. The results can be downloaded and displayed in several formats for easy usage. Last but not least, the user is provided with protein prediction possibilities as a follow-up step (ColabFold).</p>
+
+        <p class="reveal">Overall, this sophisticated pipeline is a multiple steps process which is fully automated without any user involvement. Calculations are performed on a powerful multi-core cluster and accessible through a single web form.</p>
+
+        <p class="reveal">Note from authors: “Our vision is to provide a complete and powerful tool that makes protein design as painless as possible.”</p>
       </section>
 
       <section id="tag3">
@@ -104,9 +79,30 @@
       <section id="tag3_1">
         <h3 class="revealfromtop">Screening mode</h3>
 
+
+      <div stle="background: rgb(74,74,74); background: linear-gradient(0deg, rgba(74,74,74,0.24975927871148462) 100%, rgba(253,187,45,1) 100%);">
+        <pre class="language-markup">
+          <code>
+  def parse_msa(now):
+      seqs = defaultdict(str)
+
+          </code>
+        </pre>
+      </div>  
+
+
         <p class="reveal">
           Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do. You had met they song how feel lain evil near. Small she avoid six yet table china. And bed make say been then dine mrs. To household rapturous fulfilled attempted on so.
         </p>
+
+
+        <figure class="reveal">
+          <img src="https://static.igem.wiki/teams/4214/wiki/picture.png" class="img-fluid reveal" alt="inclusivity picture">
+          <figcaption>
+            <p><i style="font-weight:bold;">Title.</i><i> This is a figure caption</i></p>
+          </figcaption>
+        </figure>
+
       </section>
 
       <section id="tag3_2">
