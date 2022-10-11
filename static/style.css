@@ -1013,9 +1013,9 @@ th {
 
 /* <code> */
 code {
-  font-family: monospace;
+  font-family: 'Courier Prime', monospace;
   font-size: 125%;
-  color:black;
+  color:black !important;
   opacity:0.75;
   background-color:whitesmoke;
 }
@@ -1025,7 +1025,7 @@ p > code,
 li > code,
 dd > code,
 td > code {
-  background: whitesmoke;
+  background: whitesmoke !important;
   word-wrap: break-word;
   box-decoration-break: clone;
   padding: .1rem .3rem .2rem;
