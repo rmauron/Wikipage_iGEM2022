@@ -41,7 +41,7 @@
 
       <section id="tag1">
         <h2>Background</h2>
-          <p>Protein design is essential for any protein engineering project. While designing new proteins is still challenging, improvement of existing ones by using site-directed mutagenesis seems to be feasible. As the amount of mutation sites space is huge, an in silico preselection of mutants is needed. Several tools are available that enable the prediction of the mutation effect on protein structures. However, they are complicated to use and they do not give any suggestions with which mutants to proceed in a particular experiment (reffs).</p>
+          <p>Protein design is essential for any protein engineering project. While designing new proteins is still challenging, improvement of existing ones by using site-directed mutagenesis seems to be feasible. As the amount of mutation sites space is huge, an in silico preselection of mutants is needed. Several tools are available that enable the prediction of the mutation effect on protein structures. However, they are complicated to use and they do not give any suggestions with which mutants to proceed in a particular experiment <a href="#references">[1]</a><a href="#references">[2]</a>.</p>
 
           <p class="reveal">In order to address this problem, we generated the powerful software ProMutor.</p>
 
@@ -62,13 +62,13 @@
           </figcaption>
         </figure>
 
-        <p class="reveal">Two modes enable various types of mutant generation. Once a mutation list is submitted, variants with either a similar WT structure (“Preserved” mode of the tool) or a significantly differing one (“Disrupted” mode of the tool) are designed. In both cases, substitution matrices such as BLOSUM or PAM are utilised for a pre-selection of amino acids. A wide choice of those (8) is provided to the user so that the prediction could be as tunable as possible. In cases of conserving structures, most similar amino acids are chosen as substitutes since it's supposed that evolutionary-tolerated amino acid substitutions cause neither major perturbations on the protein's structure nor on its function. On the contrary, when the protein structure should be completely disrupted, the mutations that are least tolerated in evolution are selected to proceed with.</p>
+        <p class="reveal">Two modes enable various types of mutant generation. Once a mutation list is submitted, variants with either a similar WT structure (“Preserved” mode of the tool) or a significantly differing one (“Disrupted” mode of the tool) are designed. In both cases, substitution matrices such as BLOSUM or PAM <a href="#references">[3]</a> are utilised for a pre-selection of amino acids. A wide choice of those (8) is provided to the user so that the prediction could be as tunable as possible. In cases of conserving structures, most similar amino acids are chosen as substitutes since it's supposed that evolutionary-tolerated amino acid substitutions cause neither major perturbations on the protein's structure nor on its function. On the contrary, when the protein structure should be completely disrupted, the mutations that are least tolerated in evolution are selected to proceed with.</p>
 
-        <p class="reveal">After compiling a list of mutants for testing, ProMutor evaluates the effect of the proposed interventions by predicting their mutational outcomes. For this purpose, a software called GEMME is used, which evaluates mutations based on explicit modelling of the evolutionary history of natural sequences. In addition, GEMME is much faster than other existing tools. It takes into account only biologically meaningful and interpretable parameters and does not require any complex learning steps. Given input alignment, it generates a complete landscape of protein mutations in minutes. Extensive validation was performed to show that GEMME is on par or better than more complex tools. Moreover, GEMME could handle combinations of mutations and give reliable predictions for those.</p>
+        <p class="reveal">After compiling a list of mutants for testing, ProMutor evaluates the effect of the proposed interventions by predicting their mutational outcomes. For this purpose, a software called GEMME <a href="#references">[4]</a> is used, which evaluates mutations based on explicit modelling of the evolutionary history of natural sequences. In addition, GEMME is much faster than other existing tools. It takes into account only biologically meaningful and interpretable parameters and does not require any complex learning steps. Given input alignment, it generates a complete landscape of protein mutations in minutes. Extensive validation was performed to show that GEMME is on par or better than more complex tools. Moreover, GEMME could handle combinations of mutations and give reliable predictions for those.</p>
 
-        <p class="reveal">For our purposes, HHblits and Uniclust database are chosen to create a multiple sequence alignment (MSA) required as an input for GEMME. By providing several databases (Uniclust, PDB70, PfamA, SCOP70), the user has the freedom to choose. However, we suggest Uniclust database due to greater search space and more reliable predictions.</p>
+        <p class="reveal">For our purposes, HHblits <a href="#references">[5]</a> and Uniclust <a href="#references">[6]</a> database are chosen to create a multiple sequence alignment (MSA) required as an input for GEMME. By providing several databases (Uniclust, PDB70 <a href="#references">[7]</a>, PfamA <a href="#references">[8]</a>, SCOP70 <a href="#references">[9]</a>), the user has the freedom to choose. However, we suggest Uniclust database due to greater search space and more reliable predictions.</p>
 
-        <p class="reveal">Once all steps are complete, the user gets a list of scored point mutants as well as their sequences. In order to enable reproducibility, all inputs and outputs are interpreted and reported. The results can be downloaded and displayed in several formats for easy usage. Last but not least, the user is provided with protein prediction possibilities as a follow-up step (ColabFold).</p>
+        <p class="reveal">Once all steps are complete, the user gets a list of scored point mutants as well as their sequences. In order to enable reproducibility, all inputs and outputs are interpreted and reported. The results can be downloaded and displayed in several formats for easy usage. Last but not least, the user is provided with protein prediction possibilities as a follow-up step (ColabFold <a href="#references">[10]</a><a href="#references">[11]</a>).</p>
 
         <p class="reveal">Overall, this sophisticated pipeline is a multiple steps process which is fully automated without any user involvement. Calculations are performed on a powerful multi-core cluster and accessible through a single web form.</p>
 
@@ -378,28 +378,122 @@ Run
               <div class="tab-content">
                 <ol>
                   <li>
-                    <p><!--authors here-->Authors<br>
-                    <!--paper titles--><b style="font-weight: bold !important;">Title</b><br>
-                    <!-- journal's name--><i>Journal's name</i><br>
-                    <!-- link to artile--><a href="#" target="_blank">A link</a>
+                    <p><!--authors here-->J.-E. Shin, A. J. Riesselman, A. W. Kollasch, C. McMahon, E. Simon, C. Sander, A. Manglik, A. C. Kruse, and D. S. Marks<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">Protein design and variant prediction using autoregressive generative models</b><br>
+                    <!-- journal's name--><i>Nature communications, vol. 12, no. 1, pp. 1–11, 2021.</i><br>
+                    <!-- link to artile--><a href="https://www.biorxiv.org/content/10.1101/757252v2" target="_blank">DOI: 10.1101/757252</a>
                     </p>
                   <hr>
                   </li>
 
                   <li>
-                    <p><!--authors here-->Authors<br>
-                    <!--paper titles--><b style="font-weight: bold !important;">Title</b><br>
-                    <!-- journal's name--><i>Journal's name</i><br>
-                    <!-- link to artile--><a href="#" target="_blank">A link</a>
+                    <p><!--authors here-->A. J. Riesselman, J. B. Ingraham, and D. S. Marks<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">Deep generative models of genetic
+variation capture mutation effects</b><br>
+                    <!-- journal's name--><i>bioRxiv, 2017</i><br>
+                    <!-- link to artile--><a href="https://www.biorxiv.org/content/10.1101/235655v2" target="_blank">DOI: 10.1101/235655</a>
                     </p>
                   <hr>
                   </li>
                   
                   <li>
-                    <p><!--authors here-->Authors<br>
-                    <!--paper titles--><b style="font-weight: bold !important;">Title</b><br>
-                    <!-- journal's name--><i>Journal's name</i><br>
-                    <!-- link to artile--><a href="#" target="_blank">A link</a>
+                    <p><!--authors here-->S. Henikoff and J. G. Henikoff<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">Amino acid substitution matrics from protein blocks.</b><br>
+                    <!-- journal's name--><i>Proc Natl Acad Sci USA, vol. 89, 1992.</i><br>
+                    <!-- link to artile--><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC50453/" target="_blank">DOI: 10.1073/pnas.89.22.10915</a>
+                    </p>
+                  <hr>
+                  </li>
+
+                  <li>
+                    <p><!--authors here-->E. Laine, Y. Karami, and A. Carbone<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">GEMME: A Simple and Fast Global Epistatic
+Model Predicting Mutational Effects</b><br>
+                    <!-- journal's name--><i>Molecular Biology and Evolution, vol. 36, pp. 2604–
+2619, 08 2019.</i><br>
+                    <!-- link to artile--><a href="https://academic.oup.com/mbe/article/36/11/2604/5548199" target="_blank">DOI: 10.1093/molbev/msz179</a>
+                    </p>
+                  <hr>
+                  </li>
+
+                  <li>
+                    <p><!--authors here-->M. Remmert, A. Biegert, A. Hauser, and J. Söding<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">HHblits: lightning-fast iterative protein
+sequence searching by HMM-HMM alignment</b><br>
+                    <!-- journal's name--><i>Nature Methods, vol. 9, pp. 173–175,
+Feb. 2012.</i><br>
+                    <!-- link to artile--><a href="https://www.nature.com/articles/nmeth.1818" target="_blank">DOI: 10.1038/nmeth.1818</a>
+                    </p>
+                  <hr>
+                  </li>
+
+                  <li>
+                    <p><!--authors here-->M. Mirdita, L. von den Driesch, C. Galiez, M. J. Martin, J. Söding, and M. Steinegger<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">Uniclust databases of clustered and deeply annotated protein sequences and alignments</b><br>
+                    <!-- journal's name--><i>Nucleic Acids Res, vol. 45, pp. D170–D176, Nov. 2016.</i><br>
+                    <!-- link to artile--><a href="https://pubmed.ncbi.nlm.nih.gov/27899574/" target="_blank">DOI: 10.1093/nar/gkw1081</a>
+                    </p>
+                  <hr>
+                  </li>
+
+                  <li>
+                    <p><!--authors here-->M. Steinegger, M. Meier, M. Mirdita, H. Vöhringer, S. J. Haunsberger, and J. Söding<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">Hh-suite3 for fast remote homology detection and deep protein annotation</b><br>
+                    <!-- journal's name--><i>BMC Bioinformatics, vol. 20, p. 473, Sep 2019.</i><br>
+                    <!-- link to artile--><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3019-7" target="_blank">DOI: 10.1186/s12859-019-3019-7</a>
+                    </p>
+                  <hr>
+                  </li>
+
+                  <li>
+                    <p><!--authors here-->E. L. Sonnhammer, S. R. Eddy, and R. Durbin<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">Pfam: a comprehensive database of protein
+domain families based on seed alignments</b><br>
+                    <!-- journal's name--><i>Proteins, vol. 28, pp. 405–420, July 1997.</i><br>
+                    <!-- link to artile--><a href="https://pubmed.ncbi.nlm.nih.gov/9223186/" target="_blank">DOI: 10.1002/(sici)1097-0134</a>
+                    </p>
+                  <hr>
+                  </li>
+
+                  <li>
+                    <p><!--authors here-->A. G. Murzin, S. E. Brenner, T. Hubbard, and C. Chothia<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">SCOP: a structural classification
+of proteins database for the investigation of sequences and structures</b><br>
+                    <!-- journal's name--><i>J Mol Biol, vol. 247, pp. 536–540, Apr. 1995.</i><br>
+                    <!-- link to artile--><a href="https://pubmed.ncbi.nlm.nih.gov/7723011/" target="_blank">DOI: 10.1006/jmbi.1995.0159</a>
+                    </p>
+                  <hr>
+                  </li>
+
+                  <li>
+                    <p><!--authors here-->J. Jumper, R. Evans, A. Pritzel, T. Green, M. Figurnov, O. Ronneberger, K. Tunyasuvunakool, R. Bates, A. Žídek, A. Potapenko, A. Bridgland, C. Meyer, S. A. A. Kohl, A. J.
+Ballard, A. Cowie, B. Romera-Paredes, S. Nikolov, R. Jain, J. Adler, T. Back, S. Petersen,
+D. Reiman, E. Clancy, M. Zielinski, M. Steinegger, M. Pacholska, T. Berghammer, S. Bodenstein,
+D. Silver, O. Vinyals, A. W. Senior, K. Kavukcuoglu, P. Kohli, and D. Hassabis<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">Highly accurate protein structure prediction with alphafold</b><br>
+                    <!-- journal's name--><i>Nature, vol. 596, pp. 583–589, Aug 2021.</i><br>
+                    <!-- link to artile--><a href="https://www.nature.com/articles/s41586-021-03819-2" target="_blank">DOI: 10.1038/s41586-021-03819-2</a>
+                    </p>
+                  <hr>
+                  </li>
+
+                  <li>
+                    <p><!--authors here-->M. Mirdita, K. Schütze, Y. Moriwaki, L. Heo, S. Ovchinnikov, and M. Steinegger<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">Colabfold:
+making protein folding accessible to all.</b><br>
+                    <!-- journal's name--><i>Nature Methods, vol. 19, pp. 679–682, Jun 2022.</i><br>
+                    <!-- link to artile--><a href="https://www.nature.com/articles/s41592-022-01488-1" target="_blank">DOI: 10.1038/s41592-022-01488-1</a>
+                    </p>
+                  <hr>
+                  </li>
+
+                  <li>
+                    <p><!--authors here-->M. H. Høie, M. Cagiada, A. H. Beck Frederiksen, A. Stein, and K. Lindorff-Larsen<br>
+                    <!--paper titles--><b style="font-weight: bold !important;">Predicting
+and interpreting large-scale mutagenesis data using analyses of protein stability
+and conservation.</b><br>
+                    <!-- journal's name--><i>Cell Reports, vol. 38, no. 2, p. 110207, 2022.</i><br>
+                    <!-- link to artile--><a href="https://www.sciencedirect.com/science/article/pii/S2211124721017113" target="_blank">DOI: 10.1016/j.celrep.2021.110207</a>
                     </p>
                   <hr>
                   </li>
