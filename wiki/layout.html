@@ -6,19 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://static.igem.wiki/teams/4214/wiki/favicon.ico"/>
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
-
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
-
-
-
     <!-- font awesome-->
     <link href="{{ url_for('static', filename = 'fontawesome.css') }}" rel="stylesheet">
-
-
     <title>{% block title %}{% endblock %} | Stockholm - iGEM 2022</title>
 </head>
 
@@ -36,8 +29,7 @@
 
       <!---- button to top ----> 
       <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
-        <svg fill="#FFFFFF" width="17" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
-         
+        <svg fill="#FFFFFF" width="17" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
       </button>
 
   </div>
@@ -50,39 +42,26 @@
 
   <!-- JS for sidebar -->
   <script src="{{ url_for('static', filename = 'navbar.js') }}"></script>
-
     <!-- JS for reveal on scroll -->
   <script src="{{ url_for('static', filename = 'onscroll.js') }}"></script>
-
       <!-- JS for reveal from top on scroll -->
   <script src="{{ url_for('static', filename = 'onscroll-top.js') }}"></script>
-
         <!-- JS for reveal from top on scroll -->
   <script src="{{ url_for('static', filename = 'revealfromleft.js') }}"></script>
-
         <!-- JS for reveal from top on scroll -->
   <script src="{{ url_for('static', filename = 'revealfromright.js') }}"></script>
-
         <!-- JS for changing font-style -->
   <script src="{{ url_for('static', filename = 'change_font.js') }}"></script>
-
           <!-- JS for button to top -->
   <script src="{{ url_for('static', filename = 'button-to-top.js') }}"></script>
-
           <!-- JS for Light/dark switch -->
   <script src="{{ url_for('static', filename = 'switch.js') }}"></script>
-
           <!-- JS for promo video change language -->
   <script src="{{ url_for('static', filename = 'video_language.js') }}"></script>
-
             <!-- JS for Model dropdown -->
   <script src="{{ url_for('static', filename = 'model.js') }}"></script>
-
             <!--boostrap.bundle.5 -->
   <script src="{{ url_for('static', filename = 'boostrap.bundle.5.js') }}"></script>
 
-
-
-  
 </body>
 </html>
