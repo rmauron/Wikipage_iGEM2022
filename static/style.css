@@ -709,6 +709,7 @@ svg:hover {
 /*button to top*/
 #btn-back-to-top {
   position: fixed;
+  z-index: 22;
   bottom: 70px;
   right: 70px;
   display: none;
